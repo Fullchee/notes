@@ -1,3 +1,5 @@
+# Epic React
+
 - [[public-foam/epic-react/1-react-fundamentals]]
 - [[public-foam/epic-react/2-react-hooks]]
 - [[public-foam/epic-react/3-react-patterns]]
