@@ -7,7 +7,8 @@
 ## Index
 
 - [[getting-started]] - learn how to use your Foam workspace
-- [[index]]
+- [[index]] - Epic React
+- [[Exis]]
 
 In the `docs` directory you can find everything you need to learn the basics of Foam.
 
