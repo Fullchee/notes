@@ -4,7 +4,7 @@ Date: 2021-12-25
 
 - [Epic React 1: React Fundamentals](#epic-react-1-react-fundamentals)
   - [React Fundamentals](#react-fundamentals)
-    - [PropTypes](#proptypes)
+    - [PropTypes confusion](#proptypes-confusion)
 
 ## React Fundamentals
 
@@ -22,17 +22,15 @@ If you only want the second value in an array, you can just use an array
 [, setCount];
 ```
 
-### PropTypes
+### PropTypes confusion
 
 I got a bit confused when I got to creating custom components extra credit where I'm not sure how React is calling the `propTypes` that we defined (not from the library).
 
 - [Course video link](https://epicreact.dev/modules/react-fundamentals/creating-custom-components-extra-credit-solution-03)
 - [Link to code](https://github.com/kentcdodds/react-fundamentals/blob/main/src/final/04.extra-3.html)
 
-I broke it down in this StackOverflow question where I even tried looking at the `React` source code but I didn't explain my question clearly enough because the one response gave a link to the `propTypes`.
+I broke it down in [this StackOverflow question]([https://stackoverflow.com/questions/70477035/when-are-the-props-propname-and-componentname-passed-to-the-proptypes-func]) where I even tried looking at the `React` source code but I didn't explain my question clearly enough because the one response gave a link to the `propTypes`.
 
-(which is interesting but not exactly what I'm looking for 😅)
+- (which is interesting but not exactly what I'm looking for 😅)
 
-https://stackoverflow.com/questions/70477035/when-are-the-props-propname-and-componentname-passed-to-the-proptypes-func
-
-I'm also posted on KCD's discord and I'm likely going to go to his office hours next Monday (Jan 10)
+I'm also posted on KCD's discord and I'm likely going to go to his office hours next Monday (Jan 10, 2022)
