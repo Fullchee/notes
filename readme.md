@@ -2,7 +2,7 @@
 
 # Foam
 
-**👋 Welcome to Fullchee's Foam Knowledge Base!**
+**👋 Welcome to [Fullchee's Foam Knowledge Base!](https://fullchee.github.io/public-foam/)**
 
 ## Index
 
