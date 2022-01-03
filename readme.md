@@ -2,7 +2,7 @@
 
 # Foam
 
-**👋 Welcome to your new Foam Knowledge Base!**
+**👋 Welcome to Fullchee's Foam Knowledge Base!**
 
 ## Index
 
