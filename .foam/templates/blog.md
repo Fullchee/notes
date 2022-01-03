@@ -1,6 +1,6 @@
 # ${1:Title}
 
-Date: ${2:YYYY-MM-DD}
+Date: 2022-${2:MM-DD}
 
 ## TLDR
 
