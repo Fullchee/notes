@@ -3,9 +3,9 @@
 # Foam
 
 **👋 Welcome to your new Foam Knowledge Base!**
-## Using Foam
 
-We've created a few Bubbles (Markdown documents) to get you started.
+
+## Getting Started
 
 - [[getting-started]] - learn how to use your Foam workspace
 
