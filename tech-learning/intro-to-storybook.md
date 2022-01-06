@@ -114,13 +114,12 @@ export default {
 
 #### Description for just one story
 
-
 ### CSS Debugging tools
-
 
 ## Add-ons (Bottom toolbar)
 
 ### Controls
+
 - only available if you use the newer way
 - replaces the `knobs` add on
 
@@ -129,7 +128,7 @@ export default {
 ### Accessibility
 
 - runs some a11y tests
-- takes a while
+- ![](2022-01-06-10-57-57.png)
 
 ![](2022-01-06-10-31-31.png)
 
@@ -159,6 +158,28 @@ export default {
   },
 }
 ```
+
+### Other add-ons we could add
+
+- https://github.com/storybookjs/storybook/tree/main/addons/jest
+- https://github.com/storybookjs/storybook/tree/main/addons/links
+- https://storybook.js.org/addons/msw-storybook-addon
+  - mock REST API calls
+- https://storybook.js.org/addons/@storybook/addon-console
+- https://storybook.js.org/addons/storybook-vscode-component
+  - open story in VSCode
+- mock query params
+  - https://github.com/storybookjs/addon-queryparams
+- https://storybook.js.org/addons/storybook-addon-material-ui
+  - I don't know if this could benefit us
+
+#### Testing add-ons
+
+- https://storybook.js.org/addons/@storybook/addon-interactions
+- https://github.com/storybookjs/storybook/tree/main/addons/storyshots
+  - snapshot testing
+- https://storybook.js.org/addons/@storybook/addon-jest
+  - display tests in storybook
 
 ## Story metadata (default export)
 
