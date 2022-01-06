@@ -17,6 +17,19 @@ Date: 2022-01-03
 
 ### Problems with foam
 
+I realized that I can just use GitHub
+
+It doesn't have SEO or customizability but I don't really care about that right now.
+- My main concern is just getting stuff out of my head and into this system
+
+
+
+
+I use Zettlr as my text editor because it has a nice left bar where I can navigate through all the files
+
+
+I tried uploading to GitHub pages but encountered these problems
+
 - I have to create `index.md` pages that I'd have to manually
   - I want to replicate the directory structure
 - 2+ levels deep folders
