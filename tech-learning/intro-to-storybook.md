@@ -184,3 +184,12 @@ export default {
 ## Story metadata (default export)
 
 - ![](2022-01-06-10-40-24.png)
+
+
+### Keyboard Shortcuts
+- F for full screen
+
+
+
+## FAQ and debugging
+- my story's not appearing in the side bar!
