@@ -172,7 +172,12 @@ export default {
   - https://github.com/storybookjs/addon-queryparams
 - https://storybook.js.org/addons/storybook-addon-material-ui
   - I don't know if this could benefit us
-
+- [Adding a CMS to Storybook](https://storybook.js.org/blog/storybook-netlify-cms/)
+  - so the product team can easily edit the docs!
+- visual regression testing with Chromatic
+  - automating it and adding it to our CI will cost money
+  - but you can still do it manually!
+  - that's another workshop
 #### Testing add-ons
 
 - https://storybook.js.org/addons/@storybook/addon-interactions
@@ -186,10 +191,7 @@ export default {
 - ![](2022-01-06-10-40-24.png)
 
 
-### Keyboard Shortcuts
-- F for full screen
-
-
 
 ## FAQ and debugging
 - my story's not appearing in the side bar!
+- Keyboard shortcut: Press F

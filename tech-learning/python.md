@@ -23,7 +23,9 @@ import pdb; pdb.set_trace()
 ```
 
 New way
-????
+```python
+breakpoint()
+```
 
 ## Testing
 
