@@ -15,11 +15,25 @@ from django.contrib.auth.models import User, Group
 ## Tests
 
 ### Run a specific test
-```python
+```shell
 python manage.py test path.app.tests.ClassName --keepdb
 ```
+?????
 
-### 
+## Migrations
+
+### Create an empty migration
+```shell
+python manage.py makemigrations api --name migration_example --empty
+```
+
+
+### Create a migration
+operations list
+
+- `migrations.RunPython(python_function_name),`
+- `migrations.RunSQL("INSERT INTO product (title) VALUES ('Product1');"),`
+
 
 ## Querying
 
