@@ -20,10 +20,8 @@ Create a function that can be used `with`
 
 ```py
 import pdb; pdb.set_trace()
-```
 
-New way
-```python
+# or
 breakpoint()
 ```
 
@@ -54,3 +52,10 @@ include = '^/c1130/.*/*\.py$'
 extend-exclude = '/migrations/'
 line-length = 120
 ```
+
+## String formatting
+Don't need to escape anymore???
+```python
+r"D:\Users\path"
+```
+* raw string

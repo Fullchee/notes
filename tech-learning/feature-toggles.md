@@ -30,4 +30,8 @@ One way to use feature toggles
 1. have feature flags on the backend
 2. have the frontend make an API call to get the feature flag list
     3. store it in redux or a global store
-    4. 
+
+
+
+How to have tests with feature flags?
+* Providers???

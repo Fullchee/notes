@@ -16,9 +16,15 @@ from django.contrib.auth.models import User, Group
 
 ### Run a specific test
 ```shell
-python manage.py test path.app.tests.ClassName --keepdb
+python manage.py test path.app.tests.ClassName.testName --keepdb
 ```
-?????
+
+
+### Create fake data from a factory
+```py
+from app.path_name import MyModel
+MyModel.create_batch(200)
+```
 
 ## Migrations
 
@@ -40,4 +46,3 @@ operations list
 ### SQL `where id in [1,3,4,5,6....];`
 
 `.filter(id__in=[1, 3, 4, 5, 6....])`
-
