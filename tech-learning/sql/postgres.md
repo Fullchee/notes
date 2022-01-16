@@ -68,7 +68,7 @@ UNNEST(ARRAY\[1,2,3\]) as num1
 UNNEST(ARRAY\[[[javascript]] javascript.md4,5\]) as num2
 1 as one
 ```
-![4f091a049cccf838fa97c4f8ead2ce88.png](4f091a049cccf838fa97c4f8ead2ce88.png)
+![4f091a049cccf838fa97c4f8ead2ce88.png](../4f091a049cccf838fa97c4f8ead2ce88.png)
 
 ### Using UNNEST
 
@@ -78,7 +78,7 @@ SELECT
     *
 FROM table_name
 ```
-![0d2b09974a338b8855490ef96c2d6960.png](0d2b09974a338b8855490ef96c2d6960.png)
+![0d2b09974a338b8855490ef96c2d6960.png](../0d2b09974a338b8855490ef96c2d6960.png)
 
 ## JSON
 
@@ -88,10 +88,10 @@ FROM table_name
 
 ### JSONB_OBJECT
 * Takes in two string arrays (they must be strings) of keys and values and zips them together
-* need more than just strings? Use `json_build_object`
+* need more than just strings? Use `json_build_object(key1, value1, key2, value2, ...)`
 
 
-![8b5b109809e298c64f6dc0783b7c22d7.png](8b5b109809e298c64f6dc0783b7c22d7.png)
+![8b5b109809e298c64f6dc0783b7c22d7.png](../8b5b109809e298c64f6dc0783b7c22d7.png)
 ```sql
 SELECT ARRAY_AGG(subcategory)
 FROM result
@@ -111,6 +111,53 @@ FROM result
 GROUP BY category
 ORDER BY ARRAY_POSITION(ARRAY['Quota 1', 'Quota 2', 'BT', 'KSO'], category)
 ```
-![0cbb118e22f89e2847dce5a70400860c.png](0cbb118e22f89e2847dce5a70400860c.png)
+![0cbb118e22f89e2847dce5a70400860c.png](../0cbb118e22f89e2847dce5a70400860c.png)
 
-### json_build_object
+
+### [ROLLUP](https://www.postgresqltutorial.com/postgresql-rollup/)
+* shorthand for defining multiple grouping sets
+* really great for calculating groups for sums
+
+![0dcda3d67b602afda521c9422556ba65.png](0dcda3d67b602afda521c9422556ba65.png)
+
+```sql
+SELECT
+    brand,
+    SUM (quantity)
+FROM sales
+GROUP BY ROLLUP (brand)
+ORDER BY brand;
+```
+![b8d0bfbaa7a1960bac01fa38cf0c7182.png](b8d0bfbaa7a1960bac01fa38cf0c7182.png)
+
+
+```sql
+SELECT
+    brand,
+    segment,
+    SUM (quantity)
+FROM sales
+GROUP BY ROLLUP (brand, segment)
+ORDER BY brand, segment;
+```
+![dd4ba80a68ccfa70205a90823a83bdab.png](dd4ba80a68ccfa70205a90823a83bdab.png)
+
+## Window Functions
+See SELECT STAR Julia Evans zine page 14
+* `[expression] OVER ([window definition])`
+* Window is a set of rows
+
+* The window here is just one row
+```sql
+SELECT item,
+  day - LAG(day) OVER (ORDER BY DAY)
+FROM sales
+```
+
+* the window here is each class
+```sql
+SELECT ROW_NUMBER() OVER(
+    PARTITION BY class
+    ORDER BY grade DESC
+  ) AS rank_in_class
+```

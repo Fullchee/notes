@@ -1,8 +1,10 @@
 ### Destructure 3 levels down
 
 ```javascript
-myObject.props.match
+myObject?.props?.match
 ```
+
+If you know the property will exist
 ```javascript
 const {  
   props : {  
@@ -10,10 +12,6 @@ const {
   },  
 } = myObject;
 ```
-
-If it gets too complex, use a safe helper
-
-#### How do you safely check?
 
 
 ### Conditional values in an array

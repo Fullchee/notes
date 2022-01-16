@@ -16,3 +16,7 @@ I had to use `typeof Shape` because I was importing the class `Shape` rather tha
 ```jsx
 import type Shape from 'progressbar.js/shape';
 ```
+
+```typescript
+// @ts-ignore
+```

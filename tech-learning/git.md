@@ -17,10 +17,6 @@ This was copied over from https://github.com/Fullchee/progress/blob/master/git.m
 # BE CAREFUL! This will delete any unstaged changes
 # Your local repo will also lose all unpushed commits!
 git reset --hard origin/master
-
-# removes unstaged files, different than reset
-# see man git-clean for more info on the options
-git clean -d -f -x
 ```
 
 - move a file from the 'staged' state to 'unstaged' state `git reset HEAD <file>`
@@ -35,7 +31,7 @@ git clean -d -f -x
 - Named stash with all staged files: `git stash save "stash name"`
 - Named stash with certain files: `git stash push -m <stash_name> <path_to_files>`
 - Get the stash changes: `git stash apply <stash name>`
-  - stashes are saved in a stack, to apply the previous stash: `git stash pop`
+    - stashes are saved in a stack, to apply the previous stash: `git stash pop`
 - alwways stash if you ever see a git reset --hard!
 
 ### git revert "hash"

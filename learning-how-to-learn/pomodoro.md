@@ -22,4 +22,7 @@ I'm going to write some of my resistance here
   - and have some sort of warning when there's 5 minutes left
 - let go of the mentality of "there's still time to do something" when there's only ~1 minute left
 
----
+Jan 14 Update
+* I've already stopped using Pomodoros
+* it's tough
+* something more effective is building natural breakpoints at work

@@ -1,13 +1,23 @@
----
-marp: true
----
-
 # Intro to Storybook
 
-## Why Storybook can make our jobs easier
+## Motivation
+![2163ddd3864efabfec5581ccb7883f26.png](2163ddd3864efabfec5581ccb7883f26.png)
+
+![6978c03e9dba9d64ba0b0c7d2f6598f8.png](6978c03e9dba9d64ba0b0c7d2f6598f8.png)
+
+## 3 Problems that Storybook solves
+
+### Build components in isolation
+* visually test edge cases
+* more on this later
+
+### Dev awareness of components
+* search!
+
+### Living Style Guide and Documentation
+* more on this later
 
 ## Writing your first story
-
 ### Create your file
 
 ### Import
