@@ -42,13 +42,32 @@ python -m pdb file.py
     * https://www.youtube.com/watch?v=WFRljVPHrkE
 
 ```py
-@patch("path.where.my_function")
+@patch("path.where.my_function", autospec=True, spec_set=True)
 class TestStuff(ApiTestCase):
     def test_stuff(self, mock_my_function):
 ```
 
+
+#### [Patch Arguments](https://youtu.be/ww1UsGZV8fQ?t=1164)
+* `spec`: doesn't know about attributes of attributes
+    * should always at least `spec`
+* `autospec` doesn't know about dynamically created attributes
+    * example: class attributes
+    * woraround: set the attribute that exists
+    * can be dangerous because it can trigger code on introspection
+    * can slow down tests
+* `spec_set=True` prevent setting properties that don't exist
+* `new_callable=MagicMock`is the default
+    * `new_callable=PropertyMock`
+* kwargs
+    * `return_value="lisa"
+    * `name="lisa"`
+* `patch.object`
+* `patch.dict`
+* `patch.multiple`
+
 * https://youtu.be/ww1UsGZV8fQ?t=889
-```py
+```diff
 -@patch("path.where.fn1")
 -@patch("path.where.fn2")
 -@patch("path.where.fn3")
@@ -67,7 +86,7 @@ class TestStuff(ApiTestCase):
 ```
 
 * You need `mock_check_output` beacuse the decorator adds it
-    * what does it do???????
+    * what does it do???????????
 
 patch for as little as possible, especially for 
 

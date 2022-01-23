@@ -7,7 +7,9 @@ Confidence
 * all tests render a component
 * do something once it's rendered
 * then tear it down
-* RTL reduces duplication
+* RTL removes boilerplate
     * and has nice practices
         * isolation of tests
         * testing like the user would
+
+
