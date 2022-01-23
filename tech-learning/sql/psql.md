@@ -30,7 +30,7 @@ pg_restore -d postgres://postgres_connection_string --no-owner --no-acl dump_nam
 * `--no-acl` removes access privileges (grant/revoke commands)
 
 
-#### Copy a table to another database
+#### Copy table to another database
 ```bash
 pg_dump --no-owner --no-acl -t table_to_copy source_db | psql target_db
 ```
@@ -82,3 +82,25 @@ FROM information_schema.columns
 WHERE table_schema = 'your_schema'
 AND table_name   = 'your_table';
 ```
+
+### Be able to view one row (if you have a ton of columns)
+
+https://stackoverflow.com/questions/9604723/alternate-output-format-for-psql/16108898#16108898
+
+![a580e45029c87021a93cc86cc9eba2bc.png](a580e45029c87021a93cc86cc9eba2bc.png)
+
+
+#### `psqlrc`
+In the files below, add this line
+`\x auto`
+
+* Mac
+    * `~/.psqlrc`
+* Windows
+    * `%APPDATA\postgres`
+    * https://stackoverflow.com/questions/64734341/where-is-the-psqlrc-file-on-windows
+
+
+
+
+

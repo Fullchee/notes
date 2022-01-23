@@ -83,8 +83,12 @@ FROM table_name
 ## JSON
 
 ### [JSON vs JSONB](https://stackoverflow.com/a/39637548/8479344)
+* `jsonb`
+    * mostly use this
+    * has an actual data structure, has actual operations, concatenation, …
 * `json` stores it as plain text with whitespace
-* `jsonb` has an actual data structure, has actual operations, concatenation, ...
+    * if you're processing logs and use it more like an audit trail
+    * can't do those operations
 
 ### JSONB_OBJECT
 * Takes in two string arrays (they must be strings) of keys and values and zips them together

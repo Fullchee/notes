@@ -20,3 +20,11 @@ import type Shape from 'progressbar.js/shape';
 ```typescript
 // @ts-ignore
 ```
+
+### Object that has at least these two properties
+
+
+
+```typescript
+<T extends {first: string; last: string}>(obj: T) 
+```
