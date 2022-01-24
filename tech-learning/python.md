@@ -72,7 +72,7 @@ class TestStuff(ApiTestCase):
 -@patch("path.where.fn2")
 -@patch("path.where.fn3")
 class TestStuff(ApiTestCase):
-    def setUp(self):
++    def setUp(self):
 +        mock_fn1 = patch("path.where_fn1").start()
 +        mock_fn2 = patch("path.where_fn2").start()
 +        mock_fn3 = patch("path.where_fn3").start()
