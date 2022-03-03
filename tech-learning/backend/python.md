@@ -1,4 +1,21 @@
-### [Context Manager](https://realpython.com/python-with-statement/#creating-function-based-context-managers)
+## TODOs
+* Testing: check out `pytest` and see why some people like it more than `unittest`
+* [Python glossary](https://docs.python.org/3/glossary.html)
+* Keep up to date
+    * [Python Bytes: Python headlines](https://pythonbytes.fm/)
+
+## Functions
+### Forced name params
+* pass a `*` to separate positional args and keyword args
+```python
+def foo(pos, *, forcenamed, **kwargs):
+    pass
+
+my_func(1, 2) # throws an error
+```
+
+
+## [Context Manager](https://realpython.com/python-with-statement/#creating-function-based-context-managers)
 Create a function that can be used `with`
 
 ```python
@@ -16,7 +33,7 @@ Create a function that can be used `with`
     Leaving the context...
 ```
 
-### `breakpoint()`
+## `breakpoint()`
 * https://www.youtube.com/watch?v=IzgSl-tkPPg
 * `n` next / step over
 * `s` step into
@@ -33,6 +50,7 @@ python -m pdb file.py
 ```
 
 ## Testing
+
 
 ### mock.patch
 * `patch` WHERE IT'S USED, not where it's defined
@@ -53,7 +71,7 @@ class TestStuff(ApiTestCase):
     * should always at least `spec`
 * `autospec` doesn't know about dynamically created attributes
     * example: class attributes
-    * woraround: set the attribute that exists
+    * work around: set the attribute that exists
     * can be dangerous because it can trigger code on introspection
     * can slow down tests
 * `spec_set=True` prevent setting properties that don't exist
@@ -77,10 +95,10 @@ class TestStuff(ApiTestCase):
 +        mock_fn2 = patch("path.where_fn2").start()
 +        mock_fn3 = patch("path.where_fn3").start()
 +        self.addCleanup(patch.stopall)
--    def test_stuff(self, mock_fn1, mock_fn2):
+-    def test_stuff(self, mock_fn1, mock_fn2, mock_fn3):
 +    def test_stuff(self):
         ...
--    def test_stuff2(self, mock_fn1, mock_fn2):
+-    def test_stuff2(self, mock_fn1, mock_fn2, mock_fn3):
 +    def test_stuff2(self):
         ...
 ```
@@ -105,7 +123,7 @@ extend-exclude = '/migrations/'
 line-length = 120
 ```
 
-## String formatting
+### String formatting
 Don't need to escape anymore???
 ```python
 r"D:\Users\path"
@@ -130,4 +148,20 @@ def get_sales_summary() -> SalesSummary:
     pass
 ```
 
-Optional values?
+### [Circular Dependencies with types](https://www.youtube.com/watch?v=UnKa_t-M_kM&t=213s)
+```python
+from __future__ import annotations
+from typing import TYPE_CHECKING # false at runtime
+
+if TYPE_CHECKING:
+    from module_b import B
+```
+
+## CLI
+* `python -m module_name args`
+    * run a module
+    * `python -m http.server`
+        * start http server on port 8000 in current directory
+    * `python -m pdb path/to/file.py`
+        * debug a Python script
+* 

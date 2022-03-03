@@ -3,12 +3,6 @@
 ### Connection string
 `postgres://YourUserName:YourPassword@YourHostname:5432/YourDatabaseName`
 
-#### Get the Heroku DB connection string
-
-```bash
-pg_dump -d `heroku config:get DATABASE_URL --app app-name` --no-owner --no-acl -Fc -f dump_name.dump
-```
-
 ### Download/Dump
 
 ```bash
@@ -104,3 +98,30 @@ In the files below, add this line
 
 
 
+## Recover your database after your computer suddenly turns off
+* Make sure there's no `postgres` processes
+    * `ps aux | ag postgres`
+* `rm -f /usr/local/var/postgres/postmaster.pid`
+* `brew services restart postgresql`
+* `/usr/local/opt/postgres/bin/createuser -s postgres`
+    * create the `postgres` user
+
+### Long running queries
+
+```sql
+SELECT pid, age(clock_timestamp(), query_start), usename, query
+FROM pg_stat_activity
+WHERE query != '<IDLE>' AND query NOT ILIKE '%pg_stat_activity%'
+ORDER BY query_start desc;
+```
+
+### Blocked PIDs
+
+```sql
+select pid, 
+       usename, 
+       pg_blocking_pids(pid) as blocked_by, 
+       query as blocked_query
+from pg_stat_activity
+where cardinality(pg_blocking_pids(pid)) > 0;
+```

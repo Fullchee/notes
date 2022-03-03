@@ -4,11 +4,7 @@ Date: 2021-12-25
 
 **Next**
 
-- [[public-foam/epic-react/2-react-hooks]]
-
-**Back**
-
-- [[public-foam/epic-react/epic-react]]
+- [[2-react-hooks]]
 
 - [Epic React 1: React Fundamentals](#epic-react-1-react-fundamentals)
   - [React Fundamentals](#react-fundamentals)
@@ -19,16 +15,6 @@ Date: 2021-12-25
 1. `React.createElement` is like `document.createElement()`
 2. `document.append(element)` is like `ReactDOM.render(reactComponent, document.body)`
    1. ReactDOM because react can be rendered in many environments (example: React Native)
-
-If you only want the second value in an array, you can just use an array
-
-```js
-[count, setCount];
-```
-
-```js
-[, setCount];
-```
 
 ### PropTypes confusion
 

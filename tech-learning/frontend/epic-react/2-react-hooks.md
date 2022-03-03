@@ -4,12 +4,11 @@ Date: 2021-12-26
 
 **Next**
 
-- [[public-foam/epic-react/3-react-patterns]]
+- [[3-react-patterns]]
 
 **Back**
 
-- [[public-foam/epic-react/1-react-fundamentals]]
-- [[public-foam/epic-react/epic-react]]
+- [[1-react-fundamentals]]
 
 - [Epic React 2: React Hooks](#epic-react-2-react-hooks)
   - [useState](#usestate)
@@ -32,11 +31,17 @@ Date: 2021-12-26
 
 ## useState
 
-- can accept a function which is a lazy initializer!
-- if you just want to calculate the initial state once (digits of pi)
+- accepts a function which is a lazy initializer!
+    - `useState` ignores the param afterwards
+    - for computationally expensive stuff (async like )
+
+### Why we need useState
+* we need to re-render the component again
 
 ## useEffect
 
+- dependency array does a `===` comparison
+    - will always re-render if you pass it an array
 - `fetch`: forgot to return early if pokemonName is null
 - I forgot about having a status variable
   - helps with determining what to display
@@ -81,6 +86,7 @@ Use cases (https://kentcdodds.com/blog/usememo-and-usecallback)
 1. not have a function re-render every time so that it can be used in a useEffect dep array
 2. avoiding unnecessary re-renders when re-rendering is super expensive (Graphs, Charts, Animations)
 3. `useMemo` can be passed a function (just like `useState`) and lazily calculate computationally expensive items
+    4. I used it in `HierarchySelect` where there was derived state that wasn't updated often
 
 ### useCallback: custom hooks
 

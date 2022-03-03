@@ -46,3 +46,9 @@ operations list
 ### SQL `where id in [1,3,4,5,6....];`
 
 `.filter(id__in=[1, 3, 4, 5, 6....])`
+
+### Pretty print
+
+`model_name.filter().values()`
+* doesn't work on the actual instance
+* ?????

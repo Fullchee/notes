@@ -13,7 +13,7 @@ END;
 ```
 
 
-## Date Tricks
+## Dates
 
 ### Fundamental methods
 * `DATE_TRUNC` gets you the date for the first second of the month, year, day, …
@@ -58,9 +58,16 @@ CASE
   ELSE 7
 ```
 
-## UNNEST
+### Group by quarter
+```psql
+GROUP BY CEIL(month_id / 3)
+```
 
-### How it works
+## Strings
+
+## Arrays
+
+### How UNNEST works
 
 ```sql
 SELECT
@@ -80,20 +87,7 @@ FROM table_name
 ```
 ![0d2b09974a338b8855490ef96c2d6960.png](../0d2b09974a338b8855490ef96c2d6960.png)
 
-## JSON
-
-### [JSON vs JSONB](https://stackoverflow.com/a/39637548/8479344)
-* `jsonb`
-    * mostly use this
-    * has an actual data structure, has actual operations, concatenation, …
-* `json` stores it as plain text with whitespace
-    * if you're processing logs and use it more like an audit trail
-    * can't do those operations
-
-### JSONB_OBJECT
-* Takes in two string arrays (they must be strings) of keys and values and zips them together
-* need more than just strings? Use `json_build_object(key1, value1, key2, value2, ...)`
-
+### ARRAY vs ARRAY_AGG
 
 ![8b5b109809e298c64f6dc0783b7c22d7.png](../8b5b109809e298c64f6dc0783b7c22d7.png)
 ```sql
@@ -104,6 +98,57 @@ GROUP BY category;
 Returns two rows where it groups the result into arrays
 * {BT}
 * {BCR,ICR}
+
+Whereas `ARRAY` won't aggregate into an array
+
+
+### JSONB to array
+```sql
+TRANSLATE('["ICR"]'::jsonb::text, '[]', '{}')::TEXT[]
+```
+
+### Index of value in array
+
+```sql
+ARRAY_POsITION('{"ICR", "ACR"}'::TEXT[], 'ICR')
+```
+
+## JSON
+
+### [JSON vs JSONB](https://stackoverflow.com/a/39637548/8479344)
+* `jsonb`
+    * mostly use this
+    * has an actual data structure, has actual operations, concatenation, …
+* `json` stores it as plain text with whitespace
+    * if you're processing logs and use it more like an audit trail
+    * can't do those operations
+
+### [-> vs ->>](https://www.postgresqltutorial.com/postgresql-json/)
+* `->` returns the result as JSON
+    * great to get nested objects
+* `->>` returns the result as text
+
+```json
+// info
+{ 
+    "customer": "Lily Bush",
+    "items": {
+        "product": "Diaper",
+        "qty": 24
+    }
+}
+```
+
+```sql
+SELECT info -> 'items' ->> 'product'
+-- Diaper as text
+```
+
+### JSONB_OBJECT
+* Takes in two string arrays (they must be strings) of keys and values and zips them together
+* need more than just strings? Use `json_build_object(key1, value1, key2, value2, ...)`
+
+![8b5b109809e298c64f6dc0783b7c22d7.png](../8b5b109809e298c64f6dc0783b7c22d7.png)
 
 ```sql
 SELECT
@@ -117,8 +162,11 @@ ORDER BY ARRAY_POSITION(ARRAY['Quota 1', 'Quota 2', 'BT', 'KSO'], category)
 ```
 ![0cbb118e22f89e2847dce5a70400860c.png](../0cbb118e22f89e2847dce5a70400860c.png)
 
+### JSON to String
+* `select jsoncol #>> '{}' from mytable;`
 
-### [ROLLUP](https://www.postgresqltutorial.com/postgresql-rollup/)
+
+## [ROLLUP](https://www.postgresqltutorial.com/postgresql-rollup/)
 * shorthand for defining multiple grouping sets
 * really great for calculating groups for sums
 

@@ -1,3 +1,6 @@
+## TODOs
+https://uptodate.frontendrescue.org/
+
 ### Destructure 3 levels down
 
 ```javascript
@@ -11,6 +14,16 @@ const {
     match  
   },  
 } = myObject;
+```
+
+### Only getting the second value in an array
+
+```js
+[count, setCount];
+```
+
+```js
+[, setCount];
 ```
 
 
@@ -28,4 +41,10 @@ const arr = [
 /* eslint-disable-next-line rule-name */
 
 // @ts-ignore
+```
+
+### Console API
+https://developer.chrome.com/docs/devtools/console/api/
+```javascript
+console.log("%cMessage", "color: orange; background-color: blue")
 ```

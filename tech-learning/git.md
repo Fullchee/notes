@@ -4,7 +4,21 @@ date: "2018-08-15"
 summary: "Git notes from a while back"
 ---
 
-This was copied over from https://github.com/Fullchee/progress/blob/master/git.md where it can be more searchable on my blog
+## Pull Requests
+
+### Quickly create a PR
+
+```bash
+createpr() {
+	git stash;
+	git switch -c $1;
+	git commit --allow-empty --no-verify -m "Trigger GH Actions";
+	git push origin $1 --no-verify;
+	git set-upstream;
+	gh pr create --assignee "@me" --title "[1130 ICM] " --web;
+	git stash pop;
+}
+```
 
 ## Undoing
 
@@ -32,7 +46,8 @@ git reset --hard origin/master
 - Named stash with certain files: `git stash push -m <stash_name> <path_to_files>`
 - Get the stash changes: `git stash apply <stash name>`
     - stashes are saved in a stack, to apply the previous stash: `git stash pop`
-- alwways stash if you ever see a git reset --hard!
+- `git stash drop 0`
+    - deletes a stash
 
 ### git revert "hash"
 

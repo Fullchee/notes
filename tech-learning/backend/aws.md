@@ -12,7 +12,10 @@ Install SSM
 
 
 ```bash
-aws ssm start-session --target "container-id-ec2, like i-0373fb85e5fbc7d8e" --document-name AWS-StartPortForwardingSession --parameters '{"portNumber":["22"],"localPortNumber":["56789"]}'
+aws ssm start-session \
+  --target "container-id-ec2, like i-0373fb85e5fbc7d8e" \
+  --document-name AWS-StartPortForwardingSession \
+  --parameters '{"portNumber":["22"],"localPortNumber":["56789"]}'
 ```
 
 On Windows
@@ -20,3 +23,8 @@ On Windows
 ```bash
 aws ssm start-session --target "container-id-ec2, like i-0373fb85e5fbc7d8e" --document-name AWS-StartPortForwardingSession --parameters "{\"portNumber\":[\"22\"],\"localPortNumber\":[\"56789\"]}"
 ```
+
+```bash
+ssh -p 56789 root@localhost
+```
+

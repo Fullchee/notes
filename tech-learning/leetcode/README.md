@@ -1,1 +1,2 @@
-https://seanprashad.com/leetcode-patterns/
+* https://seanprashad.com/leetcode-patterns/
+* [Spreadsheet](https://docs.google.com/spreadsheets/d/1ajDLzSwtyFydk6s_0-kD256sR17nrMSLxxlJc25sgDQ/edit?usp=drive_web&ouid=108721665673340477853)
