@@ -17,7 +17,7 @@ pg_dump -d postgres://postgres_connection_string --no-owner --no-acl -Fc -f dump
 ### pg_restore
 ```bash
 pg_restore -d postgres://postgres_connection_string --no-owner --no-acl dump_name.dump
-```
+```-
 
 * `-d` also accepts a local db name
 * `--no-owner` removes the ownership

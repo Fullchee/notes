@@ -12,6 +12,16 @@ CASE
 END;
 ```
 
+### Add a fallback row if there are no rows in the initial value
+
+```sql
+SELECT c1, ...
+
+UNION
+
+SELECT 0 AS c1
+LIMIT 1;
+```
 
 ## Dates
 
@@ -25,6 +35,9 @@ END;
     * example: `2022-01-15
 * `NOW()` also specifies the time
     * example: `2022-01-14 17:21:13.703974-05`
+
+* you add and subtract dates!
+    * `select '2021-02-01'::DATE - 1` => `2021-01-31'`
 
 ### Filter by date within the current fiscal year (starts Feb 1)
 

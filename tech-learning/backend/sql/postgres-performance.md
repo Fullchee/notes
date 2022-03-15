@@ -1,5 +1,11 @@
 https://youtu.be/5M2FFbVeLSs?t=233
 
+An Overview of the Various Scan Methods in PostgreSQL
+https://severalnines.com/database-blog/overview-various-scan-methods-postgresql?utm_source=pocket_mylist
+
+
+# Debugging
+
 ## `pg_stat_statements`
 
 ### Which queries have spent the most time?

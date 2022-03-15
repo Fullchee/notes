@@ -22,22 +22,35 @@ createpr() {
 
 ## Undoing
 
-- **Undo a `git rm` for a single file**`git reset -- <filePath>; git checkout -- <filePath>`
-- **Getting an old version of a single file** `git checkout <commit> <path/to/file>`
-- **Undo all changes to a repo**
+### Undo a `git rm` for a single file
+- [[terminal]] `--` is used so any future dashes are considered strings and not flags
+- useful when the file path or branch name has dashes
+```bash
+undo-rm() {
+	filePath="$1"
+	git reset -- $1
+	git checkout -- $1
+}
+```
+
+### Undo all changes to a single file
 
 ```bash
-# won't touch unstaged files files, just sets the staged & committed files to be exactly like HEAD
-# BE CAREFUL! This will delete any unstaged changes
+git checkout <commit> <path/to/file>
+```
+
+### Undo all changes to a repo
+```bash
+# won't touch unstaged files files
+# just sets the staged & committed files to be exactly like origin/master
+# will delete any unstaged changes
 # Your local repo will also lose all unpushed commits!
+# you can may be able to recover unpushed commits via git reflog
 git reset --hard origin/master
 ```
 
-- move a file from the 'staged' state to 'unstaged' state `git reset HEAD <file>`
-- Can you undo a `git reset --hard`? **no**, reset --hard is like rm -rf, please be careful.
-- Merging: remote and local have diverged. How to completely undo your changes? `git reset --hard origin/master`
-- git show master@{3.days.ago}
-  **Run a git command in another directory** `git -c <directory> <git_command>`
+### Move a file from the 'staged' state to 'unstaged' state
+`git reset HEAD <file>`
 
 ### git-stash
 
@@ -151,6 +164,10 @@ git update-index --no-assume-unchanged [<file>...]   (create a git alias <git un
 * `git log --follow -p -- file`
 * Simpler version that doesn't follow: `git log -p <filename>`
 
+### View the number of commits each person made
+
+`git shortlog -n -s`
+
 ## Git Submodules
 
 What are submodules?
@@ -183,19 +200,6 @@ git config core.sparseCheckout true
 
 - If you only want to ignore a single file without adding to the `.gitignore`, add the same structure to the `.git/info/exclude`, same structure as `.gitignore`
 
-### Windows Notes
-
-```
-Rename from 'ABOMUtils/abomutil-migration' to 'abomutil-migration' failed. Should I try again? (y/n) n
-fatal: renaming 'ABOMUtils/abomutil-migration' failed: Permission denied
-```
-
-- make sure that there are no File Explorer instances open in the folder you want to move to
-
-### View the number of commits each person made
-
-`git shortlog -n -s`
-
 ### Git search across branches
 
 ```
@@ -207,3 +211,5 @@ git grep "DialChart" `git show-ref --heads`
 ```
 git grep "DialChart" $(git rev-list --all)
 ```
+### Run a git command in another directory
+`git -c <directory> <git_command>`

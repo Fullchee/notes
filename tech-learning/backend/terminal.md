@@ -58,3 +58,12 @@ echo '127.0.0.1 redirected-url.com' | sudo tee -a /etc/hosts
 ### Less
 - `-N`show line numbers
 - `-`
+
+
+## Secrets
+
+```bash
+read -s PGPASSWORD
+your_password
+export PGPASSWORD
+```

@@ -1,3 +1,8 @@
+## Reading list
+* [How to Use Materialized View in Django](https://medium.com/analytics-vidhya/how-to-use-materialized-view-in-django-3b91f71f718a)
+* [Asynchronous Tasks With Django and Celery](https://realpython.com/asynchronous-tasks-with-django-and-celery)
+
+
 ### Python Shell
 
 ```sh
