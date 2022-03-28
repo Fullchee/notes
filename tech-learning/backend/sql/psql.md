@@ -24,6 +24,11 @@ pg_restore -d postgres://postgres_connection_string --no-owner --no-acl dump_nam
 * `--no-acl` removes access privileges (grant/revoke commands)
 
 
+#### Copy a table in the same db
+```sql
+CREATE TABLE new_table AS TABLE existing_table;
+```
+
 #### Copy table to another database
 ```bash
 pg_dump --no-owner --no-acl -t table_to_copy source_db | psql target_db
@@ -60,12 +65,20 @@ aws ssm start-session --target "container-id-ec2, like i-0373fb85e5fbc7d8e" --do
 `ssh root@127.0.0.1 -p 56789 -N -L 5433:{prod db url}:5432`
 
 
+### Rename
+```sql
+ALTER TABLE table_name
+RENAME TO new_table_name;
+```
+
 ## Debugging
 
 ### List all tables
 
 * `\dt` for the current schema
 * `\dt schema_name.*`
+* `\dt *.table_name`
+    * to find all tables with that name
 
 ### List all column names
 `\d+ <table_name>`

@@ -35,7 +35,7 @@ MyModel.create_batch(200)
 
 ### Create an empty migration
 ```shell
-python manage.py makemigrations api --name migration_example --empty
+python manage.py makemigrations app_name --name migration_name --empty
 ```
 
 
@@ -44,6 +44,22 @@ operations list
 
 - `migrations.RunPython(python_function_name),`
 - `migrations.RunSQL("INSERT INTO product (title) VALUES ('Product1');"),`
+
+
+#### Reverse a migraiton
+```python
+operations = [
+        migrations.RunSQL(
+            'CREATE INDEX "app_sale_sold_at_b9438ae4" '
+            'ON "app_sale" ("sold_at");',
+
+            reverse_sql='DROP INDEX "app_sale_sold_at_b9438ae4";',
+        ),
+    ]
+```
+
+#### Add an index to a table that already has a ton of data in it
+* https://realpython.com/create-django-index-without-downtime/#non-atomic-migrations
 
 
 ## Querying

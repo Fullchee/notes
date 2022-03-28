@@ -157,6 +157,14 @@ if TYPE_CHECKING:
     from module_b import B
 ```
 
+## Enum
+```python
+class Color(str, Enum):
+    GREEN: '#00ff00'
+    
+Color.GREEN == '#00ff00'
+```
+
 ## CLI
 * `python -m module_name args`
     * run a module
@@ -164,4 +172,16 @@ if TYPE_CHECKING:
         * start http server on port 8000 in current directory
     * `python -m pdb path/to/file.py`
         * debug a Python script
-* 
+
+
+
+## File system
+
+### Path
+
+```python
+from pathlib import Path
+
+file_directory = Path(__file__).parent.resolve()
+another_path = file_directory / "sql_scripts"
+```
