@@ -7,7 +7,6 @@ edit_uri: edit/main/docs/
 site_description: My personal notes so that I can get things out of my head and into this system
 site_author: Fullchee Zhang
 copyright: Copyright &copy; 2022 Fullchee Zhang
-remote_branch: main
 
 # Navigation
 # https://www.mkdocs.org/user-guide/configuration/#nav
