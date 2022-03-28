@@ -1,6 +1,9 @@
 https://fullchee-reminders.netlify.app/link/1015
+
 ### 4 Principles
+
 Ingrid Towey
+
 1.  We're all on the same side
     1.  the customer's side
 2.  Edit, not Edict (command)
