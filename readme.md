@@ -1,14 +1,3 @@
-<img src="attachments/foam-icon.png" width=100 align="left">
-
-# Foam
-
-**👋 Welcome to [Fullchee's Foam Knowledge Base!](https://fullchee.github.io/public-foam/)**
-
-I don't expect anyone, myself included, to be reading these words that often, if at all.
-
-I also have a private foam for private notes (mostly work notes)
-- https://github.com/Fullchee/private-foam
-
 ## Index
 
 - [[getting-started]] - learn how to use your Foam workspace
