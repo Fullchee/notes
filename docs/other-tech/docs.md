@@ -19,8 +19,8 @@ Ingrid Towey
             2.  Minimalism
             3.  DITA guidelines
         4.  Usability Testing
-            1.  [nngroup.com](nngroup.com)
-            2.  [uie.com](uie.com)
+            1.  https://www.nngroup.com/
+            2.  https://www.uie.com/
 4.  Get Help
     1.  Review in advanced
     2.  Focus on the principles
