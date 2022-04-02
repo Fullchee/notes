@@ -28,7 +28,7 @@ GROUP BY ROLLUP (brand, segment)
 ORDER BY brand, segment;
 ```
 
-![dd4ba80a68ccfa70205a90823a83bdab.png](dd4ba80a68ccfa70205a90823a83bdab.png)
+![dd4ba80a68ccfa70205a90823a83bdab.png](./dd4ba80a68ccfa70205a90823a83bdab.png)
 
 ## Window Functions
 

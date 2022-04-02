@@ -11,7 +11,7 @@ UNNEST(ARRAY\[[[javascript]] javascript.md4,5\]) as num2
 1 as one
 ```
 
-![4f091a049cccf838fa97c4f8ead2ce88.png](../../4f091a049cccf838fa97c4f8ead2ce88.png)
+![4f091a049cccf838fa97c4f8ead2ce88.png](./4f091a049cccf838fa97c4f8ead2ce88.png)
 
 ### Using UNNEST
 
@@ -22,11 +22,11 @@ SELECT
 FROM table_name
 ```
 
-![0d2b09974a338b8855490ef96c2d6960.png](../../0d2b09974a338b8855490ef96c2d6960.png)
+![0d2b09974a338b8855490ef96c2d6960.png](./0d2b09974a338b8855490ef96c2d6960.png)
 
 ### ARRAY vs ARRAY_AGG
 
-![8b5b109809e298c64f6dc0783b7c22d7.png](../../8b5b109809e298c64f6dc0783b7c22d7.png)
+![8b5b109809e298c64f6dc0783b7c22d7.png](../../../8b5b109809e298c64f6dc0783b7c22d7.png)
 
 ```sql
 SELECT ARRAY_AGG(subcategory)
@@ -93,7 +93,7 @@ SELECT info -> 'items' ->> 'product'
 - Takes in two string arrays (they must be strings) of keys and values and zips them together
 - need more than just strings? Use `json_build_object(key1, value1, key2, value2, ...)`
 
-![8b5b109809e298c64f6dc0783b7c22d7.png](../../8b5b109809e298c64f6dc0783b7c22d7.png)
+![8b5b109809e298c64f6dc0783b7c22d7.png](../../../8b5b109809e298c64f6dc0783b7c22d7.png)
 
 ```sql
 SELECT
@@ -106,7 +106,7 @@ GROUP BY category
 ORDER BY ARRAY_POSITION(ARRAY['Quota 1', 'Quota 2', 'BT', 'KSO'], category)
 ```
 
-![Image not found: ../0cbb118e22f89e2847dce5a70400860c.png](../../0cbb118e22f89e2847dce5a70400860c.png "Image not found: ../0cbb118e22f89e2847dce5a70400860c.png")
+![Image not found: ../0cbb118e22f89e2847dce5a70400860c.png](../../../0cbb118e22f89e2847dce5a70400860c.png)
 
 ### JSON to String
 
