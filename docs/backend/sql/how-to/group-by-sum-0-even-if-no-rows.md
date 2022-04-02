@@ -1,7 +1,9 @@
+# Sum should be zero even if group by returns no rows
+
 TIL to watch out for cases when I
 
-* group by
-* want the sum to be 0 even if there are no rows to sum
+- group by
+- want the sum to be 0 even if there are no rows to sum
 
 I moved the existing query to a view
 
@@ -33,4 +35,3 @@ FROM
 ORDER BY ABS(total) DESC
 LIMIT 1
 ```
-
