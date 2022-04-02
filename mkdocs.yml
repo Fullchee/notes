@@ -60,3 +60,8 @@ markdown_extensions:
 plugins:
   - git-revision-date
   - search
+
+extra:
+  analytics:
+    provider: google
+    property: G-X95X8QVDWH
