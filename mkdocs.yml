@@ -15,7 +15,6 @@ copyright: Copyright &copy; 2022 Fullchee Zhang
 #   - "User Guide": "user-guide.md"
 #   - "Bug Tracker": "/bugs/"
 
-
 # Build
 # https://www.mkdocs.org/user-guide/configuration/#build-directories
 theme:
@@ -42,7 +41,6 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
 
-
 # Preview Controls
 # https://www.mkdocs.org/user-guide/configuration/#preview-controls
 dev_addr: 127.0.0.1:5000
@@ -55,6 +53,7 @@ markdown_extensions:
   - admonition
   - footnotes
   - meta
+  - mdx_truly_sane_lists
 
 plugins:
   - git-revision-date

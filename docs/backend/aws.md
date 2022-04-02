@@ -1,7 +1,10 @@
-# Setup
+# AWS
+
+## Setup
 
 * `aws configure sso`
-    * name it `default` 
+    * name it `default`
+    * so that you don't need to specify `--profile` everytime you use `aws-cli`
 
 ## Login
 * `aws sso login --profile "profileName"`
@@ -34,7 +37,7 @@ ssh -p 56789 root@localhost
 
 Don't use presign
 * it makes your file publically available for anyone with the URL
-* just change the URL 
+* just change the URL
 
 run a bash script
 
