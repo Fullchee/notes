@@ -51,7 +51,9 @@ dev_addr: 127.0.0.1:5000
 markdown_extensions:
   - abbr
   - admonition
+  - attr_list
   - footnotes
+  - md_in_html
   - meta
   - mdx_truly_sane_lists
 
