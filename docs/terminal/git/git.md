@@ -15,7 +15,7 @@ createpr() {
 	git commit --allow-empty --no-verify -m "Trigger GH Actions";
 	git push origin $1 --no-verify;
 	git set-upstream;
-	gh pr create --assignee "@me" --title "[1130 ICM] " --web;
+	gh pr create --assignee "@me" --title "[Default Prefix] " --web;
 	git stash pop;
 }
 ```
@@ -213,3 +213,14 @@ git grep "DialChart" $(git rev-list --all)
 ```
 ### Run a git command in another directory
 `git -c <directory> <git_command>`
+
+### Add an executable file
+
+```bash
+git add <file>
+git update-index --chmod=+x <file>
+git add .
+```
+
+### Setting up a staging branch
+
