@@ -7,6 +7,7 @@ summary: "I have a particular way that I use Reddit. I block it with Freedom and
 ## How do I block Reddit?
 
 ### On my laptop
+
 I want to be deliberate on how I spend my time.
 
 I can get distracted for hours, especially on r/aww/ 🐰🐱🐶.
@@ -15,24 +16,22 @@ However, reddit is also the source of useful information, with Quora and Reddit 
 
 This is how I'm using Reddit for my benefit and not just for Reddit's benefit.
 
-
 **Software**
-* [Freedom](https://freedom.to/) to block specific sites across devices, including Reddit
-* I also have a Chrome/Firefox extension called LeechBlock for redundancy purposes
 
+- [Freedom](https://freedom.to/) to block specific sites across devices, including Reddit
+- I also have a Chrome/Firefox extension called LeechBlock for redundancy purposes
 
 ### On my phone
 
 **Software**
 
-* Firefox for Android
-    * Leechblock to block Reddit
-* Freedom app
-    * When a Freedom session is active, I disable the use of Settings
-* Nova Launcher
-    * I have it setup so that when I tap and hold on an app, there isn't an option to uninstall.
-    * This is to prevent me from uninstalling Freedom.
-
+- Firefox for Android
+  - Leechblock to block Reddit
+- Freedom app
+  - When a Freedom session is active, I disable the use of Settings
+- Nova Launcher
+  - I have it setup so that when I tap and hold on an app, there isn't an option to uninstall.
+  - This is to prevent me from uninstalling Freedom.
 
 ## How do I use Reddit if it's blocked?
 
@@ -47,8 +46,8 @@ On my laptop, I
 
 When I run the `wget` command, I replace the `www` with `old` to download the old reddit version of the site.
 
-
 ### What if I want to ask a question?
+
 1. Turn off Freedom
 2. Run `sleep 3600 && open -a Freedom` to turn on Freedom back in an hour
 3. Go on Reddit and use it normally.
@@ -57,12 +56,12 @@ When I run the `wget` command, I replace the `www` with `old` to download the ol
 
 1. I download the new reddit URL with `wget`
 2. I open the page with my web browser.
-    * Reddit has some JS that hides
+   - Reddit has some JS that hides
 3. I open the dev tools (right click anywhere, click `Inspect` )
 4. Press `cmd` `shift` `p` and type `Disable JavaScript`
 5. Press enter
-    * the sources tab should have a yellow warning icon beside it now
-    * ![sources tab header with a yellow warning triangle](/assets/images/blog/sources-tab.png)
+   - the sources tab should have a yellow warning icon beside it now
+   - ![sources tab header with a yellow warning triangle](/assets/images/blog/sources-tab.png)
 6. Refresh the page
 7. Look at the elements tab
 8. Find the `<video>` tag and look for the `<source>` tag inside it

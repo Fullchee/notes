@@ -12,9 +12,10 @@ For 2021 I decided to redesign and revamp my site with the following goals in mi
    - and see what all the hype is about
 
 ## Design
+
 - hugely inspired by
-   - Josh W. Comeau's ebook on developing a portfolio
-   - juliacodes.com
+  - Josh W. Comeau's ebook on developing a portfolio
+  - juliacodes.com
 
 ### Fonts
 
@@ -23,8 +24,8 @@ For 2021 I decided to redesign and revamp my site with the following goals in mi
   - I wanted a mono font to make it more "programmy"
 - [`Inter`](https://fonts.google.com/specimen/Inter) as the text font
 
-
 Hosted on Vercel
+
 - all the pages are static so it gets deployed to the CDN/edge network
 
 [Source code hosted on GitHub](https://github.com/fullchee/portfolio)
