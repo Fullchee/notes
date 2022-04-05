@@ -55,8 +55,9 @@ markdown_extensions:
   - attr_list
   - footnotes
   - md_in_html
-  - meta
   - mdx_truly_sane_lists
+  - meta
+  - pymdownx.magiclink
 
 plugins:
   - git-revision-date

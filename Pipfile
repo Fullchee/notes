@@ -8,6 +8,7 @@ mkdocs-material = "*"
 mkdocs-git-revision-date-plugin = "*"
 mkdocs-exclude = "*"
 mdx-truly-sane-lists = "*"
+pymdown-extensions = "*"
 
 [dev-packages]
 
