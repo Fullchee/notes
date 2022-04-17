@@ -46,8 +46,8 @@ date: "2022"
 
 #### Frontend
 * complex new logic that we didn't have previously
-    * new kinds of charts, tables, slideouts
-    * setup **Storybook** to document and developt those components
+    * new kinds of charts, tables, slide-outs
+    * setup **Storybook** to document and develop those components
 
 #### Backend
 * Convert business logic in to SQL queries
@@ -56,6 +56,7 @@ date: "2022"
 ### Documentarian
 
 * Started learning channels like `#til-sql` and `#dev-til`
+* Started an article club
 * opened communication channels with Product and Design
 * Storybook
 * Glossary
