@@ -1,12 +1,15 @@
 ---
-title: "Creating a documentation culture"
+title: Vim
 date: "2022-03-26"
 ---
 
-# E254: Cannot allocate color Orange
+## `.vimrc`
+
+https://github.com/Fullchee/mac-dotfiles/blob/master/.vimrc
+
+## E254: Cannot allocate color Orange
 
 After running `brew upgrade vim` to 8.2, I was getting this error.
-
 
 Following the comments in this StackOverflow post worked for me
 

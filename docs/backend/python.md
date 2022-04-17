@@ -185,3 +185,14 @@ from pathlib import Path
 file_directory = Path(__file__).parent.resolve()
 another_path = file_directory / "sql_scripts"
 ```
+
+## Dict
+
+
+Get the key with the max value in the dict
+```python
+stats = {'a': 1, 'b': 3000, 'c': 0}
+max(stats, key=stats.get)  # 'b'
+
+max(stats, key=lambda key: stats[key])  # 'b'
+```

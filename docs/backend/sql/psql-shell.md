@@ -68,3 +68,9 @@ where cardinality(pg_blocking_pids(pid)) > 0;
 - `brew services restart postgresql`
 - `/usr/local/opt/postgres/bin/createuser -s postgres`
   - create the `postgres` user
+
+### Create a CSV
+
+```bash
+psql -c "COPY (<select query>) TO STDOUT WITH CSV"
+```

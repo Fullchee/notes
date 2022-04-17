@@ -1,5 +1,8 @@
 # `.psqlrc`
 
+# Use `pgcli` instead
+https://www.pgcli.com/docs
+
 ## [My `.psqlrc`](https://github.com/Fullchee/mac-dotfiles/blob/master/.psqlrc)
 
 - `\pset null '∅'`
