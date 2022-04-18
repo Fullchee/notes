@@ -2,6 +2,8 @@
 
 [Notion Slides](* https://www.notion.so/bb7f3b16bae7427194cc5c4fc43416a0?v=f5e30f0e05d94b29bc5f8061a0f92f83)
 
+From Aug 3, 2021 to Aug 6, 2021, I lead a 4 day, 2-hours a day zoom frontend bootcamp for the non profit: [CICS](https://www.cicscanada.com/en/).
+
 ## Goal of the bootcamp
 * building [google.ca](google.ca)
 * brief overview of some HTML, CSS, JS
