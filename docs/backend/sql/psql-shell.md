@@ -9,11 +9,11 @@ ALTER TABLE table_name
 RENAME TO new_table_name;
 ```
 
-### Renaming a column
+### [Renaming a column](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-rename-column/)
 
 ```sql
-ALTER TABLE table_name
-???????
+ALTER TABLE table_name 
+RENAME COLUMN column_name TO new_column_name;
 ```
 
 [PSQL Cheat Sheet](https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546)

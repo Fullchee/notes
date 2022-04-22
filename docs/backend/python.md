@@ -124,7 +124,9 @@ line-length = 120
 ```
 
 ### String formatting
-Don't need to escape anymore???
+
+* raw string so that you 
+
 ```python
 r"D:\Users\path"
 ```

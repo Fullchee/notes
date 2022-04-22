@@ -63,6 +63,21 @@ grep -- --hello data.txt
 - the `--` is optional in this case
 - just a good habit, since branches usually have dashes
 
+
+### Command substitution
+
+```bash
+result=$(curl -X GET 'URL')
+```
+
+### String substitution
+
+```bash
+${var}
+
+"$var_name"
+```
+
 ## Editing Files
 #### [Delete lines that match pattern](https://stackoverflow.com/a/5410784/8479344)
 
@@ -128,3 +143,9 @@ export PGPASSWORD
 `lnav` has syntax highlighting for logs
 
 ### [Hyperfine](https://github.com/sharkdp/hyperfine) CLI Benchmarking Performance
+
+
+## Typos
+- zsh auto recommends a command if you mistype
+- for subcommands, use [thefuck](https://github.com/nvbn/thefuck)
+    - video: https://user-images.githubusercontent.com/11246258/163878799-c9b01191-e253-4a9b-9818-429d1bc7a30e.mp4
