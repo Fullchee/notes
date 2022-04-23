@@ -1,6 +1,3 @@
-## TODOs
-https://uptodate.frontendrescue.org/
-
 ### Destructure 3 levels down
 
 ```javascript
@@ -35,6 +32,7 @@ const arr = [
 ```
 
 ### ESLint
+
 ```javascript
 /* eslint-disable rule-name */
 
@@ -63,3 +61,10 @@ function myTag(strings, ...args) {
 }
 ```
 
+
+## Dates
+```javascript
+date.toLocaleDateString()
+```
+
+### Temporal API

@@ -55,9 +55,3 @@ Which is the same as
 ```py
 my_weird_dict[['price', 'size_in_sqft']]
 ```
-
-You're ready to face the challenge again!
-
-I've broken the problem down.
-
-# https://data-challenge.lighthouselabs.ca/challenge/10
