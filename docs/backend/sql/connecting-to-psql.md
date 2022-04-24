@@ -41,19 +41,6 @@ pg_dump --no-owner --no-acl -t table_to_copy source_db | psql target_db
 
 ## Cloud access
 
-### Heroku
-
-#### Connect to Heroku DB
-
-```bash
-heroku pg:psql --app app-name
-```
-
-#### Connect to your DB if you use Heroku but not their DB
-
-```bash
-heroku run 'psql $DATABASE_URL' --app app-name
-```
 
 ### AWS RDS on a VPC via SSM
 

@@ -63,6 +63,8 @@ line-length = 120
 
 ### String formatting
 
+https://www.pythonmorsels.com/string-formatting/
+
 * raw string so that you 
 
 ```python
