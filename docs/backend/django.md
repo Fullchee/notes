@@ -24,16 +24,23 @@ from django.contrib.auth.models import User, Group
 python manage.py test path.app.tests.ClassName.testName --keepdb
 ```
 
-
 ### Create fake data from a factory
 ```py
 from app.path_name import MyModel
 MyModel.create_batch(200)
 ```
 
+## Models
+
+### [`null=True` vs `blank=True`](https://stackoverflow.com/questions/8609192/what-is-the-difference-between-null-true-and-blank-true-in-django)
+
+* blank: is the field required for forms?
+
 ## Migrations
 
 ### Create an empty migration
+
+useful when you're creating a custom migration
 ```shell
 python manage.py makemigrations app_name --name migration_name --empty
 ```
@@ -42,11 +49,12 @@ python manage.py makemigrations app_name --name migration_name --empty
 ### Create a migration
 operations list
 
-- `migrations.RunPython(python_function_name),`
-- `migrations.RunSQL("INSERT INTO product (title) VALUES ('Product1');"),`
+```python
+migrations.RunPython(python_function_name),
+migrations.RunSQL("INSERT INTO product (title) VALUES ('Product1');"),
+```
 
-
-#### Reverse a migraiton
+#### Reverse a migration
 ```python
 operations = [
         migrations.RunSQL(
@@ -66,10 +74,14 @@ operations = [
 
 ### SQL `where id in [1,3,4,5,6....];`
 
-`.filter(id__in=[1, 3, 4, 5, 6....])`
+```python
+.filter(id__in=[1, 3, 4, 5, 6....])
+```
 
 ### Pretty print
 
-`model_name.filter().values()`
+```python
+model_name.filter().values()
+```
 * doesn't work on the actual instance
 * ?????

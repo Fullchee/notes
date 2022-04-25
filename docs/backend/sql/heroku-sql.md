@@ -1,6 +1,22 @@
-# Connecting to the Heroku PSQL
+## Setup
 
-## Connect
+### Add `heroku` git remote
+
+```bash
+heroku git:remote -a app_name
+```
+
+## Connect to the file system
+
+* read-only access to your repo on the Heroku container
+
+```bash
+heroku run bash
+```
+
+
+
+## Connect to DB
 
 ```bash
 heroku pg:psql --app app-name
