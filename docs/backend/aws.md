@@ -4,7 +4,7 @@
 
 - `aws configure sso`
   - name it `default`
-  - so that you don't need to specify `--profile` everytime you use `aws-cli`
+  - so that you don't need to specify `--profile` every time you use `aws-cli`
 
 ## Login
 
@@ -33,11 +33,15 @@ aws ssm start-session --target "container-id-ec2, like i-0373fb85e5fbc7d8e" --do
 ssh -p 56789 root@localhost
 ```
 
-# S3
+## S3
+
+### `cp`
 
 ```bash
 aws s3 cp "<s3://url>" "local_destination_path"
 ```
+
+Copy it to the Desktop with the same name as in S3
 
 ```bash
 s3-cp() {
@@ -49,6 +53,18 @@ s3-cp() {
 }
 ```
 
-## `aws s3 presign`
 
-- it makes your file publically available for anyone with the URL
+### `aws s3 presign`
+
+- it makes your file publicly available for anyone with the URL
+- I'm not sure why you'd do this?
+
+
+### Sync
+
+Copy from one S3 bucket to another
+* prod to staging
+
+```bash
+aws s3 sync s3://DOC-EXAMPLE-BUCKET-SOURCE s3://DOC-EXAMPLE-BUCKET-TARGET
+```
