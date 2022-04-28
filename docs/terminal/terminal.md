@@ -149,3 +149,17 @@ export PGPASSWORD
 - zsh auto recommends a command if you mistype
 - for subcommands, use [thefuck](https://github.com/nvbn/thefuck)
     - video: https://user-images.githubusercontent.com/11246258/163878799-c9b01191-e253-4a9b-9818-429d1bc7a30e.mp4
+
+
+
+## Python list to bash
+
+```bash
+space_separated_strings=$(python file.py | tr -d '[],')
+
+# We need the eval because ????
+eval "for query_content in $query_content_list; do
+    echo \$query_content
+    psql2 $COMMISSIONS_DB -c \$query_content;
+done"
+```

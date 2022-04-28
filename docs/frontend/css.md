@@ -35,7 +35,7 @@
 }
 ```
 
-### Always show scrollbars on Mac
+### Always show scroll bars on Mac
 Why
 * by default, scrollbars are always visible on non-macs
 
@@ -67,3 +67,15 @@ overflow-y: visible;
 ![de9ff42109765ccb58504230868356c2.png](de9ff42109765ccb58504230868356c2.png)
 
 
+
+## Images
+```css
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+```
+Clip path
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path
+
+
+<https://codepen.io/Fullchee/pen/vYpqoOL>
