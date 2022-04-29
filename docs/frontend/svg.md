@@ -1,5 +1,58 @@
 # SVG
 
+https://www.youtube.com/watch?v=9Y4P3FvZ5bg
+
+## Why SVG
+
+
+## What is it actually?
+- container that defines a new coordinate system and viewport
+- can embed an SVG in HTML or another SVG
+
+TODO: nested SVGs???
+
+## `<svg>` properties
+
+- width
+- height
+
+```html
+xmlns="http://www.w3.org/2000/svg"
+```
+
+### [`viewBox`](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox)
+
+
+
+## `<circle>`
+
+default `fill` is black
+
+```html
+<circle r="120" cx="125" cy="125" fill="none" stroke="red" stroke-width="10" />
+```
+
+## `<rect>`
+
+```html
+<rect x="0" y="0" height="100" width="100" rx="15" ry="100" />
+```
+
+### Round corners
+
+- how many pixels before it stops curving
+- same as border-radius
+
+if either `rx` or `ry` is 0, then it goes back to 90 degree angles
+
+## `<line>`
+
+```html
+<line x1="10" y1="125" x2="225" y2="225" stroke="green" />
+```
+
+
+## Path
 
 ```css
 M 213.1,6.7

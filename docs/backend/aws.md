@@ -68,3 +68,34 @@ Copy from one S3 bucket to another
 ```bash
 aws s3 sync s3://DOC-EXAMPLE-BUCKET-SOURCE s3://DOC-EXAMPLE-BUCKET-TARGET
 ```
+
+## Services
+
+## EC2
+
+- virtual machine
+
+### EC2 vs LightSail
+
+* Lightsail is like Digital Ocean's $5/month
+* EC2 can have more bad-ass servers
+
+### ECS
+
+* basically a lightweight Kubernetes?
+    * where you manage some EC2 instances
+
+### Fargate
+- level of abstraction that's higher than ECS
+- idea of `tasks` which could be a group of EC2 instances
+
+
+### WAF
+
+- Web Application Firewall
+
+### Kinetic
+
+- like Apache Kafka
+- for streaming content like logs or videos
+    - example: sending logs to DataDog

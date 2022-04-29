@@ -2,14 +2,6 @@
 
 Date: 2021-12-26
 
-**Next**
-
-- [[3-react-patterns]]
-
-**Back**
-
-- [[1-react-fundamentals]]
-
 - [Epic React 2: React Hooks](#epic-react-2-react-hooks)
   - [useState](#usestate)
   - [useEffect](#useeffect)
@@ -42,7 +34,7 @@ Date: 2021-12-26
 
 - dependency array does a `===` comparison
     - will always re-render if you pass it an array
-- `fetch`: forgot to return early if pokemonName is null
+- `fetch`: forgot to return early if `pokemonName` is null
 - I forgot about having a status variable
   - helps with determining what to display
   - https://kentcdodds.com/blog/stop-using-isloading-booleans
