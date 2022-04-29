@@ -52,3 +52,22 @@ import type Shape from 'progressbar.js/shape';
 ```typescript
 <T extends {first: string; last: string}>(obj: T) 
 ```
+
+
+```typescript
+/**
+ * Make all properties in T optional
+ */
+type Partial<T> = {
+    [P in keyof T]?: T[P];
+};
+```
+
+```typescript
+/**
+ * Make all properties in T required
+ */
+type Required<T> = {
+    [P in keyof T]-?: T[P];
+};
+```

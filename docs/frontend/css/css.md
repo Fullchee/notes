@@ -1,33 +1,20 @@
-### [Inline content separators](https://medium.com/@mandy.michael/you-dont-need-a-media-query-for-that-1-inline-content-separators-a9c562a597a6)
+## General
 
-* ![a0e93e7fc4e12ce32b05d5bb73386607.png](../a0e93e7fc4e12ce32b05d5bb73386607.png "a0e93e7fc4e12ce32b05d5bb73386607.png")
-* ![916f43045c6b45731a9e9c76b6afd4ae.png](../916f43045c6b45731a9e9c76b6afd4ae.png "916f43045c6b45731a9e9c76b6afd4ae.png")
+###  `initial` vs `unset`
 
+* initial: browser default
+* unset: ignore current, inherit from ancestor
 
-```css
-.container {
-  overflow: hidden;
-}
-.entry {
-  transform: translateX(-10px);
-  padding-left:(10px);
-}
+## Scroll bars
 
-.entry::before {
-  top: 0;
-  left: 0;
-  width: 1px;
-}
-```
-
-### Always show scroll bars on Mac
+### Always show scroll bars on mac!
 
 Why
-* by default, scrollbars are always visible on non-macs
+* by default, scroll bars are always visible on non-macs
 
 
 
-#### [Overflow](https://courses.joshwcomeau.com/css-for-js/02-rendering-logic-2/14-overflow)
+## [Overflow](https://courses.joshwcomeau.com/css-for-js/02-rendering-logic-2/14-overflow)
 * `auto` is amazing
     * use if it MIGHT scroll
 * use `scroll` if you know if it 100% will scroll
@@ -42,7 +29,8 @@ Why
         * solve specific problems
             * ![6279ff3f7c7ff1aa8ec781a1fc9a36c8.png](../6279ff3f7c7ff1aa8ec781a1fc9a36c8.png)
 
-##### [Can't hide the overflow only on one axis](https://courses.joshwcomeau.com/css-for-js/02-rendering-logic-2/14-overflow#scroll-containers)
+### [Can't hide the overflow only on one axis](https://courses.joshwcomeau.com/css-for-js/02-rendering-logic-2/14-overflow#scroll-containers)
+
 Scroll containers!
 
 Setting overflow to non-visible turns an element into a scroll container
@@ -84,3 +72,30 @@ clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 2. blur, decrease contrast and brightness on the main when there's a de-emphasized class on the main content
 filter: blur(3px) contrast(0.8) brightness(0.8)
 3. animation
+
+
+## Box shadow
+
+```css
+box-shadow: 1px 2px 3px 4px grey;
+```
+
+1. a grey background is drawn with the same size and position as our element
+
+2. moved 1px to the right and 2 px down
+
+3. blurred by 3px
+
+4. spread by 4px (makes your blur start further out)
+
+5. Clip the shadow where the shadows and the element intersect
+
+![6c759c7b2c4ec32d9974357c2a7f72b8.png](6c759c7b2c4ec32d9974357c2a7f72b8.png "6c759c7b2c4ec32d9974357c2a7f72b8.png")
+
+
+## Pseudo-elements
+
+`::before` and `::after`
+
+- can't add them to [replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element)
+    - whose contents can't be changed
