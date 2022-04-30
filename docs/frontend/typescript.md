@@ -12,6 +12,12 @@ ReactElement works for an array of functions
 type GreetFunction = (a: string) => void;
 ```
 
+### Click event
+
+```typescript
+(event: React.MouseEvent<HTMLElement>) => void
+```
+
 
 ## Union
 
@@ -71,3 +77,4 @@ type Required<T> = {
     [P in keyof T]-?: T[P];
 };
 ```
+

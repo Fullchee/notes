@@ -163,3 +163,11 @@ eval "for query_content in $query_content_list; do
     psql2 $COMMISSIONS_DB -c \$query_content;
 done"
 ```
+
+
+### `su` vs `sudo`
+
+- `su` switches users
+- `sudo` keeps the current user, runs as if they were sudo
+- `su -` creates a new environment with the super user's env var and switches to their home directory
+- `sudo su -`
