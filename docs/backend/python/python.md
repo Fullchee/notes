@@ -128,6 +128,12 @@ file_directory = Path(__file__).parent.resolve()
 another_path = file_directory / "sql_scripts"
 ```
 
+### Get an environment variable value
+
+```python
+os.environ.get('ENV_VAR_NAME', 'FALLBACK_VALUE')
+```
+
 ## Dict
 
 

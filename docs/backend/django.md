@@ -66,6 +66,8 @@ operations = [
     ]
 ```
 
+Then `python manage.py migrate app_name 0008
+
 #### Add an index to a table that already has a ton of data in it
 * https://realpython.com/create-django-index-without-downtime/#non-atomic-migrations
 
