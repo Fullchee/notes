@@ -80,6 +80,9 @@ markdown_extensions:
 plugins:
   - git-revision-date
   - search
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
+  - tags:
+      tags_file: tags.md
 
 extra_css:
   - stylesheets/extra.css
