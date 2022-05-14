@@ -27,6 +27,8 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.top
+    - navigation.expand
+    - navigation.sections
     - search.suggest
     - search.highlight
     - header.autohide
@@ -55,9 +57,19 @@ markdown_extensions:
   - attr_list
   - footnotes
   - md_in_html
-  - mdx_truly_sane_lists
   - meta
   - pymdownx.magiclink
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - tables
+  - toc:
+      permalink: true
 
 plugins:
   - git-revision-date
