@@ -29,12 +29,12 @@ Inspiration
 ### CSS
 
 * update the GitHub content
-* 
+*
 
 ### JS
 * Dynamic
 * cornify.com
-* Google.ca:  menu 
+* Google.ca:  menu
     * update GitHub
 * Overview of how JS is used outside of the frameworks
 
@@ -45,11 +45,11 @@ Inspiration
 
 ### Next steps
 * FreeCodeCamp
-* 
+*
 
 ## Though process
 
-I tried to give an overview of 
+I tried to give an overview of
 
 I created the content in Notion
 
@@ -69,7 +69,7 @@ For my presentation purposes, Markdown might be good enough.
 
 
 
-Use this is 
+Use this is
 
 
 ## Lessons learned
@@ -94,7 +94,7 @@ There are things that I glossed over
     * anatomy of an HTML tag
 
 
-Empower students to learn more afterwards
+Empower students to learn more afterward
 * Link to FreeCodeCamp
 
 Change the order

@@ -26,10 +26,10 @@ myObject?.props?.match
 
 If you know the property will exist
 ```javascript
-const {  
-  props : {  
-    match  
-  },  
+const {
+  props : {
+    match
+  },
 } = myObject;
 ```
 
@@ -46,12 +46,12 @@ const {
 
 1. Creates a new object
     2. type: `object`
-2. It sets this new object's internal, inaccessible, [[prototype]] (i.e. __proto__) property to be the constructor function's external, accessible, prototype object (every function object automatically has a prototype property).
+2. It sets this new object's internal, inaccessible, [[prototype]] (__proto__) property to be the constructor function's external, accessible, prototype object (every function object automatically has a prototype property).
 3. Variable points to the newly created object.
 4. Executes the constructor function
 5. Return the new object
-    6. unless the constructor function returns a non-null object reference. 
-    7. In this case, that object reference is returned instead.
+    1. unless the constructor function returns a non-null object reference.
+    2. In this case, that object reference is returned instead.
 
 #### [How do you know if they used `new`?](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new.target)
 

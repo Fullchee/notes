@@ -55,7 +55,7 @@ https://rubygarage.org/blog/monolith-soa-microservices-serverless
 - High investment costs
 - Extra overload
 
-Architecture:
+Kelvin's Architecture Notes
 
 Front End - Angular?
 
@@ -261,10 +261,10 @@ Pipeline Automation Machine Learning (Serverless):
 
 https://miro.medium.com/max/2400/1*3mB27NYBVWEmwhus-w3ULw.png
 
-Sagemaker VS Databricks
+Sagemaker VS DataBricks
 
-Databricks is a better platform for Big data(scala, pyspark) Developing.(unbeatable notebook environment)
+DataBricks is a better platform for Big data(Scala, PySpark) Developing.(unbeatable notebook environment)
 
-SageMaker is better for Deployment. and if you are not working on big data, SageMaker is a perfect choice working with (Jupyter notebook + Sklearn + Mature containers + Super easy deployment).
+SageMaker is better for Deployment. and if you aren't working on big data, SageMaker is a perfect choice working with (Jupyter notebook + SKLearn + Mature containers + Super easy deployment).
 
-SageMaker provides "real time inference", very easy to build and deploy, very impressive. you can check the official SageMaker Github. https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-python-sdk/scikit\_learn\_inference_pipeline
+SageMaker provides "real time inference," very easy to build and deploy, very impressive. you can check the official SageMaker Github. https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-python-sdk/scikit\_learn\_inference_pipeline

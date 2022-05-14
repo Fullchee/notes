@@ -16,23 +16,23 @@ Life expectancy around 30-35 years globally
 
 Height for men: 5’5, shorter lives and shorter people
 
-Exceptions of small elites on top of social pyramids 
+Exceptions of small elites on top of social pyramids
 
 Adam Smith’s the Wealth of Nations in 1776
 
-**Wealth: Product of human effort above and beyond what is necessary to survive**
+**Wealth: Product of human effort above and beyond what's necessary to survive**
 
 **1.2 - The Wealth of Villages**
 
-The Corn Harvest: People portrayed lived in subsistence level 
+The Corn Harvest: People portrayed lived in subsistence level
 
 Villages could produce non essential goods, weapons, cloth,
 
-Non essential: Sapphron in Spain, cinnamon in Sri Lanka, pepper in India; light and expensive
+Non essential: Saffron in Spain, cinnamon in Sri Lanka, pepper in India; light and expensive
 
 Trading for others, villages produce these preciosities for others, not for their own use
 
-	Long chain of trade 
+	Long chain of trade
 
 China: Powerful Hub of early globalization
 
@@ -44,7 +44,7 @@ China: Powerful Hub of early globalization
 
 **1.3 -Silk Roads (1000-1300)**
 
-Afro-eurasia: The silk roads: Causeways for merchants and camels
+Afro-Eurasia: The silk roads: Causeways for merchants and camels
 
 	Many commodities: Spices, saffron, drugs, silk
 
@@ -60,7 +60,7 @@ Caravanserais: Cities, hubs for merchants, caravan, money dealers, stench of fec
 
 	Samarkand: Prominent city
 
-	Camels: Beasts of burden used for 
+	Camels: Beasts of burden used for
 
 Moving back and forth between lines
 
@@ -80,11 +80,11 @@ Arab merchant houses helpful to connect: brokers between culture
 
 Arabic language of trade
 
-Now: nepotism 
+Now: nepotism
 
 **1.5 - Worlds of Genghis Khan**
 
-Mongols could not rely on local resources, also needed predation
+Mongols couldn't rely on local resources, also needed predation
 
 	Expansion of Mongol cultures because of Silk Road
 
@@ -107,17 +107,17 @@ Mongols had to travel light, had to live off the conquered land
 
 	Borrowed and adapted civilisation, fealty
 
-Mongols did not want to clean the slate, not destroy, wanted to absorb it into tributary system
+Mongols didn't want to clean the slate, not destroy, wanted to absorb it into tributary system
 
 Cyclical: Economic Captors and Capturers, running through proxies, intermarriage crucial
 
-Not in an act of revenge 
+Not in an act of revenge
 
 Fealty
 
-Political transportation 
+Political transportation
 
-ephemeral 
+ephemeral
 
 Empire collapsed after two generations
 
@@ -129,7 +129,7 @@ Interconnectivity: Beginning of Globalization
 
 Movement of invisible forces, whimpers of millions of people
 
-Portmanteau Term = combo of 2+ terms (eg smog = smoke fog)
+Portmanteau Term = combo of 2+ terms (example: smog = smoke fog)
 
 The Black Plague devastates Afro-Asia
 
@@ -145,11 +145,11 @@ Swahili Coast: Arabs, Buddhists, South Asians, Chinese
 
 	Africa: Source of Gold
 
-	Kilawa: African Island with largest mosque made by persians
+	Kilawa: African Island with largest mosque made by Persians
 
-Syncretic Cultures: Combination of different, seemingly contradictory beliefs/religions
+Syncretic Cultures: Combination of different, contradictory beliefs/religions
 
-	Islam amalated into  local beliefs
+	Islam amalgamated into  local beliefs
 
 African Tradition of Slavery
 
@@ -159,7 +159,7 @@ African Tradition of Slavery
 
 New Political Systems
 
-Especially after the 
+Especially after the
 
 Ottoman Empire expands and fills power vacuum
 
@@ -185,15 +185,15 @@ Complicated Systems to preserve rule, more secular form of rule
 
 1350s: Reconquest of Mongols
 
-1368: Retake of 
+1368: Retake of
 
 “Ming” = brilliant
 
-New mechanisms 
+New mechanisms
 
 	Rebuild army to legitimize
 
-	Exam System for Bureaucracies 
+	Exam System for Bureaucracies
 
 	Rebuild Forbidden City (Centre of Capital)
 
@@ -201,7 +201,7 @@ Clashes between Middle East and Chinese Authorities
 
 	751 Du: First person to write about encounters in Africa 8th Century
 
-		Ivory, Turtle Shells, frankincense, 
+		Ivory, Turtle Shells, frankincense,
 
 	1300s: Trade between China and Africa
 
@@ -215,9 +215,9 @@ Chinese Expansion: Developping tributary relations between subordinate people
 
 Had massive ships, 20x times the size of Santa Maria
 
-	Became **Zheng He**, travelled around the Indian 
+	Became **Zheng He**, travelled around the Indian
 
-	Brought back Giraffes, riches from Africa, Java, 
+	Brought back Giraffes, riches from Africa, Java,
 
 	Enters a harbour (Malabar, India)
 
@@ -225,7 +225,7 @@ Had massive ships, 20x times the size of Santa Maria
 
 	Could have easily blasted Malabar
 
-	Tension between eunuchs and Confucian 
+	Tension between eunuchs and Confucian
 
 	Scholars wanted China to be Isolated
 
@@ -239,7 +239,7 @@ Europe: Polities could never overcome, opposite of China
 
 	Hallmark of Europe until end of WW2
 
-	Tiny micro-kingdoms claiming they are more chosen by God
+	Tiny micro-kingdoms claiming they're more chosen by God
 
 Middle East: **Islamisation of Afro-Asia**
 
@@ -269,23 +269,23 @@ Integrate polyglot of Hindu, Muslim, Pagan, Buddhist beliefs in South Asia
 
 **Safavid Empire **= Iran
 
-**Ottoman Empire:** Longest lasting empire after 
+**Ottoman Empire:** Longest lasting empire after
 
 	Turk Empires attacking weakened Christendom states
 
 	Failed Crusades
 
-Slowly waning Byzantine Empire: 
+The slowly waning Byzantine Empire:
 
-1453: Fall of Constantinople
+1453: Fall Constantinople
 
 	Crossroads but protected by fortification
 
-	Long siege of 200 000 troops 
+	Long siege of 200 000 troops
 
-	Refugees flee to Italy, Florence, Venice, to form Renaissance 
+	Refugees flee to Italy, Florence, Venice, to form Renaissance
 
-	Turns largest Christian Church until 
+	Turns largest Christian Church until
 
 1529: Siege of Vienna failed
 
@@ -315,7 +315,7 @@ Mesoamerican
 
 	No large scale killing machines despite having large populations
 
-	Taking captive enemies and incorporate 
+	Taking captive enemies and incorporate
 
 	Humans were more valuable than the land
 
@@ -335,9 +335,9 @@ Mesoamerican people were speaking in the lower Andes
 
 **Inca**: Internal Struggles from Aymara speaking people
 
-	Did not practice human sacrifice
+	didn't practice human sacrifice
 
-	Required immense tributes to Inca conquerors 
+	Required immense tributes to Inca conquerors
 
 **Aztec Empire:** More External Threats
 
@@ -347,7 +347,7 @@ Mesoamerican people were speaking in the lower Andes
 
 	Blood falls from the temple, symbolizing the rain of the Gods
 
-	1487:  20 000 - 80 000 people were sacrificed 
+	1487:  20 000 - 80 000 people were sacrificed
 
 Before Spanish Arrived
 
@@ -379,7 +379,7 @@ Exploration of Atlantic Islands
 
 	Equatorial Currents to travel west, discovery of trade winds
 
-	Columbus was not alone, pooling knowledge of African, Arab, European 
+	Columbus was not alone, pooling knowledge of African, Arab, European
 
 Juan Caboto, Pedro Cabral were much more up to date than Columbus
 

@@ -8,7 +8,7 @@ which then leads to the question
 
 > Why are there so many in the first place?
 
-## Analogy: the printing press
+## Analogy: The printing press
 
 [There were precursors to the printing press 400+ years before Gutenberg invented it in Germany.](https://en.wikipedia.org/wiki/Movable_type)
 
@@ -18,37 +18,35 @@ It didn't catch on in China because there is no alphabet.
 
 > In programming, it's just easier to do some things in some programming languages
 
-
 Here are some `printing presses` for some languages
 
-* JavaScript
-    * comes with the browser => easy to make web apps
-* Java
-    * easy to make Android apps
-    * historical reason: easy to write an app once that works on a ton of machines
-* Ruby
-    * easy to build web apps with the Ruby on Rails framework
-* Bash
-    * universal adoption on \*NIX systems makes it easy to write scripts that will work on almost all servers
-
+- JavaScript
+  - comes with the browser => easy to make web apps
+- Java
+  - easy to make Android apps
+  - historical reason: easy to write an app once that works on a ton of machines
+- Ruby
+  - easy to build web apps with the Ruby on Rails framework
+- Bash
+  - universal adoption on \*NIX systems makes it easy to write scripts that will work on most servers
 
 ### Why Python?
 
 If a language only gets popular after people make things with it to make the language useful, isn't that a catch 22? You need to be popular to be more popular?
 
 #### Aesthetics
-Some languages like the romantic languages (French, Italian, Spanish) sound really nice which gives someone a reason to learn the language.
+
+Some languages like the romantic languages (French, Italian, Spanish) sound nice which gives someone a reason to learn the language.
 
 Python has a lot of nice features and it's nice to write concise programs that are pleasant to read and write.
 
-####  Ease of use
+#### Ease of use
 
 Python is one of the top languages that English speakers learn. That's because it feels more like a human language than many other programming languages.
 
 #### Utility
 
 With aesthetics, and ease of use, early adopters started making tons of libraries for anything you can think of from machine learning to web applications. Once a language it hits some critical point, it just gets more and more popular.
-
 
 ## Why so many languages?
 
@@ -60,4 +58,4 @@ The general purpose programming languages that will overtake Python as the one o
 
 Brand new languages also being created!
 
-For example, the company Hashicorp found that no other languages met their Infrastructure as Code needs so they invented a new language that's super popular in that niche.
+For example, the company HashiCorp found that no other languages met their Infrastructure as Code needs so they invented a new language that's super popular in that niche.

@@ -54,8 +54,8 @@ git reset --hard origin/main
 
 ### git revert "hash"
 
-- git revert undoes only that provided hash's chnages
-- it will still keep the changes of the commits in between
+- git revert undoes only that provided hash's changes
+- it will still keep all the other commits' changes
 - **set the HEAD as a previous commit**: `git revert --no-commit 0766c053..HEAD`
   - `--no-commit` lets you revert every commit without creating a new commit for each
   - safe, no history change

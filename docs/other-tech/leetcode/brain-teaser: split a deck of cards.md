@@ -22,7 +22,7 @@ summary: ""
     * I don't know which one I'm actually doing
 * I can somehow divide the cards into groups
     * because I don't know anything about the cards individually, I will only lose information if I split them up
-    * so I likely have to do one split in order to not lose information
+    * so I likely have to do one split to not lose information
 
 ### Brute force attempts
 

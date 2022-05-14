@@ -4,13 +4,14 @@ Date: 2021-12-26
 
 - [Epic React 2: React Hooks](#epic-react-2-react-hooks)
   - [useState](#usestate)
+    - [Why we need useState](#why-we-need-usestate)
   - [useEffect](#useeffect)
     - [Error Boundaries](#error-boundaries)
   - [Advanced React Hooks](#advanced-react-hooks)
   - [useReducer](#usereducer)
   - [useCallback and useMemo](#usecallback-and-usememo)
-    - [useCallback: custom hooks](#usecallback-custom-hooks)
-      - [What is the `run` function that we return in `useAsync`?](#what-is-the-run-function-that-we-return-in-useasync)
+    - [useCallback: Custom hooks](#usecallback-custom-hooks)
+      - [what's the `run` function that we return in `useAsync`?](#whats-the-run-function-that-we-return-in-useasync)
     - [safeDispatch (safe fetch) and useEffect cleanup](#safedispatch-safe-fetch-and-useeffect-cleanup)
       - [How do you know if a component has been unmounted?](#how-do-you-know-if-a-component-has-been-unmounted)
   - [`useContext`](#usecontext)
@@ -24,7 +25,7 @@ Date: 2021-12-26
 ## useState
 
 - accepts a function which is a lazy initializer!
-    - `useState` ignores the param afterwards
+    - `useState` ignores the param afterward
     - for computationally expensive stuff (async like )
 
 ### Why we need useState
@@ -80,12 +81,12 @@ Use cases (https://kentcdodds.com/blog/usememo-and-usecallback)
 3. `useMemo` can be passed a function (just like `useState`) and lazily calculate computationally expensive items
     4. I used it in `HierarchySelect` where there was derived state that wasn't updated often
 
-### useCallback: custom hooks
+### useCallback: Custom hooks
 
 - I had trouble with the middle param of what the initial state should be
 - I autofilled the dependencies and got into an infinite render loop
 
-#### What is the `run` function that we return in `useAsync`?
+#### what's the `run` function that we return in `useAsync`?
 
 - instead of the user putting their `fetch` in a `useCallback`
 - the `useEffect` in `useAsync` becomes `run` which is memoized with `useCallback`

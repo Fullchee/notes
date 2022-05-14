@@ -22,7 +22,7 @@ Spark their interest in your success to recruit them as un-official mentors
 - What does it take to be successful here?
 - They will watch to see if you follow their advice
 - Personal stake in seeing you succeed
-- They are assessing you for how you will be their ambassador
+- They're assessing you for how you will be their ambassador
 
 How did you come up with this salary?
 
@@ -37,7 +37,7 @@ Then Ackerman Bargaining
   - Every other communication book reminds me of NVC by Marshall B Rosenberg
   - I feel like this book is like another front for mindfulness with military terminology
     - "Tactical grade" empathy and calibrated questions, are just empathy and questions to get to know them better
-- All of the “tactics” can also be used to just create more connection with others
+- all the “tactics” can also be used to just create more connection with others
 - You can learn about black swans (unknown unknowns)
   - example: the building actually has some structural issues so now we know the value is worth a lot less
 - Deadlines are never ironclad

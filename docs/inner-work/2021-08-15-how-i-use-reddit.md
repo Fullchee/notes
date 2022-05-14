@@ -35,7 +35,7 @@ This is how I'm using Reddit for my benefit and not just for Reddit's benefit.
 
 ## How do I use Reddit if it's blocked?
 
-I do not allow any access to Reddit on my phone.
+I block access to Reddit on my phone.
 
 On my laptop, I
 

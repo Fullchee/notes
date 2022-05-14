@@ -7,7 +7,7 @@ date: "2022-03-26"
 
 https://github.com/Fullchee/mac-dotfiles/blob/master/.vimrc
 
-## E254: Cannot allocate color Orange
+## E254: `Cannot allocate color Orange`
 
 After running `brew upgrade vim` to 8.2, I was getting this error.
 

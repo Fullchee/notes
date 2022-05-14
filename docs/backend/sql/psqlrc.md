@@ -12,7 +12,7 @@ https://www.pgcli.com/docs
 - `\x auto`
   - ![a580e45029c87021a93cc86cc9eba2bc.png](a580e45029c87021a93cc86cc9eba2bc.png)
 
-## Where is `.psqlrc`
+## Where's `.psqlrc`
 
 - Mac
   - `~/.psqlrc`

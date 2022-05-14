@@ -4,12 +4,12 @@ Date: 2022-01-03
 
 ## History
 
-- I've really struggled with Pomodoros
+- I've really struggled with pomodoros
 - I don't like how it gets me out of the zone
 - and how it leads to context switching
 - I keep coming back to it
   - maybe my 10th time of trying pomodoros again
-  - because my auto-pilot is
+  - because my autopilot is
     - less productive because it leads to burnout
     - I want to learn how to pace myself
 

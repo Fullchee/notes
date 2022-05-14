@@ -6,7 +6,7 @@
   - very deep joins
   - `__in` with large lists
   - multiple .filter()/.exclude chains
-- sometimes more easily expressed in **SQL**
+- sometimes better expressed in **SQL**
 - some SQL features aren’t available in the query language
   - recursive queries
   - tree structures

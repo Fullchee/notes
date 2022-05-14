@@ -18,11 +18,11 @@ git rebase master
 - Golden rule of rebasing: **only rebase private branches**
 - Merge will create a new commit
 - rebase will just move all the branch's new commits to the end of master's HEAD
-- `git rebase -i` is really useful for cleaning up private branches
+- `git rebase -i` is very useful for cleaning up private branches
 
 * how to use the merge tool `git mergetool`
 
-### Taking all of their/our changes
+### Taking all their/our changes
 
 - if you're already in a conflict state
   - `git checkout --theirs path/to/file`

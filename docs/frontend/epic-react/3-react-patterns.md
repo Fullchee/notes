@@ -183,7 +183,7 @@ side effect to check if value is undefined or null
 
 - `readOnly` prop
 - setting the initial value of `isChange`
-- you can put hooks in the if statement because process.env.NODE_ENV never changes
+- you can put hooks in the if statement because `process.env.NODE_ENV` never changes
 
 ```js
 if (process.env.NODE_ENV !== "production") {

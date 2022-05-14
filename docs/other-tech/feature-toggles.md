@@ -12,7 +12,7 @@ Why Feature Toggles?
 https://youtu.be/Fj3TvaovPe0
 
 
-What is a feature flag?
+what's a feature flag?
 
 https://youtu.be/-n0weDGWTy8
 
@@ -20,7 +20,7 @@ https://youtu.be/-n0weDGWTy8
 ## Why use LaunchDarkly instead of building your own
 - funfun functions
     - there are lot of edge cases
-- 
+-
 
 ## Using Launch Darkly
 1. have feature flags on the backend
