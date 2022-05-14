@@ -1,8 +1,8 @@
 # Project Info
 # https://www.mkdocs.org/user-guide/configuration/#project-information
-site_name: Fullchee's Blog
-repo_url: https://github.com/Fullchee/public-foam
-repo_name: Fullchee/public-foam
+site_name: Fullchee's Notes
+repo_url: https://github.com/Fullchee/notes
+repo_name: Fullchee/notes
 edit_uri: edit/main/docs/
 site_description: My personal notes so that I can get things out of my head and into this system
 site_author: Fullchee Zhang
@@ -23,15 +23,16 @@ theme:
     repo: fontawesome/brands/git-alt
   favicon: images/fullchee.png
   features:
+    - header.autohide
+    - navigation.expand
     - navigation.instant
-    - navigation.tracking
+    - navigation.sections
     - navigation.tabs
     - navigation.top
-    - navigation.expand
-    - navigation.sections
-    - search.suggest
+    - navigation.tracking
     - search.highlight
-    - header.autohide
+    - search.share
+    - search.suggest
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -40,6 +41,7 @@ theme:
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: deep purple
       toggle:
         icon: material/weather-night
         name: Switch to light mode
@@ -54,14 +56,18 @@ dev_addr: 127.0.0.1:5000
 markdown_extensions:
   - abbr
   - admonition
-  - attr_list
+  - attr_list # add attributes to html tags like height and width for images
   - footnotes
   - md_in_html
   - meta
-  - pymdownx.magiclink
+  - pymdownx.caret
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.details # https://facelessuser.github.io/pymdown-extensions/extensions/details/
+  - pymdownx.magiclink
+  - pymdownx.mark # highlighting: https://facelessuser.github.io/pymdown-extensions/extensions/mark/
+  - pymdownx.tilde # https://facelessuser.github.io/pymdown-extensions/extensions/tilde/
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -75,6 +81,8 @@ plugins:
   - git-revision-date
   - search
 
+extra_css:
+  - stylesheets/extra.css
 extra:
   analytics:
     provider: google
