@@ -61,6 +61,8 @@ extend-exclude = '/migrations/'
 line-length = 120
 ```
 
+## Strings
+
 ### String formatting
 
 https://www.pythonmorsels.com/string-formatting/
@@ -72,6 +74,18 @@ r"D:\Users\path"
 ```
 * raw string
 
+### Regex
+
+#### [`re.match` vs `re.search`](https://stackoverflow.com/a/180993/8479344)
+
+* `match` at the beginning of the string, or `match` the entire string
+    * faster
+* Otherwise use search
+* both return a match object
+
+```python
+re.match("\w+", """something some other thing""")
+```
 
 ## Typing
 

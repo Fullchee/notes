@@ -30,11 +30,32 @@ from app.path_name import MyModel
 MyModel.create_batch(200)
 ```
 
+### Override settings
+```python
+from django.test import override_settings
+
+class TestBuildPath(TestCase):
+    @override_settings(CLIENT_ID=1130)
+    def test_overriding_settings(self):
+        self.assertEqual(settings.CLIENT_ID, 1130)
+```
+
+### Expect raising an error
+
+```python
+self.assertRaises(ExpectedException, fn_name, arg1, arg2)
+```
+
+### Testing endpoints
+
+
+
 ## Models
 
 ### [`null=True` vs `blank=True`](https://stackoverflow.com/questions/8609192/what-is-the-difference-between-null-true-and-blank-true-in-django)
 
-* blank: is the field required for forms?
+* blank: is the field required for forms
+* null=True: the value in the table can be `NULL`
 
 ## Migrations
 
