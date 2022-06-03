@@ -2,8 +2,6 @@
 
 Date: 2021-12-25
 
-**Next**
-
 ## React Fundamentals
 
 1. `React.createElement` is like `document.createElement()`
@@ -21,4 +19,6 @@ I broke it down in [this StackOverflow question]([https://stackoverflow.com/ques
 
 - (which is interesting but not exactly what I'm looking for 😅)
 
-I'm also posted on KCD's discord and I'm likely going to go to his office hours next Monday (Jan 10, 2022)
+I'm also posted on KCD's discord (but didn't get a good answer)
+
+I could (but probably won't) go to his office hours
