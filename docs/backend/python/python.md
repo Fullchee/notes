@@ -32,6 +32,24 @@ Create a function that can be used `with`
     Leaving the context...
 ```
 
+### [`suppress`](https://docs.python.org/3/library/contextlib.html#contextlib.suppress)
+
+Cleaner version of `try/raise`
+
+```python
+from contextlib import suppress
+
+with suppress(FileNotFoundError):
+    os.remove('somefile.tmp')
+
+# same as 
+
+try:
+    os.remove('somefile.tmp')
+except FileNotFoundError:
+    pass
+```
+
 ## `breakpoint()`
 * https://www.youtube.com/watch?v=IzgSl-tkPPg
 * `n` next / step over
@@ -148,13 +166,30 @@ another_path = file_directory / "sql_scripts"
 os.environ.get('ENV_VAR_NAME', 'FALLBACK_VALUE')
 ```
 
-## Dict
+
+### dataclass vs namedtuple
+
+namedtuple is immutable
+
+dataclass is mutable
 
 
-Get the key with the max value in the dict
+## Lists
+
+### Flatten a list of lists
+
 ```python
-stats = {'a': 1, 'b': 3000, 'c': 0}
-max(stats, key=stats.get)  # 'b'
+list(
+itertools.
+chain.from_iterable([[3,5,7], [0,6], [0, 5, 8]]))
+```
 
-max(stats, key=lambda key: stats[key])  # 'b'
+lazily get all of the values
+
+```python
+def from_iterable(iterables):
+    # chain.from_iterable(['ABC', 'DEF']) --> A B C D E F
+    for it in iterables:
+        for element in it:
+            yield element
 ```

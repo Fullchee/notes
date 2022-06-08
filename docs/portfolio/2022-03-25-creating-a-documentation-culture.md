@@ -36,3 +36,17 @@ I also put a ton of personal time into this which isn't a sustainable pace.
 	2. Sample questions
 4. Mkdocs POC
 5. MKDocs integration
+
+
+### Dotfiles
+
+Why dotfiles?
+
+1. get up and running in minutes
+    2. instead of days
+
+2. make assumptions in the docs
+    3. you'll know the directory structure or can point to the dev docs for the structure
+
+3. share best practices with team
+    4. aliases, oh my zsh

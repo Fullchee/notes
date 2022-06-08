@@ -1,9 +1,59 @@
 ## General
 
+
+## [Inheritance](https://courses.joshwcomeau.com/css-for-js/01-rendering-logic-1/01-built-ins-and-inheritance)
+
+like JS prototypal inheritance
+
+```css
+<main style="color: black;">
+  <p style="color: red;">
+    Hello <span>World</span>
+  </p>
+</main>
+```
+
+```javascript
+class Main {
+  color = 'black'
+}
+class Paragraph extends Main {
+  backgroundColor = 'red'
+}
+class Span extends Paragraph {
+}
+const s = new Span();
+console.log(s.color);
+```
+
+```css
+a {
+    color: inherit;  /* force inheritance */
+}
+```
+
 ###  `initial` vs `unset`
 
 * initial: browser default
 * unset: ignore current, inherit from ancestor
+
+
+### Cascade analogy
+
+Death match between classes
+
+The property with the most specificity emerges victorious
+
+### Analogy for box model: person in a winter coat
+
+1. content
+    2. the person
+3. padding
+    4. the padding in the winter coat
+5. border
+    6. the outside of the coat
+7. margin
+    8. personal space (2 meters!)
 
 ## Scroll bars
 
@@ -13,6 +63,15 @@ Why
 * by default, scroll bars are always visible on non-macs
 
 
+### Why are pixels the best unit for padding?
+
+### Why are pixels inaccessible for font-size?
+
+
+[List of CSS mistakes](https://wiki.csswg.org/ideas/mistakes)
+
+Downside of `inline-block`
+* it doesn't word wrap
 
 ## [Overflow](https://courses.joshwcomeau.com/css-for-js/02-rendering-logic-2/14-overflow)
 * `auto` is amazing
@@ -43,15 +102,23 @@ overflow-y: visible;
 
 
 ## Images
+
+Get an image from Unsplash
+
+* https://source.unsplash.com/random/300×300
+
+### Clip path
+
 ```css
 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 ```
-### Clip path
 
-* <https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path>
-* <https://codepen.io/Fullchee/pen/vYpqoOL>
+* https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path
+* https://codepen.io/Fullchee/pen/vYpqoOL
 * ![452a9d50f93ea6ccb6066564394f2818.png](../452a9d50f93ea6ccb6066564394f2818.png)
+
+
 
 
 ## Tooltip
@@ -99,3 +166,26 @@ box-shadow: 1px 2px 3px 4px grey;
 
 - can't add them to [replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element)
     - whose contents can't be changed
+
+
+### What problem does tailwind solve?
+
+maintainability
+
+have an exhaustive list of utility classes
+
+no duplicate styles
+
+No need to install Bootstrap, then BEM in another part
+
+Good for learning about good design practices
+Default design system that can be modified
+
+
+### When is a new stacking context created?
+
+position: not the default static and has a z index
+
+element has opacity less than 1
+
+transforms, filters, 

@@ -74,3 +74,10 @@ where cardinality(pg_blocking_pids(pid)) > 0;
 ```bash
 psql -c "COPY (<select query>) TO STDOUT WITH CSV"
 ```
+
+```bash
+sudo -i -u postgres
+```
+
+* -i: launch shell with super user privileges
+* -u: user

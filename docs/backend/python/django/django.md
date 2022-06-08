@@ -3,6 +3,8 @@
 * [Asynchronous Tasks With Django and Celery](https://realpython.com/asynchronous-tasks-with-django-and-celery)
 
 
+## Django (`manage.py`) scripts
+
 ### Python Shell
 
 ```sh
@@ -16,8 +18,35 @@ from django.contrib.auth.models import User, Group
 # other imports
 ```
 
+(`django_extensions` has a `shell_plus`)
+
+### [`django_extensions`](https://github.com/django-extensions/django-extensions)
+
+[video](https://vimeo.com/1720508?embedded=true&source=vimeo_logo&owner=627770) 
+
+adds a bunch of nice helpers to `./manage.py`  
+
+* `graph_models`
+    * graphs your models
+* `runserver_plus`
+    * django error page with a Python terminal to see the info
+* `runscript`
+    * run a python file that sets up django (import django, django.setup())
+    * nice for scripts that are run with cron
+* `shell_plus`
+    * django shell that loads all of your models
+* `print_user_for_session <session_ID>`
+    * get all of the session info for a user
+
 
 ## Tests
+
+### Setup PyCharm to always have the `--keepdb` flag
+
+1. Open Run/Debug Configurations
+2. Add the `--keepdb` option to the Django tests template
+3. ![9fc8cbf4887431679da62c7ea7c322d0.png](9fc8cbf4887431679da62c7ea7c322d0.png)
+4. ![33c83841218b05cac8c989b05e120628.png](33c83841218b05cac8c989b05e120628.png)
 
 ### Run a specific test
 ```shell
@@ -48,14 +77,38 @@ self.assertRaises(ExpectedException, fn_name, arg1, arg2)
 
 ### Testing endpoints
 
+If you really need to test the endpoint instead of a function
 
+https://www.django-rest-framework.org/api-guide/testing/
+
+```python
+from rest_framework.test import APIRequestFactory, force_authenticate
+
+def create_request(endpoint: str, user: User, query_params: Dict = None):
+    factory = APIRequestFactory()
+    request = factory.get(endpoint)
+    request.user = user
+    force_authenticate(request, user=user)
+    request.GET = query_params or {}
+    return request
+
+user = User.objects.create_user(
+        username="username",
+        email="username@username.com",
+        password="password",
+    )
+
+request = create_request(f"app_name/endpoint_name", user, query_params)
+response = view_fn(request)
+```
 
 ## Models
 
 ### [`null=True` vs `blank=True`](https://stackoverflow.com/questions/8609192/what-is-the-difference-between-null-true-and-blank-true-in-django)
 
-* blank: is the field required for forms
-* null=True: the value in the table can be `NULL`
+* `blank=True` can leave it blank for forms
+    * example: Django admin form
+* `null=True` the value in the table can be `NULL`
 
 ## Migrations
 

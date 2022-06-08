@@ -84,6 +84,12 @@ const arr = [
 ].filter(Boolean)
 ```
 
+### 2 arrays: check identical? (same order)
+```javascript
+Arr1.length === arr2.length &&
+arr1.every((item, i) => arr2[i] === item)
+```
+
 ### [Sorting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
 mutates the existing array
@@ -110,10 +116,44 @@ function myTag(strings, ...args) {
 }
 ```
 
-
 ## Dates
 ```javascript
 date.toLocaleDateString()
 ```
 
 ### Temporal API
+
+
+## Numbers
+
+### NaN
+```javascript
+Number.isNaN("a") // false
+isNaN("a")  // true
+
+Number.isNaN(Number(input)) === isNan(input)
+```
+
+## Browser
+
+### Sub-resource integrity
+
+```html
+<script src="//cdnjs....."
+ integrity="sha256-..." 
+crossorigin="anonymous">
+```
+
+if the CDN gets hacked, then the script won't run
+
+### [Get the URL params](https://stackoverflow.com/a/901144/8479344)
+
+```javascript
+// ?q=turtles or window.location.search
+search_string = new URL("https://www.google.ca/search?q=turtles&oq=tortuga")
+search_string = new URL(window.location.search)
+
+params = new URLSearchParams(search_string)
+
+params.get("q")  // "turtles"
+```
