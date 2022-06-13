@@ -36,6 +36,7 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: deep purple
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
@@ -65,9 +66,13 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.details # https://facelessuser.github.io/pymdown-extensions/extensions/details/
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.mark # highlighting: https://facelessuser.github.io/pymdown-extensions/extensions/mark/
   - pymdownx.tilde # https://facelessuser.github.io/pymdown-extensions/extensions/tilde/
+  - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -80,12 +85,11 @@ markdown_extensions:
 plugins:
   - git-revision-date
   - search
-  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
-  - tags:
-      tags_file: tags.md
+  - tags  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/jsx-pygments.css
 
 extra:
   analytics:

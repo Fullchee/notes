@@ -1,0 +1,48 @@
+:root > * {
+    --furple: #6b3ecc;
+    --formula-teal: #6ad4be;
+
+    --md-primary-fg-color: var(--furple);
+}
+
+[data-md-color-scheme="slate"] {
+    --md-typeset-a-color: var(--formula-teal);
+}
+
+.md-typeset h2 {
+    font-size: 2.5em;
+}
+
+.md-typeset h3 {
+    font-size: 1.75em;
+}
+
+.md-typeset h4 {
+    font-size: 1.5em;
+    margin: 1.2em 0 0.6em;
+}
+
+.md-typeset h5 {
+    font-size: 1.25em;
+    margin: 0.8em 0 0.4em;
+}
+
+body[data-md-color-scheme="default"] .md-nav__list {
+    color: #6e6e6e;
+}
+
+body[data-md-color-scheme="default"] .md-nav__list:hover {
+    color: initial;
+}
+
+body[data-md-color-scheme="default"] .md-main {
+    background-color: #f2f2f2;
+}
+
+body[data-md-color-scheme="default"] .md-content {
+    /* bookstack card */
+    background-color: #fff;
+    box-shadow: 0 1px 6px -1px rgb(0 0 0 / 10%);
+    border-radius: 3px;
+    border: 1px solid transparent;
+}
