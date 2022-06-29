@@ -107,6 +107,19 @@ re.match("\w+", """something some other thing""")
 
 ## Typing
 
+[`obj.attribute` vs `obj["member_of_collection"]`](https://stackoverflow.com/questions/30250282/whats-the-difference-between-the-square-bracket-and-dot-notations-in-python)
+
+[Property vs attribute](https://stackoverflow.com/questions/7374748/whats-the-difference-between-a-python-property-and-attribute)
+
+* property is a special kind of attribute
+   * has either a `__get__`, `__set__` or `__delete__`
+   * `spam.eggs` will return the result of `__get__`
+
+```python
+spam = SomeObject()
+print(spam.eggs)
+```
+
 ### TypedDict
 * https://adamj.eu/tech/2021/05/10/python-type-hints-how-to-use-typeddict/
 ```python
@@ -130,6 +143,10 @@ from typing import TYPE_CHECKING # false at runtime
 if TYPE_CHECKING:
     from module_b import B
 ```
+
+## Dynamic Imports
+
+* 
 
 ## Enum
 ```python
@@ -193,3 +210,8 @@ def from_iterable(iterables):
         for element in it:
             yield element
 ```
+
+## Virtual environment
+
+
+Uninstall all packages in a virtual env
