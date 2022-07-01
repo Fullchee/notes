@@ -1,1 +1,5 @@
-# Welcome to Fullchee's notes!
+# Home
+
+* [Backend](/backend)
+* [Frontend](/frontend)
+* [Other tech](/other-tech)

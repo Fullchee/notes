@@ -4,7 +4,7 @@ https://expeditedsecurity.com/aws-in-plain-english/
 
 ## Setup
 
--   `aws configure sso`
+-   `aws configure sso`w
     -   name it `default`
     -   so that you don't need to specify `--profile` every time you use `aws-cli`
 
