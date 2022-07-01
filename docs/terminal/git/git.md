@@ -7,10 +7,10 @@ git update-index --no-assume-unchanged [<file>...]   (create a git alias <git un
 
 ## Blame
 
-- **View how one file's changed across time**:
+-   **View how one file's changed across time**:
 
-* `git log --follow -p -- file`
-* Simpler version that doesn't follow: `git log -p <filename>`
+*   `git log --follow -p -- file`
+*   Simpler version that doesn't follow: `git log -p <filename>`
 
 ### View the number of commits each person made
 
@@ -20,8 +20,8 @@ git update-index --no-assume-unchanged [<file>...]   (create a git alias <git un
 
 What are submodules?
 
-- git repos in a git repo
-- for example: zprezto uses them
+-   git repos in a git repo
+-   for example: zprezto uses them
 
 1. Add a submodule `git submodule add <URL to a git repo>`
 2. Pulling from a repo with submodules
@@ -46,7 +46,7 @@ git remote add -f origin <url>
 git config core.sparseCheckout true
 ```
 
-- If you only want to ignore a single file without adding to the `.gitignore`, add the same structure to the `.git/info/exclude`, same structure as `.gitignore`
+-   If you only want to ignore a single file without adding to the `.gitignore`, add the same structure to the `.git/info/exclude`, same structure as `.gitignore`
 
 ### Git search across branches
 

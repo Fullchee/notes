@@ -1,13 +1,13 @@
 # sed
 
 ## sd
-* Alternative to sed
-* https://github.com/chmln/sd
 
-* Replace newlines with commas:
-    * sd: `sd '\n' ','`
-    * sed: `sed ':a;N;$!ba;s/\n/,/g'`
+-   Alternative to sed
+-   https://github.com/chmln/sd
 
+-   Replace newlines with commas:
+    -   sd: `sd '\n' ','`
+    -   sed: `sed ':a;N;$!ba;s/\n/,/g'`
 
 ### sed
 
@@ -15,9 +15,9 @@
 
 you can use any delimiter char for a sed expression
 
-- doesn’t have to be`/`
-- if you know you’re going to have`/`
-- you can pick something else to avoid needing to escape `/` a bunch of times
+-   doesn’t have to be`/`
+-   if you know you’re going to have`/`
+-   you can pick something else to avoid needing to escape `/` a bunch of times
 
 ### One liner to remove lines that match a pattern from a file
 

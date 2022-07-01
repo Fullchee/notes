@@ -1,6 +1,7 @@
 # Python Dictionaries
 
 ### Get the key with the max value in the dict
+
 ```python
 stats = {'a': 1, 'b': 3000, 'c': 0}
 max(stats, key=stats.get)  # 'b'

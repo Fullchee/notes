@@ -6,4 +6,3 @@ pV: specific
 presented overview of what they needed to know
 
 taught JS promises
-

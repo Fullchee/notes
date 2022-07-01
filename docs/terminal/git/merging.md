@@ -14,17 +14,17 @@ git rebase master
 
 ### git merge vs git rebase
 
-- like `revert` vs `reset`
-- Golden rule of rebasing: **only rebase private branches**
-- Merge will create a new commit
-- rebase will just move all the branch's new commits to the end of master's HEAD
-- `git rebase -i` is very useful for cleaning up private branches
+-   like `revert` vs `reset`
+-   Golden rule of rebasing: **only rebase private branches**
+-   Merge will create a new commit
+-   rebase will just move all the branch's new commits to the end of master's HEAD
+-   `git rebase -i` is very useful for cleaning up private branches
 
-* how to use the merge tool `git mergetool`
+*   how to use the merge tool `git mergetool`
 
 ### Taking all their/our changes
 
-- if you're already in a conflict state
-  - `git checkout --theirs path/to/file`
-  - `git checkout --ours path/to/file`
-- pulling theirs: `git pull -X theirs`
+-   if you're already in a conflict state
+    -   `git checkout --theirs path/to/file`
+    -   `git checkout --ours path/to/file`
+-   pulling theirs: `git pull -X theirs`

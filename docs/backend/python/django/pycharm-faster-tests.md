@@ -13,11 +13,11 @@ It runs `python manage.py path_to_test` which creates a test database.
 We can update the `Django tests` template to have the `--keepdb` option
 
 1. Open the Run/Debug Configurations
-   1. In the top right of PyCharm, click the box to the left of the green play button
-   1. Click `Edit Configurations...`
-   1. ![edit-configurations.png](images/edit-configurations.png)
+    1. In the top right of PyCharm, click the box to the left of the green play button
+    1. Click `Edit Configurations...`
+    1. ![edit-configurations.png](images/edit-configurations.png)
 2. Add the `--keepdb` option to the Django tests
-   1. ![pycharm-django-config.png](images/pycharm-django-config.png)
+    1. ![pycharm-django-config.png](images/pycharm-django-config.png)
 
 ## How do I update the test database?
 
@@ -27,8 +27,8 @@ Your test database has the same name as your actual database with a `test_` pref
 
 Example
 
-- if your database name is `database-name`
-- the test database is `test_database-name`
+-   if your database name is `database-name`
+-   the test database is `test_database-name`
 
 You can drop that database and the next time you run a test, a new test database will be created.
 

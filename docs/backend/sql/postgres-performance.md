@@ -22,8 +22,8 @@ ORDER BY total_time DESC
 LIMIT 20
 ```
 
-- https://youtu.be/5M2FFbVeLSs?t=746
-  ![7d6a0d338515443c3e55ccfad2bdb2c9.png](7d6a0d338515443c3e55ccfad2bdb2c9.png)
+-   https://youtu.be/5M2FFbVeLSs?t=746
+    ![7d6a0d338515443c3e55ccfad2bdb2c9.png](7d6a0d338515443c3e55ccfad2bdb2c9.png)
 
 ### Find candidates for indexes
 
@@ -39,11 +39,11 @@ WHERE seq_scan > 0
 ORDER BY seq_tup_read DESC;
 ```
 
-- https://youtu.be/5M2FFbVeLSs?t=978
+-   https://youtu.be/5M2FFbVeLSs?t=978
 
 ## Aggregate first
 
-- https://youtu.be/5M2FFbVeLSs?t=1206
+-   https://youtu.be/5M2FFbVeLSs?t=1206
 
 ```sql
 SELECT name, count(*)
@@ -77,5 +77,5 @@ B tree entry is ~25 bytes
 
 ## Batching
 
-- https://youtu.be/5M2FFbVeLSs?t=1573
-- Rollup
+-   https://youtu.be/5M2FFbVeLSs?t=1573
+-   Rollup

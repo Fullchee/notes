@@ -1,10 +1,11 @@
 ## Reading list
-* [How to Use Materialized View in Django](https://medium.com/analytics-vidhya/how-to-use-materialized-view-in-django-3b91f71f718a)
-* [Asynchronous Tasks With Django and Celery](https://realpython.com/asynchronous-tasks-with-django-and-celery)
+
+-   [How to Use Materialized View in Django](https://medium.com/analytics-vidhya/how-to-use-materialized-view-in-django-3b91f71f718a)
+-   [Asynchronous Tasks With Django and Celery](https://realpython.com/asynchronous-tasks-with-django-and-celery)
 
 [Write your own commands](https://docs.djangoproject.com/en/dev/howto/custom-management-commands/)
 
-* `app_name/management/commands`
+-   `app_name/management/commands`
 
 ## Django (`manage.py`) scripts
 
@@ -23,43 +24,45 @@ from django.contrib.auth.models import User, Group
 
 `manage.py shell` vs `python` console
 
-* `manage.py shell` sets the `DJANGO_SETTINGS_MODULE`which lets it know about the `settings.py`
+-   `manage.py shell` sets the `DJANGO_SETTINGS_MODULE`which lets it know about the `settings.py`
 
 (`django_extensions` has a `shell_plus`)
 
 ### [`django_extensions`](https://github.com/django-extensions/django-extensions)
 
-[video](https://vimeo.com/1720508?embedded=true&source=vimeo_logo&owner=627770) 
+[video](https://vimeo.com/1720508?embedded=true&source=vimeo_logo&owner=627770)
 
-adds a bunch of nice helpers to `./manage.py`  
+adds a bunch of nice helpers to `./manage.py`
 
-* `graph_models`
-    * graphs your models
-* `runserver_plus`
-    * django error page with a Python terminal to see the info
-* `runscript`
-    * run a python file that sets up django (import django, django.setup())
-    * nice for scripts that are run with cron
-* `shell_plus`
-    * django shell that loads all of your models
-* `print_user_for_session <session_ID>`
-    * get all of the session info for a user
-
+-   `graph_models`
+    -   graphs your models
+-   `runserver_plus`
+    -   django error page with a Python terminal to see the info
+-   `runscript`
+    -   run a python file that sets up django (import django, django.setup())
+    -   nice for scripts that are run with cron
+-   `shell_plus`
+    -   django shell that loads all of your models
+-   `print_user_for_session <session_ID>`
+    -   get all of the session info for a user
 
 ## Tests
 
 ### Run a specific test
+
 ```shell
 python manage.py test path.app.tests.ClassName.testName --keepdb
 ```
 
 ### Create fake data from a factory
+
 ```py
 from app.path_name import MyModel
 MyModel.create_batch(200)
 ```
 
 ### Override settings
+
 ```python
 from django.test import override_settings
 
@@ -106,21 +109,22 @@ response = view_fn(request)
 
 ### [`null=True` vs `blank=True`](https://stackoverflow.com/questions/8609192/what-is-the-difference-between-null-true-and-blank-true-in-django)
 
-* `blank=True` can leave it blank for forms
-    * example: Django admin form
-* `null=True` the value in the table can be `NULL`
+-   `blank=True` can leave it blank for forms
+    -   example: Django admin form
+-   `null=True` the value in the table can be `NULL`
 
 ## Migrations
 
 ### Create an empty migration
 
 useful when you're creating a custom migration
+
 ```shell
 python manage.py makemigrations app_name --name migration_name --empty
 ```
 
-
 ### Create a migration
+
 operations list
 
 ```python
@@ -129,6 +133,7 @@ migrations.RunSQL("INSERT INTO product (title) VALUES ('Product1');"),
 ```
 
 #### Reverse a migration
+
 ```python
 operations = [
         migrations.RunSQL(
@@ -143,8 +148,8 @@ operations = [
 Then `python manage.py migrate app_name 0008
 
 #### Add an index to a table that already has a ton of data in it
-* https://realpython.com/create-django-index-without-downtime/#non-atomic-migrations
 
+-   https://realpython.com/create-django-index-without-downtime/#non-atomic-migrations
 
 ## Querying
 
@@ -159,5 +164,6 @@ Then `python manage.py migrate app_name 0008
 ```python
 model_name.filter().values()
 ```
-* doesn't work on the actual instance
-* ?????
+
+-   doesn't work on the actual instance
+-   ?????

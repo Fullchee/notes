@@ -1,11 +1,15 @@
 ## TODOs
-* [Python glossary](https://docs.python.org/3/glossary.html)
-* Keep up to date
-    * [Python Bytes: Python headlines](https://pythonbytes.fm/)
+
+-   [Python glossary](https://docs.python.org/3/glossary.html)
+-   Keep up to date
+    -   [Python Bytes: Python headlines](https://pythonbytes.fm/)
 
 ## Functions
+
 ### Forced name params
-* pass a `*` to separate positional args and keyword args
+
+-   pass a `*` to separate positional args and keyword args
+
 ```python
 def foo(pos, *, forcenamed, **kwargs):
     pass
@@ -13,8 +17,8 @@ def foo(pos, *, forcenamed, **kwargs):
 my_func(1, 2) # throws an error
 ```
 
-
 ## [Context Manager](https://realpython.com/python-with-statement/#creating-function-based-context-managers)
+
 Create a function that can be used `with`
 
 ```python
@@ -44,7 +48,7 @@ from contextlib import suppress
 with suppress(FileNotFoundError):
     os.remove('somefile.tmp')
 
-# same as 
+# same as
 
 try:
     os.remove('somefile.tmp')
@@ -54,25 +58,24 @@ except FileNotFoundError:
 
 [`logging.warning` vs `warnings.warn`](https://stackoverflow.com/questions/9595009/warnings-warn-vs-logging-warning/14762106#14762106)
 
-* `logging.warning`
-    * issue with input/user
-    * nothing the client app can do
-* `warnings.warn`
-    * dev issue
-        * deprecated code
-        * abstract class not implement
-
-
+-   `logging.warning`
+    -   issue with input/user
+    -   nothing the client app can do
+-   `warnings.warn`
+    -   dev issue
+        -   deprecated code
+        -   abstract class not implement
 
 ## `breakpoint()`
-* https://www.youtube.com/watch?v=IzgSl-tkPPg
-* `n` next / step over
-* `s` step into
-* `l` list code
-* `j <line>` jump to line
-* `b <line>` or `break <line>` set breakpoint
-* `c` or `continue` until breakpoint
-* `h` help
+
+-   https://www.youtube.com/watch?v=IzgSl-tkPPg
+-   `n` next / step over
+-   `s` step into
+-   `l` list code
+-   `j <line>` jump to line
+-   `b <line>` or `break <line>` set breakpoint
+-   `c` or `continue` until breakpoint
+-   `h` help
 
 or start a file with PDB
 
@@ -82,9 +85,9 @@ python -m pdb file.py
 
 ## Formatting
 
-- In the root of the project
-  - Create a file called: `pyproject.toml`
-  - to configure the `Black` formatter
+-   In the root of the project
+    -   Create a file called: `pyproject.toml`
+    -   to configure the `Black` formatter
 
 ```toml
 [tool.black]
@@ -99,21 +102,22 @@ line-length = 120
 
 https://www.pythonmorsels.com/string-formatting/
 
-* raw string so that you 
+-   raw string so that you
 
 ```python
 r"D:\Users\path"
 ```
-* raw string
+
+-   raw string
 
 ### Regex
 
 #### [`re.match` vs `re.search`](https://stackoverflow.com/a/180993/8479344)
 
-* `match` at the beginning of the string, or `match` the entire string
-    * faster
-* Otherwise use search
-* both return a match object
+-   `match` at the beginning of the string, or `match` the entire string
+    -   faster
+-   Otherwise use search
+-   both return a match object
 
 ```python
 re.match("\w+", """something some other thing""")
@@ -125,9 +129,9 @@ re.match("\w+", """something some other thing""")
 
 [Property vs attribute](https://stackoverflow.com/questions/7374748/whats-the-difference-between-a-python-property-and-attribute)
 
-* property is a special kind of attribute
-   * has either a `__get__`, `__set__` or `__delete__`
-   * `spam.eggs` will return the result of `__get__`
+-   property is a special kind of attribute
+    -   has either a `__get__`, `__set__` or `__delete__`
+    -   `spam.eggs` will return the result of `__get__`
 
 ```python
 spam = SomeObject()
@@ -135,7 +139,9 @@ print(spam.eggs)
 ```
 
 ### TypedDict
-* https://adamj.eu/tech/2021/05/10/python-type-hints-how-to-use-typeddict/
+
+-   https://adamj.eu/tech/2021/05/10/python-type-hints-how-to-use-typeddict/
+
 ```python
 from typing import TypedDict
 
@@ -150,6 +156,7 @@ def get_sales_summary() -> SalesSummary:
 ```
 
 ### [Circular Dependencies with types](https://www.youtube.com/watch?v=UnKa_t-M_kM&t=213s)
+
 ```python
 from __future__ import annotations
 from typing import TYPE_CHECKING # false at runtime
@@ -160,25 +167,25 @@ if TYPE_CHECKING:
 
 ## Dynamic Imports
 
-* 
+-
 
 ## Enum
+
 ```python
 class Color(str, Enum):
     GREEN: '#00ff00'
-    
+
 Color.GREEN == '#00ff00'
 ```
 
 ## CLI
-* `python -m module_name args`
-    * run a module
-    * `python -m http.server`
-        * start http server on port 8000 in current directory
-    * `python -m pdb path/to/file.py`
-        * debug a Python script
 
-
+-   `python -m module_name args`
+    -   run a module
+    -   `python -m http.server`
+        -   start http server on port 8000 in current directory
+    -   `python -m pdb path/to/file.py`
+        -   debug a Python script
 
 ## File system
 
@@ -197,7 +204,6 @@ another_path = file_directory / "sql_scripts"
 os.environ.get('ENV_VAR_NAME', 'FALLBACK_VALUE')
 ```
 
-
 ### dataclass vs namedtuple
 
 namedtuple is immutable
@@ -205,6 +211,7 @@ namedtuple is immutable
 dataclass is mutable
 
 both can have default values
+
 ```python
 StatsTup = namedtuple('Stats', ['min', 'max'], defaults = [3, 7])
 
@@ -213,7 +220,6 @@ class Stats:
     min: int = 3
     max: int = 7
 ```
-
 
 ## Lists
 
@@ -236,6 +242,5 @@ def from_iterable(iterables):
 ```
 
 ## Virtual environment
-
 
 Uninstall all packages in a virtual env

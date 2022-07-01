@@ -4,16 +4,15 @@ https://docs.python.org/3/library/re.html
 
 Always use raw strings (aka regex strings)
 
-* so that it doesn't escape `"C:\Programs\nathan"`
-* `\n` is a newline 😱
-* `r"C:\Programs\nathan"`
-    * is what we expect 😄
+-   so that it doesn't escape `"C:\Programs\nathan"`
+-   `\n` is a newline 😱
+-   `r"C:\Programs\nathan"`
+    -   is what we expect 😄
 
 ```python
 re.search(r"[^0-9]", "100")  # not numeric, only works at the top
 re.search(r"[0-9^]"", "100")  # numeric or ^ symbol
 ```
-
 
 ### [Verbose mode](https://youtu.be/0sOfhhduqks?t=3868)
 
@@ -35,4 +34,3 @@ def is_valid_uuid(uuid: str) -> bool:
         $
     """, uuid, re.IGNORECASE | re.VERBOSE))
 ```
-

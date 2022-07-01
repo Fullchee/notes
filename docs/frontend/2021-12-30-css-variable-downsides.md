@@ -12,22 +12,23 @@ The reason why we didn't adopt CSS variables boils down to this one point:
 
 ### CSS vars can be updated with JS
 
-- might be the killer feature for CSS variables
-  - allows theming
-  - lets you set styling with CSS vars in JS
-- downsides
-  - you'll have to check more code (all your CSS and your JS) to debug why the variable is set
+-   might be the killer feature for CSS variables
+    -   allows theming
+    -   lets you set styling with CSS vars in JS
+-   downsides
+    -   you'll have to check more code (all your CSS and your JS) to debug why the variable is set
 
 ### CSS vars can be reassign in different scopes
 
-- example: defining a variable in `--root` and again in a class
-- again, this is a powerful feature
-- it might be confusing and harder to debug where a variable is set
-  - especially when CSS specificity can be confusing enough when learning the basics
+-   example: defining a variable in `--root` and again in a class
+-   again, this is a powerful feature
+-   it might be confusing and harder to debug where a variable is set
+    -   especially when CSS specificity can be confusing enough when learning the basics
 
 ### Why CSS variables are awesome
-- can be updated by JS
-- can be cascaded
-- part of the CSS spec so it gets updated instantly on the page
-   - no compile step!
-   - no need to refresh the webpage!
+
+-   can be updated by JS
+-   can be cascaded
+-   part of the CSS spec so it gets updated instantly on the page
+    -   no compile step!
+    -   no need to refresh the webpage!

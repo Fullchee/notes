@@ -2,19 +2,19 @@
 
 ## Fundamental methods
 
-- `DATE_TRUNC` gets you the date for the first second of the month, year, day, …
-  - `DATE_TRUNC('month', '2022-01-15'::DATE)` -> `2022-01-01 00:00:00-05`
-- `DATE_PART` gets the year/month/date of the date
-  - `DATE_PART('year', '2022-01-15'::DATE)` -> `2022`
-  - `EXTRACT` is the same except it returns numeric instead of float8
-- `CURRENT_DATE` gives the day
-  - example: `2022-01-15
-- `NOW()` also specifies the time
+-   `DATE_TRUNC` gets you the date for the first second of the month, year, day, …
+    -   `DATE_TRUNC('month', '2022-01-15'::DATE)` -> `2022-01-01 00:00:00-05`
+-   `DATE_PART` gets the year/month/date of the date
+    -   `DATE_PART('year', '2022-01-15'::DATE)` -> `2022`
+    -   `EXTRACT` is the same except it returns numeric instead of float8
+-   `CURRENT_DATE` gives the day
+    -   example: `2022-01-15
+-   `NOW()` also specifies the time
 
-  - example: `2022-01-14 17:21:13.703974-05`
+    -   example: `2022-01-14 17:21:13.703974-05`
 
-- you add and subtract dates!
-  - `select '2021-02-01'::DATE - 1` => `2021-01-31'`
+-   you add and subtract dates!
+    -   `select '2021-02-01'::DATE - 1` => `2021-01-31'`
 
 ### Filter by date within the current fiscal year (starts Feb 1)
 
@@ -33,7 +33,7 @@ WHERE DATE_PART('year', date_column_name - '1 month'::INTERVAL) =
 EXTRACT(DOW FROM DATE_TRUNC('month', CURRENT_DATE))
 ```
 
-- gets the DOW of the 1st of the month
+-   gets the DOW of the 1st of the month
 
 DOW of 1st of month -> Day of first Friday
 0 -> 6

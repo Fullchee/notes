@@ -4,11 +4,10 @@ https://betterprogramming.pub/everything-you-need-to-know-about-django-models-in
 
 1. startproject and startapp
 
-
 UUIDField as primary key
-* cluster index?
-    * don't use UUIDs
 
+-   cluster index?
+    -   don't use UUIDs
 
 ```python
   AGE_RATING =[
@@ -25,9 +24,7 @@ age_rating = models.CharField(max_length= 5, choices = AGE_RATING, default = "GE
 
 Choices
 
-
 Validators
-
 
 Migrations
 
@@ -35,12 +32,11 @@ Django Admin
 
 Customizing the Django Admin
 
-`__str__` representation of 
+`__str__` representation of
 
 Metadata
 
-* unique constraints
-* ordering
-
+-   unique constraints
+-   ordering
 
 Adding Django context

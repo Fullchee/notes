@@ -11,7 +11,6 @@
 
 ![default-docstring-format.png](default-docstring-format.png)
 
-
 ## GitToolBox
 
 ![git-toolbox-settings.png](git-toolbox-settings.png)

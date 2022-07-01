@@ -15,7 +15,6 @@ Following the comments in this StackOverflow post worked for me
 
 https://vi.stackexchange.com/questions/34639/e254-cannot-allocate-color-slateblue
 
-
 I had to download the `runtime` folder from the official `vim` repo in GitHub and link my `$VIMRUNTIME`
 
 ```bash

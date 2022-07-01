@@ -2,8 +2,8 @@
 
 TIL to watch out for cases when I
 
-- group by
-- want the sum to be 0 even if there are no rows to sum
+-   group by
+-   want the sum to be 0 even if there are no rows to sum
 
 I moved the existing query to a view
 

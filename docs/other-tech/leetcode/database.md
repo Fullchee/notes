@@ -1,7 +1,7 @@
 ## How to scale up database writes? (4)
 
 1. Is the app making a ton of unnecessary writes or unnecessary indexes?
-(duplicate API calls)
+   (duplicate API calls)
 
 2. upgrade your machine
 

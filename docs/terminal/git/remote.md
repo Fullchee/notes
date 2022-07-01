@@ -20,7 +20,7 @@ createpr() {
 
 ## Remotes
 
-- add a remote: `git remote add origin git@github.com:User/UserRepo.git`
-- change the url of a remote: `git remote set-url origin git@github.com:User/UserRepo.git`
+-   add a remote: `git remote add origin git@github.com:User/UserRepo.git`
+-   change the url of a remote: `git remote set-url origin git@github.com:User/UserRepo.git`
 
 ### Setting up a staging branch

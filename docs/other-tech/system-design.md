@@ -1,4 +1,5 @@
 # System Design
+
 https://rubygarage.org/blog/monolith-soa-microservices-serverless
 
 ## Architecture
@@ -6,54 +7,56 @@ https://rubygarage.org/blog/monolith-soa-microservices-serverless
 ### Monolith
 
 #### Pros
-- Single self-contained
-- Simpler
-    - deployment
-- Fewer cross-cutting concerns
-- Better performance
-    - no need for 40 API calls between services
+
+-   Single self-contained
+-   Simpler
+    -   deployment
+-   Fewer cross-cutting concerns
+-   Better performance
+    -   no need for 40 API calls between services
 
 #### Cons
-- Codebase becomes sphaghetti
-    - tight coupling
-    - harder to add new features
-    - hard to onboard new devs
-- Difficult to adopt new technologies
-    - can break things if you update the Django version
-- less reliable
-    - breaking one thing can break everything
+
+-   Codebase becomes sphaghetti
+    -   tight coupling
+    -   harder to add new features
+    -   hard to onboard new devs
+-   Difficult to adopt new technologies
+    -   can break things if you update the Django version
+-   less reliable
+    -   breaking one thing can break everything
 
 #### What it looks like
 
-* Front End: React
-* Monolithic with all the business logic
-* DB
+-   Front End: React
+-   Monolithic with all the business logic
+-   DB
 
 #### When to use monolith
 
-- Etsy
-- Forma
-    - to get stuff working asap
+-   Etsy
+-   Forma
+    -   to get stuff working asap
 
 ### SOA: Service Oriented Arch
 
-* Reusable components
+-   Reusable components
 
-* Enterprise Scope. Shared ESB. Uses SOAP, AMQP, MSMQ
+-   Enterprise Scope. Shared ESB. Uses SOAP, AMQP, MSMQ
 
 #### Pros
 
-- Reusability of services
-- Better maintainability
-    - modules that can be maintainted without knowing the whole system
-- Higher reliability
-- Parallel development
+-   Reusability of services
+-   Better maintainability
+    -   modules that can be maintainted without knowing the whole system
+-   Higher reliability
+-   Parallel development
 
 #### Cons
 
-- Complex management
-- High investment costs
-- Extra overload
+-   Complex management
+-   High investment costs
+-   Extra overload
 
 Kelvin's Architecture Notes
 

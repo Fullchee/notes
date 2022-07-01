@@ -32,35 +32,35 @@ Non essential: Saffron in Spain, cinnamon in Sri Lanka, pepper in India; light a
 
 Trading for others, villages produce these preciosities for others, not for their own use
 
-	Long chain of trade
+    Long chain of trade
 
 China: Powerful Hub of early globalization
 
-	Hydraulic Engineering; building dams, irrigation, land reclamation (hills), sewage
+    Hydraulic Engineering; building dams, irrigation, land reclamation (hills), sewage
 
-		Grand Canal from the North to South
+    	Grand Canal from the North to South
 
-	Large scale deforestation, huge population doubling to 100 million
+    Large scale deforestation, huge population doubling to 100 million
 
 **1.3 -Silk Roads (1000-1300)**
 
 Afro-Eurasia: The silk roads: Causeways for merchants and camels
 
-	Many commodities: Spices, saffron, drugs, silk
+    Many commodities: Spices, saffron, drugs, silk
 
-		All goods of high yield, low weight
+    	All goods of high yield, low weight
 
-	Deforestation for rice, mulberry, Elephants and megafauna were dying
+    Deforestation for rice, mulberry, Elephants and megafauna were dying
 
 Buddhism and trade connected, Buddha's message appealing
 
-	Amalgamated many faiths, could connect many peoples
+    Amalgamated many faiths, could connect many peoples
 
 Caravanserais: Cities, hubs for merchants, caravan, money dealers, stench of feces
 
-	Samarkand: Prominent city
+    Samarkand: Prominent city
 
-	Camels: Beasts of burden used for
+    Camels: Beasts of burden used for
 
 Moving back and forth between lines
 
@@ -70,11 +70,11 @@ Had special shoes, had light bottles to store water
 
 Dhows, Caravels: Important ships used to transport heavier goods, much more cargo
 
-	Silk Road limited to preciosities
+    Silk Road limited to preciosities
 
-	Charts, compasses (invented in China)
+    Charts, compasses (invented in China)
 
-	Ivory, wood
+    Ivory, wood
 
 Arab merchant houses helpful to connect: brokers between culture
 
@@ -86,26 +86,26 @@ Now: nepotism
 
 Mongols couldn't rely on local resources, also needed predation
 
-	Expansion of Mongol cultures because of Silk Road
+    Expansion of Mongol cultures because of Silk Road
 
-Genghis Khan: Connected the world’s parts in 25 years  \
-	Impediments because of Afghanistan, India, Japan failed
+Genghis Khan: Connected the world’s parts in 25 years \
+ Impediments because of Afghanistan, India, Japan failed
 
 Genghis Khan’s conquering: first world war
 
-	Developments of Equestrian warfare
+    Developments of Equestrian warfare
 
 Taking of the Khwarezm bassin from sultan of Baghdad took 125 000 horses
 
 Turkish allies, chinese allies
 
-	Relied on fear, skulls hanging as necklaces
+    Relied on fear, skulls hanging as necklaces
 
-	Element of surprise: strategic attacks of fear, public desecration, subordinate the enemy
+    Element of surprise: strategic attacks of fear, public desecration, subordinate the enemy
 
 Mongols had to travel light, had to live off the conquered land
 
-	Borrowed and adapted civilisation, fealty
+    Borrowed and adapted civilisation, fealty
 
 Mongols didn't want to clean the slate, not destroy, wanted to absorb it into tributary system
 
@@ -141,19 +141,19 @@ Unaffected areas: South, West Africa, Americas
 
 Swahili Coast: Arabs, Buddhists, South Asians, Chinese
 
-	Build towns and coastal cities
+    Build towns and coastal cities
 
-	Africa: Source of Gold
+    Africa: Source of Gold
 
-	Kilawa: African Island with largest mosque made by Persians
+    Kilawa: African Island with largest mosque made by Persians
 
 Syncretic Cultures: Combination of different, contradictory beliefs/religions
 
-	Islam amalgamated into  local beliefs
+    Islam amalgamated into  local beliefs
 
 African Tradition of Slavery
 
-	African slaves for employment outside of Africa
+    African slaves for employment outside of Africa
 
 **2.2 - Reconstruction after the Black Death**
 
@@ -173,13 +173,13 @@ Complicated Systems to preserve rule, more secular form of rule
 
 3: Religion Ethnic Identity
 
-	Relate to subject people
+    Relate to subject people
 
-	Ming Dynasty in China: Being Non-Mongolian
+    Ming Dynasty in China: Being Non-Mongolian
 
-	Revitalized relationship/connection with God using Kings as mediators
+    Revitalized relationship/connection with God using Kings as mediators
 
-	Faith Based Model of Law
+    Faith Based Model of Law
 
 **2.3 - The Ming Dynasty **
 
@@ -191,43 +191,43 @@ Complicated Systems to preserve rule, more secular form of rule
 
 New mechanisms
 
-	Rebuild army to legitimize
+    Rebuild army to legitimize
 
-	Exam System for Bureaucracies
+    Exam System for Bureaucracies
 
-	Rebuild Forbidden City (Centre of Capital)
+    Rebuild Forbidden City (Centre of Capital)
 
 Clashes between Middle East and Chinese Authorities
 
-	751 Du: First person to write about encounters in Africa 8th Century
+    751 Du: First person to write about encounters in Africa 8th Century
 
-		Ivory, Turtle Shells, frankincense,
+    	Ivory, Turtle Shells, frankincense,
 
-	1300s: Trade between China and Africa
+    1300s: Trade between China and Africa
 
-	Chinese Demands for African Exports, after tribute and trade
+    Chinese Demands for African Exports, after tribute and trade
 
 Chinese Expansion: Developping tributary relations between subordinate people
 
 1382: Chinese Army Captured 10 year old, Mah, became a eunich
 
-	Grew up to become a fearsome warrior
+    Grew up to become a fearsome warrior
 
 Had massive ships, 20x times the size of Santa Maria
 
-	Became **Zheng He**, travelled around the Indian
+    Became **Zheng He**, travelled around the Indian
 
-	Brought back Giraffes, riches from Africa, Java,
+    Brought back Giraffes, riches from Africa, Java,
 
-	Enters a harbour (Malabar, India)
+    Enters a harbour (Malabar, India)
 
-	Give elaborate gifts and negotiated long term partnership, could take months
+    Give elaborate gifts and negotiated long term partnership, could take months
 
-	Could have easily blasted Malabar
+    Could have easily blasted Malabar
 
-	Tension between eunuchs and Confucian
+    Tension between eunuchs and Confucian
 
-	Scholars wanted China to be Isolated
+    Scholars wanted China to be Isolated
 
 **2.4 - Christendom and Islam**
 
@@ -235,11 +235,11 @@ China: System of Integration
 
 Europe: Polities could never overcome, opposite of China
 
-	Persistent feudalism, localism, militant rivalry
+    Persistent feudalism, localism, militant rivalry
 
-	Hallmark of Europe until end of WW2
+    Hallmark of Europe until end of WW2
 
-	Tiny micro-kingdoms claiming they're more chosen by God
+    Tiny micro-kingdoms claiming they're more chosen by God
 
 Middle East: **Islamisation of Afro-Asia**
 
@@ -247,49 +247,49 @@ Conversion Follow Commerse, Also Conquest Corridors
 
 16th Century: Eastern Sprawl of Islam
 
-	Chinese Ports would be dominated by mosques
+    Chinese Ports would be dominated by mosques
 
 Kingdom of Mali, connecting Niger inland to Timbuktu
 
 **Mughal Empire: **Process of reintegration after devastation of 14th century
 
-	Islamic Dynasty, conquest by Turks in today’s India
+    Islamic Dynasty, conquest by Turks in today’s India
 
 Timur or Tamerlane: Conqueror 15th Century: Restorer of gardure of Genghis Khan
 
 1398: Invade South Asia, Attack Delhi Sultanate & absorb to Mughal Empire
 
-	Dehli had war elephants and set staw on camel’s back on fire, forcing elephants retreat
+    Dehli had war elephants and set staw on camel’s back on fire, forcing elephants retreat
 
-	Delhi plundered and brought riches to Samarkand, capital
+    Delhi plundered and brought riches to Samarkand, capital
 
 Integrate polyglot of Hindu, Muslim, Pagan, Buddhist beliefs in South Asia
 
-  	Timur’s offspring, Babur founding Mughal Empire
+Timur’s offspring, Babur founding Mughal Empire
 
 **Safavid Empire **= Iran
 
 **Ottoman Empire:** Longest lasting empire after
 
-	Turk Empires attacking weakened Christendom states
+    Turk Empires attacking weakened Christendom states
 
-	Failed Crusades
+    Failed Crusades
 
 The slowly waning Byzantine Empire:
 
 1453: Fall Constantinople
 
-	Crossroads but protected by fortification
+    Crossroads but protected by fortification
 
-	Long siege of 200 000 troops
+    Long siege of 200 000 troops
 
-	Refugees flee to Italy, Florence, Venice, to form Renaissance
+    Refugees flee to Italy, Florence, Venice, to form Renaissance
 
-	Turns largest Christian Church until
+    Turns largest Christian Church until
 
 1529: Siege of Vienna failed
 
-	1520s: Important decade, spanish in Mexico
+    1520s: Important decade, spanish in Mexico
 
 Mehmed:Portrayed usually as barbarian conqueror
 
@@ -307,17 +307,17 @@ Christian Europeans need to find a new way to Asia (Columbus?)
 
 Martin Behaim’s Globe
 
-	Americas are missing
+    Americas are missing
 
 Mesoamerican
 
-	Not developed large sailing
+    Not developed large sailing
 
-	No large scale killing machines despite having large populations
+    No large scale killing machines despite having large populations
 
-	Taking captive enemies and incorporate
+    Taking captive enemies and incorporate
 
-	Humans were more valuable than the land
+    Humans were more valuable than the land
 
 1: No widespread warfare
 
@@ -335,19 +335,19 @@ Mesoamerican people were speaking in the lower Andes
 
 **Inca**: Internal Struggles from Aymara speaking people
 
-	didn't practice human sacrifice
+    didn't practice human sacrifice
 
-	Required immense tributes to Inca conquerors
+    Required immense tributes to Inca conquerors
 
 **Aztec Empire:** More External Threats
 
-	Tlaxcalan neighbour, closer to Gulf to Mexico
+    Tlaxcalan neighbour, closer to Gulf to Mexico
 
-	Capturing enemy people to sacrifice them
+    Capturing enemy people to sacrifice them
 
-	Blood falls from the temple, symbolizing the rain of the Gods
+    Blood falls from the temple, symbolizing the rain of the Gods
 
-	1487:  20 000 - 80 000 people were sacrificed
+    1487:  20 000 - 80 000 people were sacrificed
 
 Before Spanish Arrived
 
@@ -359,27 +359,27 @@ Montezuma II became emperor, feuding between sucessors
 
 Christendom facing two fronted conflict
 
-	East: Ottoman Expansion from Balkans
+    East: Ottoman Expansion from Balkans
 
-	North: Searching for passages to Asia
+    North: Searching for passages to Asia
 
-	Exploration North and East
+    Exploration North and East
 
 Marriage of Castile and Aragon
 
-	Push muslim frontier out of Spain
+    Push muslim frontier out of Spain
 
 Exploration of Atlantic Islands
 
-	Canary Islands and Azores Islands
+    Canary Islands and Azores Islands
 
-	Test subjects of first colonies, first sugar plantation, African slavery
+    Test subjects of first colonies, first sugar plantation, African slavery
 
-	European tapping African coast to buy gold and slaves
+    European tapping African coast to buy gold and slaves
 
-	Equatorial Currents to travel west, discovery of trade winds
+    Equatorial Currents to travel west, discovery of trade winds
 
-	Columbus was not alone, pooling knowledge of African, Arab, European
+    Columbus was not alone, pooling knowledge of African, Arab, European
 
 Juan Caboto, Pedro Cabral were much more up to date than Columbus
 
@@ -387,17 +387,17 @@ Columbus was first ot reach landfall
 
 Columbus and “Indians”
 
-	Brought a translator
+    Brought a translator
 
-	Translation starts at the start of conquest
+    Translation starts at the start of conquest
 
 Hispaniola Island: First colonies, agrarian societies for someone else’s consuption
 
-	Tropical export to Europe,
+    Tropical export to Europe,
 
-	Blurred lines between conquest and colonization
+    Blurred lines between conquest and colonization
 
-	Legend of El Dorado, looking for even more riches in new land
+    Legend of El Dorado, looking for even more riches in new land
 
 **3.4 - Europe Meets America**
 

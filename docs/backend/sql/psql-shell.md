@@ -12,7 +12,7 @@ RENAME TO new_table_name;
 ### [Renaming a column](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-rename-column/)
 
 ```sql
-ALTER TABLE table_name 
+ALTER TABLE table_name
 RENAME COLUMN column_name TO new_column_name;
 ```
 
@@ -22,10 +22,10 @@ RENAME COLUMN column_name TO new_column_name;
 
 ### List all tables
 
-- `\dt` for the current schema
-- `\dt schema_name.*`
-- `\dt *.table_name`
-  - to find all tables with that name
+-   `\dt` for the current schema
+-   `\dt schema_name.*`
+-   `\dt *.table_name`
+    -   to find all tables with that name
 
 ### List all column names
 
@@ -62,12 +62,12 @@ where cardinality(pg_blocking_pids(pid)) > 0;
 
 ## Recover your database after your computer suddenly turns off
 
-- Make sure there's no `postgres` processes
-  - `ps aux | ag postgres`
-- `rm -f /usr/local/var/postgres/postmaster.pid`
-- `brew services restart postgresql`
-- `/usr/local/opt/postgres/bin/createuser -s postgres`
-  - create the `postgres` user
+-   Make sure there's no `postgres` processes
+    -   `ps aux | ag postgres`
+-   `rm -f /usr/local/var/postgres/postmaster.pid`
+-   `brew services restart postgresql`
+-   `/usr/local/opt/postgres/bin/createuser -s postgres`
+    -   create the `postgres` user
 
 ### Create a CSV
 
@@ -79,5 +79,5 @@ psql -c "COPY (<select query>) TO STDOUT WITH CSV"
 sudo -i -u postgres
 ```
 
-* -i: launch shell with super user privileges
-* -u: user
+-   -i: launch shell with super user privileges
+-   -u: user

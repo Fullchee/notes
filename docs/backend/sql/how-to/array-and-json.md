@@ -36,8 +36,8 @@ GROUP BY category;
 
 Returns two rows where it groups the result into arrays
 
-- {BT}
-- {BCR,ICR}
+-   {BT}
+-   {BCR,ICR}
 
 Whereas `ARRAY` won't aggregate into an array
 
@@ -59,27 +59,27 @@ ARRAY_POsITION('{"ICR", "ACR"}'::TEXT[], 'ICR')
 
 ### [JSON vs JSONB in postgres](<[https://stackoverflow.com/a/39637548/8479344](https://stackoverflow.com/a/39637548/8479344)>)
 
-- `jsonb`
-  - mostly use this
-  - has an actual data structure, has actual operations, concatenation, …
-- `json` stores it as plain text with whitespace
-  - if you're processing logs and use it more like an audit trail
-  - can't do those operations
+-   `jsonb`
+    -   mostly use this
+    -   has an actual data structure, has actual operations, concatenation, …
+-   `json` stores it as plain text with whitespace
+    -   if you're processing logs and use it more like an audit trail
+    -   can't do those operations
 
 ### [-> vs ->>](https://www.postgresqltutorial.com/postgresql-json/)
 
-- `->` returns the result as JSON
-  - great to get nested objects
-- `->>` returns the result as text
+-   `->` returns the result as JSON
+    -   great to get nested objects
+-   `->>` returns the result as text
 
 ```json
 // info
 {
-  "customer": "Lily Bush",
-  "items": {
-    "product": "Diaper",
-    "qty": 24
-  }
+    "customer": "Lily Bush",
+    "items": {
+        "product": "Diaper",
+        "qty": 24
+    }
 }
 ```
 
@@ -90,8 +90,8 @@ SELECT info -> 'items' ->> 'product'
 
 ### JSONB_OBJECT
 
-- Takes in two string arrays (they must be strings) of keys and values and zips them together
-- need more than just strings? Use `json_build_object(key1, value1, key2, value2, ...)`
+-   Takes in two string arrays (they must be strings) of keys and values and zips them together
+-   need more than just strings? Use `json_build_object(key1, value1, key2, value2, ...)`
 
 ![8b5b109809e298c64f6dc0783b7c22d7.png](../../../8b5b109809e298c64f6dc0783b7c22d7.png)
 
@@ -110,4 +110,4 @@ ORDER BY ARRAY_POSITION(ARRAY['Quota 1', 'Quota 2', 'BT', 'KSO'], category)
 
 ### JSON to String
 
-- `select jsoncol #>> '{}' from mytable;`
+-   `select jsoncol #>> '{}' from mytable;`

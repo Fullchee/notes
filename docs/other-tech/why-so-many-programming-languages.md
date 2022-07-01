@@ -20,15 +20,15 @@ It didn't catch on in China because there is no alphabet.
 
 Here are some `printing presses` for some languages
 
-- JavaScript
-  - comes with the browser => easy to make web apps
-- Java
-  - easy to make Android apps
-  - historical reason: easy to write an app once that works on a ton of machines
-- Ruby
-  - easy to build web apps with the Ruby on Rails framework
-- Bash
-  - universal adoption on \*NIX systems makes it easy to write scripts that will work on most servers
+-   JavaScript
+    -   comes with the browser => easy to make web apps
+-   Java
+    -   easy to make Android apps
+    -   historical reason: easy to write an app once that works on a ton of machines
+-   Ruby
+    -   easy to build web apps with the Ruby on Rails framework
+-   Bash
+    -   universal adoption on \*NIX systems makes it easy to write scripts that will work on most servers
 
 ### Why Python?
 

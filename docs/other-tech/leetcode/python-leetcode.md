@@ -1,19 +1,21 @@
 ## Data Structures
 
 ### Queue
+
 ```python
 collections.dequeue # double ended queue
 ```
 
 #### Unshift the first item in an array
+
 ```python
 first_value = arr.pop(0)  # O(n)
 
 
 ```
 
-
 ### defaultdict
+
 ```python
 my_dict = collections.defaultdict(int)  # default value: 0
 my_dict[key] += 1
@@ -24,7 +26,6 @@ my_dict[key] += 1
 ```python
 collections.counter
 ```
-
 
 ```python
 class Solution:

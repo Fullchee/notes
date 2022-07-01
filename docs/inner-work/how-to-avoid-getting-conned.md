@@ -8,11 +8,8 @@ They're taking advantage of that part of us
 
 "Often, the shame associated with being conned can discourage victims from sharing their stories."
 
-* like rape?
-
+-   like rape?
 
 https://www.psychologytoday.com/ca/blog/the-blame-game/201909/how-avoid-getting-conned
 
-
 Help without giving money.
-

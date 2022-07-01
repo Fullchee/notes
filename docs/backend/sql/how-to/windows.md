@@ -2,8 +2,8 @@
 
 ## [ROLLUP](https://www.postgresqltutorial.com/postgresql-rollup/)
 
-- shorthand for defining multiple grouping sets
-- really great for calculating groups for sums
+-   shorthand for defining multiple grouping sets
+-   really great for calculating groups for sums
 
 ![0dcda3d67b602afda521c9422556ba65.png](0dcda3d67b602afda521c9422556ba65.png)
 
@@ -34,10 +34,10 @@ ORDER BY brand, segment;
 
 See SELECT STAR Julia Evans zine page 14
 
-- `[expression] OVER ([window definition])`
-- Window is a set of rows
+-   `[expression] OVER ([window definition])`
+-   Window is a set of rows
 
-- The window here is just one row
+-   The window here is just one row
 
 ```sql
 SELECT item,
@@ -45,7 +45,7 @@ SELECT item,
 FROM sales
 ```
 
-- the window here is each class
+-   the window here is each class
 
 ```sql
 SELECT ROW_NUMBER() OVER(

@@ -2,8 +2,8 @@
 
 Casting text to boolean
 
-- `t`, `true`, `y`, `yes`, `on`, `1`
-- `f`, `false`, `n`, `no`, `off`, `0`
+-   `t`, `true`, `y`, `yes`, `on`, `1`
+-   `f`, `false`, `n`, `no`, `off`, `0`
 
 ```sql
 select 'true'::boolean, 'false'::boolean;

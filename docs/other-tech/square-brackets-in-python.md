@@ -6,7 +6,6 @@ When you need to get a value in a dict, you pass in the key (the 'word' using th
 
 Then Python will fetch what the corresponding value is.
 
-
 ```py
 my_dict = {'a': 'alpha', 'b': 'beta'}
 my_dict['a']  # 'alpha'
@@ -18,7 +17,7 @@ You can think of lists like special dictionaries.
 
 The OG dictionary 😎
 
-That's why they both use square brackets (my guess  ¯\\_(ツ)_/¯)
+That's why they both use square brackets (my guess ¯\\_(ツ)_/¯)
 
 ```py
 my_list = ['a', 'b', 'c']

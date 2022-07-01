@@ -1,5 +1,5 @@
 ```sql
-CREATE TABLE new_table AS 
+CREATE TABLE new_table AS
 TABLE existing_table;
 ```
 

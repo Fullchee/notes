@@ -1,14 +1,14 @@
-* Testing: check out `pytest` and see why some people like it more than `unittest`
+-   Testing: check out `pytest` and see why some people like it more than `unittest`
 
 ## Testing
 
-
 ### mock.patch
-* `patch` WHERE IT'S USED, not where it's defined
-    * the file only knows about what files are exported
-    * https://youtu.be/ww1UsGZV8fQ?t=434
-* 3 ways of patching
-    * https://www.youtube.com/watch?v=WFRljVPHrkE
+
+-   `patch` WHERE IT'S USED, not where it's defined
+    -   the file only knows about what files are exported
+    -   https://youtu.be/ww1UsGZV8fQ?t=434
+-   3 ways of patching
+    -   https://www.youtube.com/watch?v=WFRljVPHrkE
 
 ```py
 @patch("path.where.my_function", autospec=True, spec_set=True)
@@ -16,26 +16,27 @@ class TestStuff(ApiTestCase):
     def test_stuff(self, mock_my_function):
 ```
 
-
 #### [Patch Arguments](https://youtu.be/ww1UsGZV8fQ?t=1164)
-* `spec`: doesn't know about attributes of attributes
-    * should always at least `spec`
-* `autospec` doesn't know about dynamically created attributes
-    * example: class attributes
-    * work around: set the attribute that exists
-    * can be dangerous because it can trigger code on introspection
-    * can slow down tests
-* `spec_set=True` prevent setting properties that don't exist
-* `new_callable=MagicMock`is the default
-    * `new_callable=PropertyMock`
-* kwargs
-    * `return_value="lisa"
-    * `name="lisa"`
-* `patch.object`
-* `patch.dict`
-* `patch.multiple`
 
-* https://youtu.be/ww1UsGZV8fQ?t=889
+-   `spec`: doesn't know about attributes of attributes
+    -   should always at least `spec`
+-   `autospec` doesn't know about dynamically created attributes
+    -   example: class attributes
+    -   work around: set the attribute that exists
+    -   can be dangerous because it can trigger code on introspection
+    -   can slow down tests
+-   `spec_set=True` prevent setting properties that don't exist
+-   `new_callable=MagicMock`is the default
+    -   `new_callable=PropertyMock`
+-   kwargs
+    -   `return_value="lisa"
+    -   `name="lisa"`
+-   `patch.object`
+-   `patch.dict`
+-   `patch.multiple`
+
+-   https://youtu.be/ww1UsGZV8fQ?t=889
+
 ```diff
 -@patch("path.where.fn1")
 -@patch("path.where.fn2")
@@ -54,9 +55,9 @@ class TestStuff(ApiTestCase):
         ...
 ```
 
-* You need `mock_check_output` because the decorator adds it
-    * what does it do???????????
+-   You need `mock_check_output` because the decorator adds it
+    -   what does it do???????????
 
-patch for as little as possible, especially for 
+patch for as little as possible, especially for
 
 or use setUp() and tearDown()
