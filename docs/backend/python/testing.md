@@ -5,7 +5,7 @@
 
 ### mock.patch
 * `patch` WHERE IT'S USED, not where it's defined
-    * the fiile only knows about what files are exported
+    * the file only knows about what files are exported
     * https://youtu.be/ww1UsGZV8fQ?t=434
 * 3 ways of patching
     * https://www.youtube.com/watch?v=WFRljVPHrkE
@@ -54,7 +54,7 @@ class TestStuff(ApiTestCase):
         ...
 ```
 
-* You need `mock_check_output` beacuse the decorator adds it
+* You need `mock_check_output` because the decorator adds it
     * what does it do???????????
 
 patch for as little as possible, especially for 

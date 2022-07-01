@@ -2,6 +2,9 @@
 * [How to Use Materialized View in Django](https://medium.com/analytics-vidhya/how-to-use-materialized-view-in-django-3b91f71f718a)
 * [Asynchronous Tasks With Django and Celery](https://realpython.com/asynchronous-tasks-with-django-and-celery)
 
+[Write your own commands](https://docs.djangoproject.com/en/dev/howto/custom-management-commands/)
+
+* `app_name/management/commands`
 
 ## Django (`manage.py`) scripts
 
@@ -17,6 +20,10 @@ django.setup()
 from django.contrib.auth.models import User, Group
 # other imports
 ```
+
+`manage.py shell` vs `python` console
+
+* `manage.py shell` sets the `DJANGO_SETTINGS_MODULE`which lets it know about the `settings.py`
 
 (`django_extensions` has a `shell_plus`)
 
@@ -40,13 +47,6 @@ adds a bunch of nice helpers to `./manage.py`
 
 
 ## Tests
-
-### Setup PyCharm to always have the `--keepdb` flag
-
-1. Open Run/Debug Configurations
-2. Add the `--keepdb` option to the Django tests template
-3. ![9fc8cbf4887431679da62c7ea7c322d0.png](9fc8cbf4887431679da62c7ea7c322d0.png)
-4. ![33c83841218b05cac8c989b05e120628.png](33c83841218b05cac8c989b05e120628.png)
 
 ### Run a specific test
 ```shell

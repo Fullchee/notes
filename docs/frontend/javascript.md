@@ -7,8 +7,17 @@
 
 /* eslint-disable-next-line rule-name */
 
-// @ts-ignore
+// @ts-ignore (ignores one line)
+// @ts-nocheck (ignores the whole file)
 ```
+
+#### Run `prettier` and then `eslint`
+
+```bash
+prettier --write src
+npm run lint -- --fix
+```
+
 
 ### Console API
 https://developer.chrome.com/docs/devtools/console/api/

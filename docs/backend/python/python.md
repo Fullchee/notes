@@ -32,9 +32,11 @@ Create a function that can be used `with`
     Leaving the context...
 ```
 
+## Error handling
+
 ### [`suppress`](https://docs.python.org/3/library/contextlib.html#contextlib.suppress)
 
-Cleaner version of `try/raise`
+Cleaner version of `try/except`
 
 ```python
 from contextlib import suppress
@@ -49,6 +51,18 @@ try:
 except FileNotFoundError:
     pass
 ```
+
+[`logging.warning` vs `warnings.warn`](https://stackoverflow.com/questions/9595009/warnings-warn-vs-logging-warning/14762106#14762106)
+
+* `logging.warning`
+    * issue with input/user
+    * nothing the client app can do
+* `warnings.warn`
+    * dev issue
+        * deprecated code
+        * abstract class not implement
+
+
 
 ## `breakpoint()`
 * https://www.youtube.com/watch?v=IzgSl-tkPPg
@@ -189,6 +203,16 @@ os.environ.get('ENV_VAR_NAME', 'FALLBACK_VALUE')
 namedtuple is immutable
 
 dataclass is mutable
+
+both can have default values
+```python
+StatsTup = namedtuple('Stats', ['min', 'max'], defaults = [3, 7])
+
+@dataclass
+class Stats:
+    min: int = 3
+    max: int = 7
+```
 
 
 ## Lists
