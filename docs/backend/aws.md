@@ -1,5 +1,7 @@
 # AWS
 
+https://expeditedsecurity.com/aws-in-plain-english/
+
 ## Setup
 
 -   `aws configure sso`
