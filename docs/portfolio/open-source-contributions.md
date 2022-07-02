@@ -19,6 +19,9 @@ Repos that I've contributed to (that aren't my repos)
     -   Jan, 2022
 -   [Foam: improve docs](https://github.com/foambubble/foam/commits?author=Fullchee)
     -   Jan 2022
+-   [recharts.org](https://github.com/recharts/recharts.org/pull/166)
+    -   update a link
+    -   Jan 4, 2022
 -   [Epic React: advanced-react-patterns: fix a typo](https://github.com/kentcdodds/advanced-react-patterns/commits?author=Fullchee)
     -   Dec 31, 2021
 -   [django-migration-checker](https://github.com/tonyo/django-migration-checker/commits?author=Fullchee)
