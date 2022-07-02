@@ -1,5 +1,6 @@
 # Home
 
-* [Backend](/backend)
-* [Frontend](/frontend)
-* [Other tech](/other-tech)
+-   [Backend](/backend)
+-   [Frontend](/frontend)
+-   [Technical](/technical)
+-   [Soft skills](/soft-skills)

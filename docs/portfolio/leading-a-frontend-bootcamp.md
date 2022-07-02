@@ -6,7 +6,7 @@ From Aug 3, 2021 to Aug 6, 2021, I lead a 4 day, 2-hours a day zoom frontend boo
 
 ## Goal of the bootcamp
 
--   building [google.ca](google.ca)
+-   building [google.ca](https://google.ca)
 -   brief overview of some HTML, CSS, JS
 -   how websites work
 
