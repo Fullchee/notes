@@ -21,6 +21,8 @@ Generativity
 -   what you generate
 -   your team + you vs your team without you
 -   usage example: [Jessica Kerr talk](/soft-skills/forget-velocity-lets-talk-acceleration)
+-   more useful than personal productivity
+    -   shaving yaks is super generative but not productive
 
 ## H
 
@@ -52,6 +54,11 @@ Kreplit
 
 ## S
 
+symmathesy
+
+-   https://medium.com/@jessitron/symmathecist-n-c728957ce71f
+-   Jessica Kerr talk: https://fullchee-reminders.netlify.app/link/1117
+
 ## T
 
 ## U
@@ -70,5 +77,6 @@ Kreplit
 -   https://xkcd.com/1739/
 -   https://sketchplanations.com/yak-shaving
 -   [Malcolm in the middle example](https://fullchee-reminders.netlify.app/link/38)
+-   [Jessica Kerr: shaving the golden yak](https://www.infoq.com/presentations/easier-software-development/)
 
 ## Z
