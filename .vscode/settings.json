@@ -1,37 +1,39 @@
 {
-  "editor.minimap.enabled": false,
-  "editor.wrappingIndent": "indent",
-  "editor.overviewRulerBorder": false,
-  "editor.lineHeight": 24,
-  "[markdown]": {
-    "editor.quickSuggestions": {
-      "comments": "on",
-      "strings": "on",
-      "other": "on"
-    }
-  },
-  "files.defaultLanguage": "markdown",
-  "files.exclude": {
-    "**/node_modules": true
-  },
-  "files.watcherExclude": {
-    "**/node_modules": true
-  },
-  "foam.edit.linkReferenceDefinitions": "withoutExtensions",
-  "foam.openDailyNote.directory": "journal",
-  "foam.openDailyNote.titleFormat": "fullDate",
-  "git.enableSmartCommit": true,
-  "git.postCommitCommand": "sync",
-  "markdown.preview.breaks": true,
-  "pasteImage.path": "${projectRoot}/attachments",
-  "pasteImage.showFilePathConfirmInputBox": true,
-  "prettier.singleQuote": false,
-  "spellright.notificationClass": "warning",
-  "vscodeMarkdownNotes.noteCompletionConvention": "noExtension",
-  "vscodeMarkdownNotes.slugifyMethod": "github-slugger",
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#352D1A",
-    "titleBar.activeBackground": "#4A3F24",
-    "titleBar.activeForeground": "#FBFAF7"
-  },
+    "editor.minimap.enabled": false,
+    "editor.wrappingIndent": "indent",
+    "editor.overviewRulerBorder": false,
+    "editor.lineHeight": 24,
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        }
+    },
+    "files.defaultLanguage": "markdown",
+    "files.exclude": {
+        "**/node_modules": true
+    },
+    "files.watcherExclude": {
+        "**/node_modules": true
+    },
+    "git.enableSmartCommit": true,
+    "git.postCommitCommand": "sync",
+    "markdown.preview.breaks": true,
+    "pasteImage.path": "${projectRoot}/attachments",
+    "pasteImage.showFilePathConfirmInputBox": true,
+    "prettier.singleQuote": false,
+    "spellright.notificationClass": "warning",
+    "vscodeMarkdownNotes.noteCompletionConvention": "noExtension",
+    "vscodeMarkdownNotes.slugifyMethod": "github-slugger",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#352D1A",
+        "titleBar.activeBackground": "#4A3F24",
+        "titleBar.activeForeground": "#FBFAF7"
+    },
+    "yaml.customTags": [
+        "tag:yaml.org,2002:python/name:pymdownx.emoji.twemoji",
+        "tag:yaml.org,2002:python/name:materialx.emoji.to_svg",
+        "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_formatYAML"
+    ]
 }

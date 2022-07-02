@@ -85,7 +85,7 @@ markdown_extensions:
 plugins:
   - git-revision-date
   - search
-  - tags  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
+  - tags # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
 
 extra_css:
   - stylesheets/extra.css
