@@ -24,10 +24,18 @@ Generativity
 -   more useful than personal productivity
     -   shaving yaks is super generative but not productive
 
+Glue work
+
+-   Tanya Reilly talk: https://fullchee-reminders.netlify.app/link/1454
+-   less glamorous (and often less-promotable) work that needs to happen to make a team successful
+    -   documentation
+    -   creating reports
+    -   onboarding teammates
+
 Golden yak
 
-* see yak shaving
-* https://fullchee-reminders.netlify.app/link/1927
+-   see yak shaving
+-   https://fullchee-reminders.netlify.app/link/1927
 
 ## H
 
