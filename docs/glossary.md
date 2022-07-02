@@ -24,6 +24,11 @@ Generativity
 -   more useful than personal productivity
     -   shaving yaks is super generative but not productive
 
+Golden yak
+
+* see yak shaving
+* https://fullchee-reminders.netlify.app/link/1927
+
 ## H
 
 ## I
