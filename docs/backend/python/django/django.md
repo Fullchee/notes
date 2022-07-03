@@ -159,11 +159,11 @@ Then `python manage.py migrate app_name 0008
 .filter(id__in=[1, 3, 4, 5, 6....])
 ```
 
-### Pretty print
 
 ```python
 model_name.filter().values()
 ```
 
--   doesn't work on the actual instance
--   ?????
+### [.filter(id=1, name=1) and .filter(id=1).filter(name=1)](https://stackoverflow.com/a/21364751/8479344)
+
+- they only might be different when dealing with foreign keys

@@ -244,3 +244,18 @@ def from_iterable(iterables):
 ## Virtual environment
 
 Uninstall all packages in a virtual env
+
+## Equality
+
+### `==` vs `is`
+
+- `is`: same ID
+- `==`: uses `__eq__`
+
+
+### [`isinstance` vs `type()`](https://stackoverflow.com/a/1549854/8479344)
+
+- `type`: returns the name of the type
+- `isinstance([1,2,3], list)`
+    - goes up the inheritance tree
+    - can catch more than comparing two `type`s
