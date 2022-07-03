@@ -14,6 +14,12 @@
 
 ## F
 
+Feed
+
+-   example: news feed, Facebook feed
+-   the analogy turns us into livestock
+-   we're given feed, not food
+
 ## G
 
 Generativity
