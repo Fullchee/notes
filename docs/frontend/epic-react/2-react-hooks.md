@@ -2,25 +2,32 @@
 
 Date: 2021-12-26
 
--   [Epic React 2: React Hooks](#epic-react-2-react-hooks)
-    -   [useState](#usestate)
-        -   [Why we need useState](#why-we-need-usestate)
-    -   [useEffect](#useeffect)
-        -   [Error Boundaries](#error-boundaries)
-    -   [Advanced React Hooks](#advanced-react-hooks)
-    -   [useReducer](#usereducer)
-    -   [useCallback and useMemo](#usecallback-and-usememo)
-        -   [useCallback: Custom hooks](#usecallback-custom-hooks)
-            -   [what's the `run` function that we return in `useAsync`?](#whats-the-run-function-that-we-return-in-useasync)
-        -   [safeDispatch (safe fetch) and useEffect cleanup](#safedispatch-safe-fetch-and-useeffect-cleanup)
-            -   [How do you know if a component has been unmounted?](#how-do-you-know-if-a-component-has-been-unmounted)
-    -   [`useContext`](#usecontext)
-        -   [`useCount` wrapper for better errors](#usecount-wrapper-for-better-errors)
-    -   [`useEffect` vs `useLayoutEffect`](#useeffect-vs-uselayouteffect)
-    -   [`useImperativeHandle`](#useimperativehandle)
-        -   [`React.forwardRef`](#reactforwardref)
-        -   [Do you need to always use `useImperativeHandle` when using `React.forwardRef`?](#do-you-need-to-always-use-useimperativehandle-when-using-reactforwardref)
-        -   [`useDebugValue`](#usedebugvalue)
+- [Epic React 2: React Hooks](#epic-react-2-react-hooks)
+  - [Why React Hooks?](#why-react-hooks)
+  - [useState](#usestate)
+    - [Why we need useState](#why-we-need-usestate)
+  - [useEffect](#useeffect)
+    - [Error Boundaries](#error-boundaries)
+  - [Advanced React Hooks](#advanced-react-hooks)
+  - [useReducer](#usereducer)
+  - [useCallback and useMemo](#usecallback-and-usememo)
+    - [useCallback: Custom hooks](#usecallback-custom-hooks)
+      - [what's the `run` function that we return in `useAsync`?](#whats-the-run-function-that-we-return-in-useasync)
+    - [safeDispatch (safe fetch) and useEffect cleanup](#safedispatch-safe-fetch-and-useeffect-cleanup)
+      - [How do you know if a component has been unmounted?](#how-do-you-know-if-a-component-has-been-unmounted)
+  - [`useContext`](#usecontext)
+      - [`useCount` wrapper for better errors](#usecount-wrapper-for-better-errors)
+  - [`useEffect` vs `useLayoutEffect`](#useeffect-vs-uselayouteffect)
+  - [`useImperativeHandle`](#useimperativehandle)
+    - [`React.forwardRef`](#reactforwardref)
+    - [Do you need to always use `useImperativeHandle` when using `React.forwardRef`?](#do-you-need-to-always-use-useimperativehandle-when-using-reactforwardref)
+    - [`useDebugValue`](#usedebugvalue)
+
+## Why React Hooks?
+
+-   no duplicate code in different lifecycle methods
+-   Solves the problem of switching between functional component to class component
+-   [Tyler McGinnis: Why React Hooks (the history)](https://www.youtube.com/watch?v=3hCge6XFju8)
 
 ## useState
 
