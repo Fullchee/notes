@@ -73,6 +73,10 @@ Kreplit
 
 ## S
 
+SoC
+
+-   Separation of Concerns
+
 symmathesy
 
 -   https://medium.com/@jessitron/symmathecist-n-c728957ce71f
