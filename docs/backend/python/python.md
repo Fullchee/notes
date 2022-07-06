@@ -102,13 +102,24 @@ line-length = 120
 
 https://www.pythonmorsels.com/string-formatting/
 
--   raw string so that you
+-   raw string to ignore
+    -   JS has [String.raw](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw)
 
 ```python
 r"D:\Users\path"
 ```
 
--   raw string
+#### Nicer multi-line strings
+
+```python
+from textwrap import dedent
+
+def copyright():
+    print(dedent("""
+        Copyright (c) 2022
+        All Rights Reserved.
+    """).strip("\n"))
+```
 
 ### Regex
 
@@ -140,6 +151,7 @@ print(spam.eggs)
 
 ### TypedDict
 
+-   new in Python 3.8
 -   https://adamj.eu/tech/2021/05/10/python-type-hints-how-to-use-typeddict/
 
 ```python
@@ -167,7 +179,7 @@ if TYPE_CHECKING:
 
 ## Dynamic Imports
 
--
+- 
 
 ## Enum
 
@@ -259,3 +271,29 @@ Uninstall all packages in a virtual env
 - `isinstance([1,2,3], list)`
     - goes up the inheritance tree
     - can catch more than comparing two `type`s
+
+
+### [walrus operator](https://fullchee-reminders.netlify.app/link/1945)
+
+```python
+match = MY_REGEX.search(string)
+if match:
+    pass
+```
+
+```python
+if match := MY_REGEX.search(string):
+    pass
+```
+
+```python
+while chunk := f.read(8192):
+    md5.update(chunk)
+```
+
+- new in Python 3.8
+- assignment expression
+    - merge two lines into one
+- assignment statements needs to be on their own line
+- **When to use?**
+    - only if it makes your code more readable
