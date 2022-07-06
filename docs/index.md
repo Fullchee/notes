@@ -1,5 +1,7 @@
 # Home
 
+## [Portfolio](https://fullchee.com)
+
 -   [Backend](/backend)
 -   [Frontend](/frontend)
 -   [Technical](/technical)

@@ -90,6 +90,8 @@ symmathesy
 
 ## W
 
+[Walrus operator]()
+
 ## X
 
 ## Y
