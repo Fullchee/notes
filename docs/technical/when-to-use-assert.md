@@ -2,6 +2,8 @@
 
 ## When to use vs throwing an Exception
 
+Only to help other devs
+
 - documenting your understanding of the code at a point
     - guarantees about
         - inputs (preconditions)
@@ -10,6 +12,16 @@
         - like CSC494 & contracts
 
 - debugging a broken algo
+
+
+```python
+if condition1:
+    pass
+else:
+    assert False, (
+    "This should never happen, but it does sometimes."
+    "We're trying to figure out why. Email us if you hit this!")
+```
 
 ## When to not use assertions
 

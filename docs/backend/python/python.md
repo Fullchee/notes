@@ -17,55 +17,6 @@ def foo(pos, *, forcenamed, **kwargs):
 my_func(1, 2) # throws an error
 ```
 
-## [Context Manager](https://realpython.com/python-with-statement/#creating-function-based-context-managers)
-
-Create a function that can be used `with`
-
-```python
-    >>> @contextmanager
-    ... def hello_context_manager():
-    ...     print("Entering the context...")
-    ...     yield "Hello, World!"
-    ...     print("Leaving the context...")
-    ...
-
-    >>> with hello_context_manager() as hello:
-    ...     print(hello)
-    Entering the context...
-    Hello, World!
-    Leaving the context...
-```
-
-## Error handling
-
-### [`suppress`](https://docs.python.org/3/library/contextlib.html#contextlib.suppress)
-
-Cleaner version of `try/except`
-
-```python
-from contextlib import suppress
-
-with suppress(FileNotFoundError):
-    os.remove('somefile.tmp')
-
-# same as
-
-try:
-    os.remove('somefile.tmp')
-except FileNotFoundError:
-    pass
-```
-
-[`logging.warning` vs `warnings.warn`](https://stackoverflow.com/questions/9595009/warnings-warn-vs-logging-warning/14762106#14762106)
-
--   `logging.warning`
-    -   issue with input/user
-    -   nothing the client app can do
--   `warnings.warn`
-    -   dev issue
-        -   deprecated code
-        -   abstract class not implement
-
 ## `breakpoint()`
 
 -   https://www.youtube.com/watch?v=IzgSl-tkPPg

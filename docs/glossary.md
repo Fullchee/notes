@@ -45,6 +45,10 @@ Golden yak
 
 ## H
 
+[Heisenbug](https://en.wikipedia.org/wiki/Heisenbug)
+- bug that's not reproducible when you try to fix it
+
+
 ## I
 
 ## J
