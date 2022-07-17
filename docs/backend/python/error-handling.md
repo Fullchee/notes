@@ -20,6 +20,7 @@ with open('hello.txt', 'w') as f:
     f.write('hello')
 ```
 
+same as
 
 ```python
 f = open('hello.txt', 'w')
@@ -64,32 +65,7 @@ def managed_file(name):
         f.close()
 ```
 
-
-## [`suppress`](https://docs.python.org/3/library/contextlib.html#contextlib.suppress)
-
-Cleaner version of `try/except` and ignore
-
-```python
-from contextlib import suppress
-
-with suppress(FileNotFoundError):
-    os.remove('somefile.tmp')
-```
-same as
-
-```python
-try:
-    os.remove('somefile.tmp')
-except FileNotFoundError:
-    pass
-```
-
-
-
-
-## Exercises
-
-### Python Tricks Page 33
+### Python Tricks Page 33 context manager exercise
 
 ```python
 with Indenter() as indent:
@@ -125,5 +101,26 @@ class Indenter:
 ```
 
 
-### Python Tricks Page 35
+### Python Tricks Page 35 context manager
 - context manager that measures the execution time of a code block using the `time.time` function
+
+
+
+## [`suppress`](https://docs.python.org/3/library/contextlib.html#contextlib.suppress)
+
+Cleaner version of `try/except` and ignore
+
+```python
+from contextlib import suppress
+
+with suppress(FileNotFoundError):
+    os.remove('somefile.tmp')
+```
+same as
+
+```python
+try:
+    os.remove('somefile.tmp')
+except FileNotFoundError:
+    pass
+```
