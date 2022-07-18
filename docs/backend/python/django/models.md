@@ -2,6 +2,14 @@
 
 https://betterprogramming.pub/everything-you-need-to-know-about-django-models-in-python-2a44ed4293dd
 
+### Get the instances from a QuerySet?
+
+- Convert it into a list and it will make the database call
+
+```python
+list(Widget.objects.filter())
+```
+
 1. startproject and startapp
 
 UUIDField as primary key

@@ -1,5 +1,11 @@
 # Python Dictionaries
 
+### Nested get
+
+```python
+example_dict.get('key1', {}).get('key2')
+```
+
 ### Get the key with the max value in the dict
 
 ```python

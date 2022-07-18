@@ -9,6 +9,29 @@
 
 ## Django (`manage.py`) scripts
 
+### Creating your custom commands
+
+1. Create a file called: `app_name/management/commands/create_admin_superuser.py`
+2. Fill in the blanks
+
+
+#### When would you want to write your own command?
+
+```python
+from django.core.management.base import BaseCommand
+
+class Command(BaseCommand):
+    help = """ help string """
+
+    def add_arguments(self, parser):
+        parser.add_argument("email", type=str)
+        parser.add_argument("password", type=str)
+
+    def handle(self, *args, **options):
+        # do stuff
+        self.stdout.write("Created an admin superuser")
+```
+
 ### Python Shell
 
 ```sh
@@ -167,3 +190,20 @@ model_name.filter().values()
 ### [.filter(id=1, name=1) and .filter(id=1).filter(name=1)](https://stackoverflow.com/a/21364751/8479344)
 
 - they only might be different when dealing with foreign keys
+
+
+### Set a foreign key to be something other than an ID
+
+```python
+class DashboardWidget(models.Model):
+    query = models.ForeignKey(
+        DashboardQuery,  # the foreign model
+        to_field="file_path",  # DashboardQuery.file_path, must be unique
+        db_column="query_file_path",  # name of the db column, default: query_id (field-name_id)
+        ...
+    )
+
+```
+
+If you're doing a migration, you may also need to drop the field and re-create it
+- `AlterField` doesn't change the column type in Django 2.2

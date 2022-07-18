@@ -34,5 +34,12 @@ Problem with `_.chain`
 * it imports all of `underscore`
 
 
-### `_.groupby`
+### [`_.groupby`](https://underscorejs.org/#groupBy)
 
+```javascript
+_.groupBy([1.3, 2.1, 2.4], function(num){ return Math.floor(num); });
+=> {1: [1.3], 2: [2.1, 2.4]}
+
+_.groupBy(['one', 'two', 'three'], 'length');
+=> {3: ["one", "two"], 5: ["three"]}
+```
