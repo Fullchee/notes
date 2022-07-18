@@ -64,3 +64,17 @@ Car(color='red', mileage=999)
 - alternatives
    - dataclass (if you don't want immutability)
    - dict or list
+
+
+## [read-only attribute](https://www.pythonmorsels.com/making-read-only-attribute)
+
+- use a `@property`
+
+```python
+class Square:
+    def __init__(self, length):
+        self._length = length
+    @property
+    def length(self):
+        return self._length
+```

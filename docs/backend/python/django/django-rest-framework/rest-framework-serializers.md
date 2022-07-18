@@ -116,10 +116,20 @@ because we can't do `.update()` because we're given the
 A
 
 
-## Custom field
+## [Custom fields](https://www.django-rest-framework.org/api-guide/fields/#a-basic-custom-field)
 
-- read-only
+```python
+class ColorField(serializers.Field):
+    """
+    Color objects are serialized into 'rgb(#, #, #)' notation.
+    """
+    def to_representation(self, value):
+        return "rgb(%d, %d, %d)" % (value.red, value.green, value.blue)
 
-
+    def to_internal_value(self, data):
+        data = data.strip('rgb(').rstrip(')')
+        red, green, blue = [int(col) for col in data.split(',')]
+        return Color(red, green, blue)
+```
 
 https://github.com/beda-software/drf-writable-nested
