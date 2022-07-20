@@ -1,9 +1,24 @@
+## Chrome
+
 ### Emulate a focused page
 
 -   `Emulate a focused page`
 -   Super helpful when debugging a component that disappears on blur
 
-https://user-images.githubusercontent.com/11246258/149845357-d72466cf-b023-4738-be7b-cc4fdace2def.mov
+
+<video>
+    <source src="https://user-images.githubusercontent.com/11246258/180092063-bca459dd-e0f7-4b36-997f-cde745587968.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+
+
+## [Record a workflow](https://developer.chrome.com/docs/devtools/recorder/)
+
+- export as a Puppeteer script
+
+
 
 HTTP Responses
 

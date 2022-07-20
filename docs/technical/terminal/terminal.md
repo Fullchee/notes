@@ -22,6 +22,16 @@ ssh -p 56789 root@localhost
 ssh root@127.0.0.1 -p 56789 -N -L 5433:database-url:5432
 ```
 
+#### Ignore ssh host for 127.0.0.1
+`REMOTE HOST IDENTIFICATION HAS CHANGED`
+
+```bash
+$cat ~/.ssh/config
+Host 127.0.0.1
+   StrictHostKeyChecking no
+   UserKnownHostsFile=/dev/null
+```
+
 ### Transfer files with [croc](https://github.com/schollz/croc)
 
 ```bash
@@ -163,9 +173,14 @@ eval "for query_content in $query_content_list; do
 done"
 ```
 
-### `su` vs `sudo`
+## `su` vs `sudo`
 
 -   `su` switches users
 -   `sudo` keeps the current user, runs as if they were sudo
 -   `su -` creates a new environment with the super user's env var and switches to their home directory
 -   `sudo su -`
+
+## `xargs`
+
+ - Run a command using the input data as arguments:
+ - `arguments_source | xargs command`

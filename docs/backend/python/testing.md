@@ -61,3 +61,13 @@ class TestStuff(ApiTestCase):
 patch for as little as possible, especially for
 
 or use setUp() and tearDown()
+
+## Expecting an Exception
+
+```python
+self.assertRaises(ExceptionType, func, arg1, arg2)
+```
+
+```python
+self.assertRaises(ExceptionType, lambda: func(kwarg1="a", kwarg2="b"))
+```

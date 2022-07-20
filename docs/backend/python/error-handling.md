@@ -124,3 +124,10 @@ try:
 except FileNotFoundError:
     pass
 ```
+
+## Get the error message from an exception
+
+- no standard property
+- use `str(e)`
+- or debug and get the properties for that specific Exception
+    - `error_message = e.detail["name"][0]`

@@ -66,6 +66,32 @@ Car(color='red', mileage=999)
    - dict or list
 
 
+## `NamedTuple`
+
+Python 3.6+
+
+```python
+from typing import NamedTuple
+class Car(NamedTuple):
+    color: str
+    mileage: float
+    automatic: bool
+    
+car1 = Car('red', 3812.4, True)
+>>> car1.mileage
+3812.4
+# Fields are immutable:
+>>> car1.mileage = 12
+AttributeError: "can't set attribute"
+>>> car1.windshield = 'broken'
+AttributeError:
+"'Car' object has no attribute 'windshield'"
+# Type annotations are not enforced without
+# a separate type checking tool like mypy:
+>>> Car('red', 'NOT_A_FLOAT', 99)
+Car(color='red', mileage='NOT_A_FLOAT', automatic=99)
+```
+
 ## [read-only attribute](https://www.pythonmorsels.com/making-read-only-attribute)
 
 - use a `@property`

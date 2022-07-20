@@ -1,5 +1,7 @@
 # Python Dictionaries
 
+## [Deep copying](https://fullchee.github.io/notes/backend/python/custom-classes/?h=shallow#deep-copying)
+
 ### Nested get
 
 ```python
@@ -29,6 +31,30 @@ config["debug"]  # True
 # looks for the key in cli_args and then in defaults
 ```
 
+###  `MappingProxyType`
+
+- read-only immutable dictionaries
+- not hashable
+    - unlike `namedtuple`
+- example
+    - dict of internal state that you don't 
+
+```python
+from types import MappingProxyType
+writable = {'one': 1, 'two': 2}
+read_only = MappingProxyType(writable)
+
+>>> read_only['one']
+1
+>>> read_only['one'] = 23
+TypeError:
+"'mappingproxy' object does not support item assignment"
+# Updates to the original are reflected in the proxy:
+>>> writable['one'] = 42
+>>> read_only
+mappingproxy({'one': 42, 'two': 2})
+```
+
 ### [UserDict](https://realpython.com/python-collections-module/#customizing-built-ins-userstring-userlist-and-userdict)
 
-When you want to modify the behaviour of the built-in dict
+When you want to modify the behavior of the built-in dict???
