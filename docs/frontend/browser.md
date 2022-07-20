@@ -18,6 +18,8 @@
 
 - export as a Puppeteer script
 
+<iframe width="700" height="394" src="https://www.youtube.com/embed/rMUayh1QPYs" title="Record and replay user flow with the Recorder panel | DevTools Tips" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 HTTP Responses
