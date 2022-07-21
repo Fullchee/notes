@@ -157,3 +157,14 @@ while chunk := f.read(8192):
 - assignment statements needs to be on their own line
 - **When to use?**
     - only if it makes your code more readable
+
+
+## Dynamic imports
+
+```python
+from importlib import import_module
+
+if settings.SOME_STRING:
+    module = import_module(settings.SOME_STRING)
+return fallback
+```

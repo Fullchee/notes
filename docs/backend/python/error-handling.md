@@ -105,6 +105,11 @@ class Indenter:
 - context manager that measures the execution time of a code block using the `time.time` function
 
 
+### Context managers vs decorators
+
+- separate concepts
+- `contextlib.contextmanager` lets your context managers be decorators
+    - so you don't need to use `with`
 
 ## [`suppress`](https://docs.python.org/3/library/contextlib.html#contextlib.suppress)
 

@@ -1,5 +1,3 @@
-## General
-
 ## [Inheritance](https://courses.joshwcomeau.com/css-for-js/01-rendering-logic-1/01-built-ins-and-inheritance)
 
 like JS prototypal inheritance
@@ -41,13 +39,6 @@ Death match between classes
 
 The property with the most specificity emerges victorious
 
-### Analogy for box model: person in a winter coat
-
-1. content 2. the person
-2. padding 4. the padding in the winter coat
-3. border 6. the outside of the coat
-4. margin 8. personal space (2 meters!)
-
 ## Scroll bars
 
 ### Always show scroll bars on mac!
@@ -55,8 +46,6 @@ The property with the most specificity emerges victorious
 Why
 
 -   by default, scroll bars are always visible on non-macs
-
-### Why are pixels the best unit for padding?
 
 ### Why are pixels inaccessible for font-size?
 
