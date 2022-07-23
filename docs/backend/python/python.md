@@ -164,7 +164,9 @@ while chunk := f.read(8192):
 ```python
 from importlib import import_module
 
-if settings.SOME_STRING:
-    module = import_module(settings.SOME_STRING)
+# like backendcore.path.to.file
+if module_path := getattr(settings, "SOME_NAME", None):
+    module = import_module(module_path)
+    return getattr(module, "DashboardServices")()
 return fallback
 ```

@@ -2,13 +2,24 @@
 
 ## [Deep copying](https://fullchee.github.io/notes/backend/python/custom-classes/?h=shallow#deep-copying)
 
-### Nested get
+## Nested get
 
 ```python
 example_dict.get('key1', {}).get('key2')
 ```
 
-### Get the key with the max value in the dict
+- default fallback for `.get` is `None`
+    - unlike `getattr`
+    - which you have to explicitly provide a fallback
+
+## `defaultdict`
+
+```python
+my_dict = collections.defaultdict(int)  # default value: 0
+my_dict[key] += 1
+```
+
+## Get the key with the max value in the dict
 
 ```python
 stats = {'a': 1, 'b': 3000, 'c': 0}
@@ -17,9 +28,9 @@ max(stats, key=stats.get)  # 'b'
 max(stats, key=lambda key: stats[key])  # 'b'
 ```
 
-### [ChainMap](https://florimond.dev/en/posts/2018/07/a-practical-usage-of-chainmap-in-python/#example-the-shopping-inventory)
+## [ChainMap](https://florimond.dev/en/posts/2018/07/a-practical-usage-of-chainmap-in-python/#example-the-shopping-inventory)
 
-#### Maintaining a precedence chain of defaults
+### Maintaining a precedence chain of defaults
 
 ```python
 cli_args = {"debug": True}
@@ -31,7 +42,7 @@ config["debug"]  # True
 # looks for the key in cli_args and then in defaults
 ```
 
-###  `MappingProxyType`
+##  `MappingProxyType`
 
 - read-only immutable dictionaries
 - not hashable
@@ -55,6 +66,6 @@ TypeError:
 mappingproxy({'one': 42, 'two': 2})
 ```
 
-### [UserDict](https://realpython.com/python-collections-module/#customizing-built-ins-userstring-userlist-and-userdict)
+## [UserDict](https://realpython.com/python-collections-module/#customizing-built-ins-userstring-userlist-and-userdict)
 
 When you want to modify the behavior of the built-in dict???

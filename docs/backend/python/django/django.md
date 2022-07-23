@@ -202,8 +202,10 @@ class DashboardWidget(models.Model):
         db_column="query_file_path",  # name of the db column, default: query_id (field-name_id)
         ...
     )
-
 ```
 
-If you're doing a migration, you may also need to drop the field and re-create it
-- `AlterField` doesn't change the column type in Django 2.2
+Doing a migration?
+- you need to drop the `DashboardWidget.query` and then re-create it
+- `AlterField` doesn't change the column type from `int` to `text` in Django 2.2
+
+

@@ -1,5 +1,11 @@
 # Home
 
+At Forma.ai, I implemented a docs-as-code at Forma.
+
+[Read that full story here](https://fullchee.com/project/forma)
+
+I realized that I could use the same system to organize all my personal notes.
+
 ## [Portfolio](https://fullchee.com)
 
 -   [Backend](https://fullchee.github.io/notes/backend/aws/)

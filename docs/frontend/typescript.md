@@ -1,3 +1,20 @@
+## Comments
+
+- ignore a rule for the whole file
+```javascript
+/* eslint-disable rule-name */
+// @ts-nocheck (ignores the whole file)
+```
+
+- ignore the rule for one line
+
+```javascript
+/* eslint-disable-next-line rule-name */
+
+// @ts-ignore (ignores one line)
+```
+
+
 ## React
 
 ### Return type
@@ -71,3 +88,8 @@ type Required<T> = {
     [P in keyof T]-?: T[P];
 };
 ```
+
+
+## Empty types
+
+### never

@@ -1,5 +1,8 @@
 # Data structures
 
+## [Lists](https://fullchee.github.io/notes/backend/python/python-lists)
+
+## [Dicts](https://fullchee.github.io/notes/backend/python/dict/)
 ## Stacks
 - list
     - amortized O(1) for inserts and deletes
