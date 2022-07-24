@@ -43,6 +43,14 @@ box-decoration-break: clone;
 
 ![box-decoration-break-clone.png](box-decoration-break-clone.png)
 
+### Replaced elements
+
+- img
+- video
+- canvas
+
+Inline wrapper on some foreign object
+
 ## Inline-block
 - like `inline` except you can apply padding, 
 - doesn't word wrap

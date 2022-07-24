@@ -6,6 +6,10 @@ At Forma.ai, I implemented a docs-as-code at Forma.
 
 I realized that I could use the same system to organize all my personal notes.
 
+!!! note
+
+    These are my personal notes. If I were to write docs for others, it would be much more readable and be written differently.
+
 ## [Portfolio](https://fullchee.com)
 
 -   [Backend](https://fullchee.github.io/notes/backend/aws/)
