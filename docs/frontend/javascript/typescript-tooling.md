@@ -14,6 +14,31 @@
 // @ts-ignore (ignores one line)
 ```
 
+## Empty Types
+
+- `unknown`
+    - I don't know
+        - could be anything
+    - need to type check/guard
+- `any`
+    - I don't care
+
+### `never`
+
+things that should never happen
+
+- prune conditional types
+
+```ts
+type NonNullable<T> = T extends null | undefined ? never : T;
+
+// NonNullable<MyType> can't be assigned null or undefined
+```
+
+- infinite loops
+- only ever throwing errors
+
+
 ## Checking types
 
 ### [`instanceof` vs `typeof`](https://stackoverflow.com/a/6625960/8479344)
@@ -34,6 +59,13 @@ function isFish(pet: Fish | Bird): pet is Fish {
 }
 ```
 
+## Type Generation
+
+- [MakeTypes](https://jvilk.com/MakeTypes/)
+    - Generates interfaces from JSON
+- https://github.com/swagger-api/swagger-codegen
+
+
 ## Interfaces
 
 Extend a type
@@ -49,34 +81,32 @@ interface IsLoading {
 }
 ```
 
-### `interface` vs `type`
+### [`interface` vs `type`](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces)
 
 - both are good, for consistency, stick with one
 
-
 #### What only `interface` can do
+
+- declaration merging
+- interfaces can be changed after being created
+
+```ts
+interface Point { x: number; }
+interface Point { y: number; }
+//becomes: interface Point { x: number; y: number; }
+```
 
 #### What only `type` can do
 
 - primitives
     - `#!ts type Name = string`
 - unions
-
-### [MakeTypes](https://jvilk.com/MakeTypes/)
-
-Generates interfaces from JSON
-
-
-## Empty Types
-
-- `unknown`
-    - I don't know
-    - need to type check/guard
-- `any`
-    - I don't care
+    - `#!ts type Id = string | number`
+- tuples
+    - `#!ts type Data = [number, string]`
 
 
-## React
+## React and TS
 
 ### Return type
 
@@ -94,12 +124,6 @@ type GreetFunction = (a: string) => void;
 
 ```typescript
 (event: React.MouseEvent<HTMLElement>) => void
-```
-
-## Union
-
-```typescript
-number | string;
 ```
 
 ### Importing a `type` that's the same name as the `class`
@@ -149,8 +173,3 @@ type Required<T> = {
     [P in keyof T]-?: T[P];
 };
 ```
-
-
-## Empty types
-
-### never
