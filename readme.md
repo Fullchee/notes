@@ -1,4 +1,4 @@
-# [Fullchee's Notes](https://github.com/Fullchee/notes)
+# [Fullchee's Notes](https://fullcheezhang.com/)
 
 Instead of memorizing all things dev with flashcards, I am creating a repo that I can reference.
 
