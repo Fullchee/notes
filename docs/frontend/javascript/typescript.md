@@ -221,3 +221,8 @@ type Required<T> = {
     [P in keyof T]-?: T[P];
 };
 ```
+
+
+## Generics
+
+Inferred generic: (from the params)????
