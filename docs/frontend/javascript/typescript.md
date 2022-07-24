@@ -23,9 +23,19 @@
 - `any`
     - I don't care
 
-### `never`
+### [`never`](https://stackoverflow.com/a/54243343/8479344)
 
 things that should never happen
+
+```ts
+const reportError = function (): never {
+    throw Error('my error');
+}
+
+const loop = function (): never {
+    while(true) {}
+}
+```
 
 - prune conditional types
 
@@ -33,6 +43,7 @@ things that should never happen
 type NonNullable<T> = T extends null | undefined ? never : T;
 
 // NonNullable<MyType> can't be assigned null or undefined
+type A = NonNullable<number | null>;      // number
 ```
 
 - infinite loops
@@ -104,6 +115,43 @@ interface Point { y: number; }
     - `#!ts type Id = string | number`
 - tuples
     - `#!ts type Data = [number, string]`
+
+
+## Avoid optional properties
+
+- Explicitly model which combinations exist and which don't
+
+```ts
+interface Product {
+  id: string
+  type: 'digital' | 'physical'
+  weightInKg?: number
+  sizeInMb?: number
+}
+```
+
+```ts
+interface Product {
+  id: string
+  type: 'digital' | 'physical'
+}
+
+interface DigitalProduct extends Product {
+  type: 'digital'
+  sizeInMb: number
+}
+
+interface PhysicalProduct extends Product {
+  type: 'physical'
+  weightInKg: number
+}
+```
+
+### Enums
+
+- avoid enums
+- use string literals instead
+- https://react-typescript-cheatsheet.netlify.app/docs/basic/troubleshooting/types/#enum-types
 
 
 ## React and TS

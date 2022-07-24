@@ -68,17 +68,6 @@ example
 
 ### Border vs outline
 
-<iframe
-  width="727"
-  height="360"
-  src="https://www.youtube.com/embed/ypNpmXfFfXI"
-  title="CSS Outlines are great | #shorts"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen
-></iframe>
-
-
 - outline: takes up no space
     - not a part of the box model
 - `outline-offset`: can be negative -> inside the content
@@ -86,3 +75,46 @@ example
 - outline is still a rectangle in Safari
     - respects `border-radius` in other browsers
 - Accessibility
+
+
+## Margin
+
+### Negative margin
+
+the only one of the three that can be negative
+
+- will still move around the children
+    - because of the flow algo
+- unlike `#!css transform: translate()`
+
+### Margin `auto`
+- left/right `margin: auto` only works if there's an explicit width
+- put the leftover space in the left/right
+
+```css
+margin-left: auto;
+width: 24rem;
+```
+
+
+### Stretch out an image with margin
+
+Get images to break free from the parent padding
+
+- you could use `calc()`
+
+
+```css
+.stretched {
+  margin-left: -32px;
+  margin-right: -32px;
+}
+
+.stretched img {
+    width: 100%;
+    /* display: block */ 
+}
+```
+
+![margin-can-go-through-parent-padding.png](margin-can-go-through-parent-padding.png)
+![margin-stretched-out.png](margin-stretched-out.png)
