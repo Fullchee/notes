@@ -14,6 +14,67 @@
 // @ts-ignore (ignores one line)
 ```
 
+## Checking types
+
+### [`instanceof` vs `typeof`](https://stackoverflow.com/a/6625960/8479344)
+
+JS built-ins
+
+- `instanceof` for custom types
+- `typeof` for the simple built-in types
+
+
+### Type guards
+
+Return type isn't a boolean!
+
+```ts
+function isFish(pet: Fish | Bird): pet is Fish {
+  return (pet as Fish).swim !== undefined;
+}
+```
+
+## Interfaces
+
+Extend a type
+
+```ts
+interface LoadingWidgets {
+    [widgetId?: number]: boolean;
+}
+
+interface IsLoading {
+    widgets: LoadingWidgets;
+    [key?: string]: boolean | LoadingWidgets;
+}
+```
+
+### `interface` vs `type`
+
+- both are good, for consistency, stick with one
+
+
+#### What only `interface` can do
+
+#### What only `type` can do
+
+- primitives
+    - `#!ts type Name = string`
+- unions
+
+### [MakeTypes](https://jvilk.com/MakeTypes/)
+
+Generates interfaces from JSON
+
+
+## Empty Types
+
+- `unknown`
+    - I don't know
+    - need to type check/guard
+- `any`
+    - I don't care
+
 
 ## React
 
