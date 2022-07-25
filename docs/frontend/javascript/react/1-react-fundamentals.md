@@ -1,14 +1,12 @@
-# Epic React 1: React Fundamentals
+# React Fundamentals
 
 Date: 2021-12-25
-
-## React Fundamentals
 
 1. `React.createElement` is like `document.createElement()`
 2. `document.append(element)` is like `ReactDOM.render(reactComponent, document.body)`
     1. ReactDOM because react can be rendered in many environments (example: React Native)
 
-### PropTypes confusion
+## PropTypes confusion
 
 I got a bit confused when I got to creating custom components extra credit where I'm not sure how React is calling the `propTypes` that we defined (not from the library).
 
@@ -22,3 +20,7 @@ I broke it down in [this StackOverflow question]([https://stackoverflow.com/ques
 I'm also posted on KCD's discord (but didn't get a good answer)
 
 I could (but probably won't) go to his office hours
+
+
+### isLoading booleans
+https://kentcdodds.com/blog/stop-using-isloading-booleans

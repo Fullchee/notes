@@ -2,26 +2,16 @@
 
 Date: 2021-12-26
 
-- [Epic React 2: React Hooks](#epic-react-2-react-hooks)
-  - [Why React Hooks?](#why-react-hooks)
-  - [useState](#usestate)
-    - [Why we need useState](#why-we-need-usestate)
-  - [useEffect](#useeffect)
-    - [Error Boundaries](#error-boundaries)
-  - [Advanced React Hooks](#advanced-react-hooks)
-  - [useReducer](#usereducer)
-  - [useCallback and useMemo](#usecallback-and-usememo)
-    - [useCallback: Custom hooks](#usecallback-custom-hooks)
-      - [what's the `run` function that we return in `useAsync`?](#whats-the-run-function-that-we-return-in-useasync)
-    - [safeDispatch (safe fetch) and useEffect cleanup](#safedispatch-safe-fetch-and-useeffect-cleanup)
-      - [How do you know if a component has been unmounted?](#how-do-you-know-if-a-component-has-been-unmounted)
-  - [`useContext`](#usecontext)
-      - [`useCount` wrapper for better errors](#usecount-wrapper-for-better-errors)
-  - [`useEffect` vs `useLayoutEffect`](#useeffect-vs-uselayouteffect)
-  - [`useImperativeHandle`](#useimperativehandle)
-    - [`React.forwardRef`](#reactforwardref)
-    - [Do you need to always use `useImperativeHandle` when using `React.forwardRef`?](#do-you-need-to-always-use-useimperativehandle-when-using-reactforwardref)
-    - [`useDebugValue`](#usedebugvalue)
+- [Why React Hooks?](#why-react-hooks)
+- [useState](#usestate)
+- [useEffect](#useeffect)
+- [Advanced React Hooks](#advanced-react-hooks)
+- [useReducer](#usereducer)
+- [useCallback and useMemo](#usecallback-and-usememo)
+- [`useContext`](#usecontext)
+- [`useEffect` vs `useLayoutEffect`](#useeffect-vs-uselayouteffect)
+- [`useImperativeHandle`](#useimperativehandle)
+- [`React.forwardRef`](#reactforwardref)
 
 ## Why React Hooks?
 
@@ -33,20 +23,20 @@ Date: 2021-12-26
 
 -   accepts a function which is a lazy initializer!
     -   `useState` ignores the param afterward
-    -   for computationally expensive stuff (async like )
+    -   for computationally expensive stuff (async, like getFromLocalStorage)
+    -   so that the expensive function only runs once
 
-### Why we need useState
-
--   we need to re-render the component again
+```jsx
+const [item, setItem] = useState(() => getFromLocalStorage())
+```
 
 ## useEffect
 
 -   dependency array does a `===` comparison
     -   will always re-render if you pass it an array
 -   `fetch`: forgot to return early if `pokemonName` is null
--   I forgot about having a status variable
-    -   helps with determining what to display
-    -   https://kentcdodds.com/blog/stop-using-isloading-booleans
+
+
 -   the way that Kent does a sort of manual TDD where he always gets something to display
     -   eg: create a variable with a stub error message to make sure that the error shows up
 
