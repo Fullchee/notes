@@ -66,3 +66,15 @@ async function test() {
 ```js
 Promise.reject(e);
 ```
+
+## `fetch`
+
+### Why do you need to `await` `fetch` calls twice?
+
+```javascript
+const response = await fetch("url");
+const data = response.json();
+```
+
+1. `response` returns when we get the first bit of data
+2. `data` returns when we get the rest of the data

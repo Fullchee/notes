@@ -136,5 +136,3 @@ isNaN("a"); // true
 
 Number.isNaN(Number(input)) === isNan(input);
 ```
-
-## Promises
