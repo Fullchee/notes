@@ -16,14 +16,30 @@ r"D:\Users\path"
 
 ### [Title case](https://www.pythonmorsels.com/title-case-in-python/)
 
-Use a regex or a library?
-
-Avoid `"str".title()`
+#### Avoid `"str".title()` alone
 
 ```python
 >>> "don't".title()
 "Don'T"
 ```
+
+Use a regex
+
+```python
+import re
+
+def title(value: str) -> str:
+    titled = value.title()
+    
+    # Lowercase the whole regular expression match group.
+    lowercase_match = lambda match: match.group().lower()
+    
+    titled = re.sub(r"([a-z])'([A-Z])", lowercase_match, titled)  # Fix Don'T
+    titled = re.sub(r"\d([A-Z])", lowercase_match, titled)  # Fix 1St and 2Nd
+    return titled
+```
+
+Use a library like [`titlecase`](https://github.com/ppannuto/python-titlecase) if you want small words (like `is` and `a`) to be lower case
 
 
 
