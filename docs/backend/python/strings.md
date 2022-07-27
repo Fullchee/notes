@@ -14,6 +14,19 @@ https://www.pythonmorsels.com/string-formatting/
 r"D:\Users\path"
 ```
 
+### [Title case](https://www.pythonmorsels.com/title-case-in-python/)
+
+Use a regex or a library?
+
+Avoid `"str".title()`
+
+```python
+>>> "don't".title()
+"Don'T"
+```
+
+
+
 ### Template strings
 
 * less powerful than `f` strings

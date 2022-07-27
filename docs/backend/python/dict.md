@@ -14,6 +14,38 @@ example_dict.get('key1', {}).get('key2')
     - unlike `getattr`
     - which you have to explicitly provide a fallback
 
+### [Destructure dicts](https://stackoverflow.com/a/52083390/8479344)
+
+In JS
+
+```javascript
+params = {a: 1, b: 2};
+const {a, b} = params;
+```
+
+Python can't do the same thing 😞
+
+Given `#!py params = {'a': 1, 'b': 2}`
+
+**itemgetter**
+
+```python
+from operator import itemgetter
+a, b = itemgetter('a', 'b')(params)
+```
+
+**list comprehension**
+
+```python
+a, b = [d[k] for k in ('a','b')]
+```
+
+**assignment**
+
+```python
+a, b = params['a'], params['b']
+```
+
 ### key with the max value
 
 ```python

@@ -112,8 +112,7 @@ DashboardWidget <-> DashboardQuery
 instance.query = DashboardQuery.objects.get(file_path=file_path)
 ```
 
-because we can't do `.update()` because we're given the 
-A
+because we can't do `.update()` because we're given the instance and not a query set
 
 
 ## [Custom fields](https://www.django-rest-framework.org/api-guide/fields/#a-basic-custom-field)

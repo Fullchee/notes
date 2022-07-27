@@ -19,3 +19,8 @@ dispatch({
 
 dispatch((dispatch, ))
 ```
+
+
+## Updating a set in Redux
+
+- don't use set when 
