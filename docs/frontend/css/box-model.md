@@ -118,3 +118,20 @@ Get images to break free from the parent padding
 
 ![margin-can-go-through-parent-padding.png](margin-can-go-through-parent-padding.png)
 ![margin-stretched-out.png](margin-stretched-out.png)
+
+
+## Width
+
+## [Height](https://stackoverflow.com/a/22675563/8479344)
+
+[clientHeight](https://developer.mozilla.org/en-US/docs/Web/API/Element/clientHeight)
+
+> returns the inner height of an element in pixels, including padding but **not** the horizontal **scrollbar height**, **border**, or **margin**
+
+[offsetHeight](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight)
+
+> is a measurement which **includes** the element **borders**, the element vertical padding, the element horizontal **scrollbar** (if present, if rendered) and the element CSS height.
+
+[scrollHeight](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight)
+
+> is a measurement of the height of an element's content **including** content **not visible** on the screen **due to overflow**

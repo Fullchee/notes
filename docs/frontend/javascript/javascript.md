@@ -118,6 +118,17 @@ function myTag(strings, ...args) {
 }
 ```
 
+### Converting anything into a string
+
+
+#### `String()`
+
+```javascript
+String(anyThing)
+```
+
+might not work on older JS versions?
+
 ## Dates
 
 ```javascript
