@@ -22,9 +22,7 @@ backendcore module cannot be found:# Intro to Promises
 
 ```js
 function printContents(err, data) {
-    if (err) {
-        console.error(err);
-    }
+    if (err) console.error(err);
     console.log(data);
 }
 
@@ -37,38 +35,22 @@ fs.readFile("package.json", "utf8", printContents);
 const fs = require("fs");
 
 fs.readFile("package.json", "utf8", function (err, data) {
-    if (err) {
-        console.error(err);
-    }
+    if (err) console.error(err);
     console.log(data);
     fs.readFile("file2", "utf8", function (err, data) {
-        if (err) {
-            console.error(err);
-        }
+        if (err) console.error(err);
         fs.readFile("file3", "utf8", function (err, data) {
-            if (err) {
-                console.error(err);
-            }
+            if (err) console.error(err);
             fs.readFile("file4", "utf8", function (err, data) {
-                if (err) {
-                    console.error(err);
-                }
+                if (err) console.error(err);
                 fs.readFile("file5", "utf8", function (err, data) {
-                    if (err) {
-                        console.error(err);
-                    }
+                    if (err) console.error(err);
                     fs.readFile("file6", "utf8", function (err, data) {
-                        if (err) {
-                            console.error(err);
-                        }
+                        if (err) console.error(err);
                         fs.readFile("file7", "utf8", function (err, data) {
-                            if (err) {
-                                console.error(err);
-                            }
+                            if (err) console.error(err);
                             fs.readFile("file8", "utf8", function (err, data) {
-                                if (err) {
-                                    console.error(err);
-                                }
+                                if (err) console.error(err);
                             });
                         });
                     });
@@ -90,27 +72,27 @@ file8Promise = fs
     .then(function (_file1) {
         // NOTE: you NEED to return in order for the data to get passed into the function
         file1 = _file1;
-        return fs.readFile("file2", "utf8");
+        return fs.promises.readFile("file2", "utf8");
     })
     .then(function (file2) {
         console.log(file1);
         console.log(_file1); // errors out
-        return fs.readFile("file3", "utf8");
+        return fs.promises.readFile("file3", "utf8");
     })
     .then(function (file3) {
-        return fs.readFile("file4", "utf8");
+        return fs.promises.readFile("file4", "utf8");
     })
     .then(function (file4) {
-        return fs.readFile("file5", "utf8");
+        return fs.promises.readFile("file5", "utf8");
     })
     .then(function (file5) {
-        return fs.readFile("file6", "utf8");
+        return fs.promises.readFile("file6", "utf8");
     })
     .then(function (file6) {
-        return fs.readFile("file7", "utf8");
+        return fs.promises.readFile("file7", "utf8");
     })
     .then(function (file7) {
-        return fs.readFile("file8", "utf8");
+        return fs.promises.readFile("file8", "utf8");
     })
     .catch(function () {
         // if any of the 8 error out
@@ -123,15 +105,15 @@ file8Promise = fs
 ```javascript
 async function readFiles() {
     try {
-        const file1 = await fs.readFile("file1", "utf8");
-        const file2 = await fs.readFile("file2", "utf8");
+        const file1 = await fs.promises.readFile("file1", "utf8");
+        const file2 = await fs.promises.readFile("file2", "utf8");
         console.log(file1);
-        const file3 = await fs.readFile("file3", "utf8");
-        const file4 = await fs.readFile("file4", "utf8");
-        const file5 = await fs.readFile("file5", "utf8");
-        const file6 = await fs.readFile("file6", "utf8");
-        const file7 = await fs.readFile("file7", "utf8");
-        const file8 = await fs.readFile("file8", "utf8");
+        const file3 = await fs.promises.readFile("file3", "utf8");
+        const file4 = await fs.promises.readFile("file4", "utf8");
+        const file5 = await fs.promises.readFile("file5", "utf8");
+        const file6 = await fs.promises.readFile("file6", "utf8");
+        const file7 = await fs.promises.readFile("file7", "utf8");
+        const file8 = await fs.promises.readFile("file8", "utf8");
     } catch (error) {
         console.error(error);
     }
