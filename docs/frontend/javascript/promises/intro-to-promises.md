@@ -1,4 +1,4 @@
-# Promises
+# Intro to Promises
 
 ## How the event loop works
 <iframe
@@ -37,10 +37,11 @@ fs.readFile('package.json', 'utf8', printContents);
 ```javascript
 const fs = require('fs');
 
-fs.readFile('file1', 'utf8' function(err, data) {
+fs.readFile('package.json', 'utf8' function(err, data) {
     if (err) {
         console.error(err);
     }
+    console.log(data)
     fs.readFile('file2', 'utf8' function(err, data) {
         if (err) {
             console.error(err);
@@ -84,12 +85,16 @@ fs.readFile('file1', 'utf8' function(err, data) {
 ### `.then()` example
 
 ```js
+let file1;
 file8Promise = fs.readFile('file1', 'utf8')
-    .then(function(file1) {
+    .then(function(_file1) {
         // NOTE: you NEED to return in order for the data to get passed into the function
+        file1 = _file1
         return fs.readFile('file2', 'utf8');
     })
     .then(function(file2) {
+        console.log(file1);
+        console.log(_file1);  // errors out
         return fs.readFile('file3', 'utf8');
     })
     .then(function(file3) {
@@ -120,6 +125,7 @@ async function readFiles() {
   try {
     const file1 = await fs.readFile("file1", "utf8");
     const file2 = await fs.readFile("file2", "utf8");
+    console.log(file1)
     const file3 = await fs.readFile("file3", "utf8");
     const file4 = await fs.readFile("file4", "utf8");
     const file5 = await fs.readFile("file5", "utf8");
@@ -131,6 +137,22 @@ async function readFiles() {
   }
 }
 ```
+
+#### Using `useEffect` with `async/await`
+
+- `useEffect` can only return a cleanup function
+- need a wrapper
+
+```jsx
+useEffect(() => {
+    const make_api_call = async () => {
+        const response = await fetch()
+        const data = await response.json()
+    }
+    make_api_call()
+})
+```
+
 
 ### What is a promise
 
