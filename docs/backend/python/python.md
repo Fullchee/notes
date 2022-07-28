@@ -18,6 +18,11 @@ my_func(1, 2) # throws an error
 ```
 
 
+### Mark a function as deprecated
+
+- https://github.com/tantale/deprecated
+- decorator
+
 ### Trivia
 
 ```python
