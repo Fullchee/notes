@@ -1,5 +1,33 @@
 # Slack tips
 
+## Slack API
+
+### Get a user ID
+![slack-id.png](slack-id.png "slack-id.png")
+
+
+###  [Text formatting](https://api.slack.com/reference/surfaces/formatting)
+
+#### [Links](https://api.slack.com/reference/surfaces/formatting#linking-urls)
+
+```markdown
+<example.com|Text>
+```
+
+Markdown equivalent
+
+```markdown
+[Text](example.com)
+```
+
+Email links
+
+```markdown
+<mailto:bob@example.com|Email Bob Roberts>
+```
+
+
+
 ## Automated message on the last Thursday of the month
 
 - `/remind` doesn’t work for “last Thursday of the month” 😥
