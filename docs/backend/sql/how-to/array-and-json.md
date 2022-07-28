@@ -2,6 +2,15 @@
 
 ## Arrays
 
+```sql
+SELECT
+ARRAY
+  [COL1, COL2]
+FROM table
+```
+
+![63c31635f1c8fabd69f5224f1a32cc4e.png](../63c31635f1c8fabd69f5224f1a32cc4e.png)
+
 ### How UNNEST works
 
 ```sql
@@ -91,7 +100,7 @@ SELECT info -> 'items' ->> 'product'
 ### JSONB_OBJECT
 
 -   Takes in two string arrays (they must be strings) of keys and values and zips them together
--   need more than just strings? 
+-   need more than just strings?
     -   Use `json_build_object(key1, value1, key2, value2, ...)`
 
 ![8b5b109809e298c64f6dc0783b7c22d7.png](../../../8b5b109809e298c64f6dc0783b7c22d7.png)
