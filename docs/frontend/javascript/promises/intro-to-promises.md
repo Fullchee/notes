@@ -149,3 +149,14 @@ One of 3 states
 -   `pending`
 -   `fulfilled`
 -   `rejected`
+
+
+### What can promises do that callbacks can't?
+
+Run Promises simultaneously
+
+```javascript
+Promise.all([api(), api2(), api3()]).then(function(result) {
+    //do work. result is an array contains the values of the three fulfilled promises.
+}).catch(function(error) {
+```

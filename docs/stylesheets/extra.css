@@ -5,26 +5,38 @@
     --md-primary-fg-color: var(--furple);
 }
 
-[data-md-color-scheme="slate"] {
-    --md-typeset-a-color: var(--formula-teal);
+[data-md-color-scheme="slate"][data-md-color-primary="deep-purple"] {
+    --md-typeset-a-color: var(--formula-teal, #6ad4be);
+}
+
+.md-typeset h1 {
+    /* text-4xl */
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
 }
 
 .md-typeset h2 {
-    font-size: 2.5em;
+    /* text-3xl	*/
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
 }
 
 .md-typeset h3 {
-    font-size: 1.75em;
+    /* text-2xl */
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
 }
 
 .md-typeset h4 {
-    font-size: 1.5em;
-    margin: 1.2em 0 0.6em;
+    /* text-xl */
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
 }
 
 .md-typeset h5 {
-    font-size: 1.25em;
-    margin: 0.8em 0 0.4em;
+    /* text-lg */
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
 }
 
 body[data-md-color-scheme="default"] .md-nav__list {
